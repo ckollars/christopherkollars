@@ -7,7 +7,7 @@
   <title>{{author}} {{title}} on scriptogr.am</title>
   <meta charset="utf-8">
   <meta name="description" content="{{author}} {{blog_title}}" />
-  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="ROBOTS" content="INDEX,FOLLOW">
   <meta property="og:url" content="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}">
@@ -20,7 +20,7 @@
   <link rel="canonical" href="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}" />
   <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
   <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
-  <link rel="stylesheet" href="http://codyjamespeterson.com/blog/stylesheets/style.css">
+  <link rel="stylesheet" href="http://raw.github.com/ckollars/christopherkollars/master/style.css">
   <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
 <body>
@@ -38,6 +38,10 @@
     <div class="avatar"><a href="{{base_url}}"></a></div>
   </header>
   <section id="articles" class="{{page}}">
+  {{#posts}}
+
+
+  {{^is_archive}}
   {{#is_index}}
   <article>
     <header>
@@ -48,8 +52,7 @@
   </article>
   {{/is_index}}
 
-  {{#posts}}
-  {{^is_archive}}
+  {{#is_post}}
     <article>
      <div class="content">
      {{#date}}<div class="date">{{prettydate}}</div>{{/date}}
@@ -59,7 +62,7 @@
       </header>
       {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
       {{content}}
-      {{#is_post}}
+
         <div class="social">
           <! -- Tweet button / Comments-->
           <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently reading: {{title}} by {{author}}" data-related="scriptogram" data-count="none">Tweet</a>
@@ -70,10 +73,11 @@
             {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
           </ul>
         {{/if_tags}}
-      {{/is_post}}
+
       </div>
      </div>
     </article>
+    {{/is_post}}
     {{/is_archive}}
   {{/posts}}
   </section>
