@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie7"> <![endif]-->
+<!--[if IE 7]><html class="lt-ie8"> <![endif]-->
+<!--[if IE 8]><html class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+  <title>{{author}} {{title}} on scriptogr.am</title>
+  <meta charset="utf-8">
+  <meta name="description" content="{{author}} {{blog_title}}" />
+  <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="ROBOTS" content="INDEX,FOLLOW">
+  <meta property="og:url" content="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}">
+  <meta property="og:site_name" content="{{#posts}}{{#is_post}}{{title}} - {{/is_post}}{{/posts}}{{author}} on scriptogr.am">
+  <meta property="og:title" content="{{#posts}}{{#is_post}}{{title}} - {{/is_post}}{{/posts}}{{author}} on scriptogr.am" />
+  <meta property="og:description" content="{{author}} | {{blog_title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="fb:app_id" content="" />
+  <meta property="og:image" content="https://twimg0-a.akamaihd.net/profile_images/1733970682/scriptogram.png" />
+  <link rel="canonical" href="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}" />
+  <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
+  <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
+  <link rel="stylesheet" href="http://codyjamespeterson.com/blog/stylesheets/style.css">
+  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+  <header id="top-header">
+    <nav id="main-nav">
+      <ul>
+        <li><a href="http://twitter.com/ckollars">twitter</a></li>
+        <li><a href="http://github.com/ckollars">github</a></li>
+        <li><a href="mailto:ckollars@gmail.com">chat</a></li>
+      </ul>
+    </nav>
+    <h1>Hi! My name is Christopher Kollars.<br />
+      I am a <span>web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
+    </h1>
+    <div class="avatar"><a href="{{base_url}}"></a></div>
+  </header>
+  <section id="articles" class="{{page}}">
+  {{#is_index}}
+  <article>
+    <header>
+      <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+    </header>
+    {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+    {{#date}}<div class="date">{{prettydate}}</div>{{/date}}
+  </article>
+  {{/is_index}}
+
+  {{#posts}}
+  {{^is_archive}}
+    <article>
+     <div class="content">
+     {{#date}}<div class="date">{{prettydate}}</div>{{/date}}
+      <div class="articlepost">
+      <header>
+        <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+      </header>
+      {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+      {{content}}
+      {{#is_post}}
+        <div class="social">
+          <! -- Tweet button / Comments-->
+          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently reading: {{title}} by {{author}}" data-related="scriptogram" data-count="none">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
+        {{#if_tags}}
+          <ul class="tags">
+            {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
+          </ul>
+        {{/if_tags}}
+      {{/is_post}}
+      </div>
+     </div>
+    </article>
+    {{/is_archive}}
+  {{/posts}}
+  </section>
+  <section class="pagination">
+    <div class="content">{{pagination}}</div>
+  </section>
+  <footer>
+    <div class="content">
+      {{blog_title}}
+      <p>Built with <a class="scriptogram-link" href="http://scriptogr.am/" title="Built with scriptogr.am" >scriptogr.am</a></p>
+    </div>
+  </footer>
+</body>
+</html>
