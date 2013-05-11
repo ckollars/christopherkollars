@@ -1,0 +1,13 @@
+Thank you for using scriptogr.am. While we’re still in early beta development, we think think you’ll enjoy the app. It’s designed to be fast, simple and to get the most creativity out of you.
+
+scriptogr.am uses Markdown, a lightweight markup language, originally created by John Gruber and Aaron Swartz. Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML). Read more about Markdown here: http://daringfireball.net/projects/markdown/
+
+
+Getting started with scriptogr.am
+=================================
+
+We strongly suggest you to visit: http://scriptogr.am/<YOUR_USERNAME>/post/this-your-blog-delivered-by-scriptogram
+where <YOUR_USERNAME> is the username you picked while signing up to scriptogr.am
+
+
+If you have any questions, just drop us an e-mail at any time.
