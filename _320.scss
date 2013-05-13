@@ -1,0 +1,126 @@
+html{
+  font-size : 62.5%;
+  -webkit-overflow-scrolling : touch;
+  -webkit-tap-highlight-color : lighten($green, 75%);
+  -webkit-text-size-adjust : 100%;
+  -ms-text-size-adjust : 100%;
+}
+body{
+  margin : 0;
+  padding : 0;
+  width : 100%;
+  background-color : transparent;
+  font-family : $basefont;
+  @include font-size();
+  line-height : $baselineheight;
+
+  font-weight: 400;
+  color: $gray;
+}
+article a,
+footer a{
+  color: $gray;
+  text-decoration: none;
+  background: #e7f7cf;
+  transition: all .2s;
+  &:hover{
+    background: none;
+  }
+}
+nav ul{
+  margin: 5px 0 0 24px;
+  padding: 0;
+  @include font-size(14);
+  li{
+    // display: inline;
+    list-style: none;
+    margin-bottom: 8px;
+    a{
+      color: $gray;
+      text-decoration: none;
+      &:hover{
+        background: #e7f7cf;
+      }
+    }
+  }
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.avatar{
+  width: 130px;
+  float: right;
+  margin-right: 20px;
+  img{
+    width: 130px;
+  }
+}
+
+
+#top-header,
+#articles,
+footer{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+article{
+  margin-bottom: 70px;
+  .content{
+    padding: 0 20px;
+    p{
+      margin: 2.1em 0;
+      color: lighten($gray, 1%);
+    }
+  }
+  h2{
+    @include font-size(24);
+    margin-bottom: 10px;
+    a{
+      background: transparent;
+      &:hover{
+
+      }
+    }
+  }
+  .introduction{
+    color: lighten($gray, 20%);
+    @include font-size(18);
+  }
+  .date{
+    margin-top: 20px;
+  }
+}
+.index article{
+  padding: 0 20px;
+}
+.post{
+  .date{
+    display: none;
+  }
+  .introduction{
+    font-weight: 200;
+  }
+}
+.index article,
+.article-header{
+  border-left: 10px solid $green;
+  padding: 0 20px;
+}
+#top-header{
+  margin-top: 20px;
+  h1{
+    display: none;
+  }
+  .colophon{
+    float: left;
+  }
+}
+
+footer{
+  padding: 0 20px;
+  @include font-size(14);
+}

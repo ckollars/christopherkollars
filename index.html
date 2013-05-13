@@ -20,22 +20,24 @@
   <link rel="canonical" href="{{#posts}}{{#is_post}}{{permalink}}{{/is_post}}{{/posts}}" />
   <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
   <link rel="shortcut icon" href="http://scriptogr.am/lib/img/favicon.ico">
-  <link rel="stylesheet" href="http://raw.github.com/ckollars/christopherkollars/master/style.css">
-  <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+  <link rel="stylesheet" href="https://dl.dropboxusercontent.com/u/2243605/site/css/style.css">
+  <script src="https://dl.dropboxusercontent.com/u/2243605/site/js/libs/modernizr.js"></script>
 </head>
 <body>
-  <header id="top-header">
-    <nav id="main-nav">
-      <ul>
-        <li><a href="http://twitter.com/ckollars">twitter</a></li>
-        <li><a href="http://github.com/ckollars">github</a></li>
-        <li><a href="mailto:ckollars@gmail.com">chat</a></li>
-      </ul>
-    </nav>
-    <h1>Hi! My name is Christopher Kollars.<br />
-      I am a <span>web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
-    </h1>
-    <div class="avatar"><a href="{{base_url}}"></a></div>
+  <header id="top-header" class="group">
+    <div class="colophon">
+      <nav id="main-nav">
+        <ul>
+          <li><a href="http://twitter.com/ckollars">twitter</a></li>
+          <li><a href="http://github.com/ckollars">github</a></li>
+          <li><a href="mailto:ckollars@gmail.com">chat</a></li>
+        </ul>
+      </nav>
+      <h1>Hi! My name is Christopher Kollars.<br />
+        I am a <span>web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
+      </h1>
+    </div>
+    <div class="avatar"><a href="{{base_url}}"><img src="https://dl.dropboxusercontent.com/u/2243605/site/img/avatar.jpg" alt="Christopher Kollars avatar"></a></div>
   </header>
   <section id="articles" class="{{page}}">
   {{#posts}}
@@ -48,34 +50,34 @@
       <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
     </header>
     {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
-    {{#date}}<div class="date">{{prettydate}}</div>{{/date}}
+    {{#date}}<div class="date">⌘ {{prettydate}}</div>{{/date}}
   </article>
   {{/is_index}}
 
   {{#is_post}}
     <article>
-     <div class="content">
-     {{#date}}<div class="date">{{prettydate}}</div>{{/date}}
-      <div class="articlepost">
-      <header>
-        <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
-      </header>
-      {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
-      {{content}}
-
-        <div class="social">
-          <! -- Tweet button / Comments-->
-          <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently reading: {{title}} by {{author}}" data-related="scriptogram" data-count="none">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-        </div>
-        {{#if_tags}}
-          <ul class="tags">
-            {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
-          </ul>
-        {{/if_tags}}
-
+      <div class="article-header">
+        <header>
+          <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+        </header>
+        {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+        {{#date}}<div class="date">⌘ {{prettydate}}</div>{{/date}}
       </div>
-     </div>
+      <div class="content">
+      {{content}}
+      <p>-----</p>
+      </div>
+      <div class="social">
+        <! -- Tweet button / Comments-->
+        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently reading: {{title}} by {{author}}" data-related="scriptogram" data-count="none">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      {{#if_tags}}
+        <ul class="tags">
+          {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
+        </ul>
+      {{/if_tags}}
+
     </article>
     {{/is_post}}
     {{/is_archive}}
@@ -86,8 +88,7 @@
   </section>
   <footer>
     <div class="content">
-      {{blog_title}}
-      <p>Built with <a class="scriptogram-link" href="http://scriptogr.am/" title="Built with scriptogr.am" >scriptogr.am</a></p>
+      <p>The source code for this website is available on <a href="https://github.com/ckollars/christopherkollars">GitHub</a>. All code and content on this site is published under the <a href="">MIT license</a>.</p>
     </div>
   </footer>
 </body>
