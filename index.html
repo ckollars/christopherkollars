@@ -34,7 +34,7 @@
         </ul>
       </nav>
       <h1>Hi! My name is Christopher Kollars.<br />
-        I am a <span>web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
+        I am a <span class="alert">web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
       </h1>
     </div>
     <div class="avatar"><a href="{{base_url}}"><img src="https://dl.dropboxusercontent.com/u/2243605/site/img/avatar.jpg" alt="Christopher Kollars avatar"></a></div>
@@ -66,12 +66,13 @@
       <div class="content">
       {{content}}
       <p>----- <a href="https://twitter.com/intent/tweet?text={{title}}&url={{permalink}}&via=ckollars" class="twitter" data-text=""><i class="icon-twitter"></i>Comment</a></p><! -- Tweet button / Comments-->
-      </div>
+
       {{#if_tags}}
         <ul class="tags">
           {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">#{{name}}</a></li>{{/tags}}
         </ul>
       {{/if_tags}}
+      </div>
 
     </article>
     {{/is_post}}
@@ -106,12 +107,6 @@
   <script src="https://dl.dropboxusercontent.com/u/2243605/site/js/libs/waypoints-sticky.min.js"></script>
   <script src="https://dl.dropboxusercontent.com/u/2243605/site/js/scripts.js"></script>
 
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
 

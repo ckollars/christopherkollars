@@ -21,7 +21,7 @@ article a,
 footer a{
   color: $gray;
   text-decoration: none;
-  background: #e7f7cf;
+  background: $lightgreen;
   transition: all .2s;
   &:hover{
     background: none;
@@ -40,7 +40,7 @@ nav ul{
     text-decoration: none;
     transition: all .2s;
     &:hover{
-      background: #e7f7cf;
+      background: $lightgreen;
     }
   }
 }
@@ -77,6 +77,7 @@ article{
   margin-right: 40px;
   .content{
     padding: 0 20px;
+    position: relative;
     p{
       margin: 2.1em 0;
       color: lighten($gray, 1%);
@@ -87,9 +88,6 @@ article{
     margin-bottom: 10px;
     a{
       background: transparent;
-      &:hover{
-
-      }
     }
   }
   .introduction{
@@ -102,8 +100,11 @@ article{
 }
 .index article{
   padding: 0 20px;
-  h2{
-    color: $green;
+  a{
+    transition: all .2s;
+    &:hover{
+      color: lighten($gray, 20%);
+    }
   }
 }
 .post{
@@ -165,5 +166,11 @@ footer{
   }
   i{
     margin-right: 10px;
+  }
+}
+.alert{
+  background: $lightgreen;
+  &:hover{
+    cursor: pointer;
   }
 }

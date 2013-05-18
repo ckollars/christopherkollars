@@ -396,6 +396,9 @@ table {
   content: '\e802'; }
 
 /* '' */
+.gist-meta a {
+  background: none; }
+
 @media only screen and (min-width: 320px) {
   html {
     font-size: 62.5%;
@@ -468,7 +471,8 @@ table {
     margin-bottom: 70px;
     margin-right: 40px; }
     article .content {
-      padding: 0 20px; }
+      padding: 0 20px;
+      position: relative; }
       article .content p {
         margin: 2.1em 0;
         color: #3e3e3e; }
@@ -487,8 +491,10 @@ table {
 
   .index article {
     padding: 0 20px; }
-    .index article h2 {
-      color: #7ed21d; }
+    .index article a {
+      transition: all .2s; }
+      .index article a:hover {
+        color: #6e6e6e; }
 
   .post .date {
     display: none; }
@@ -541,7 +547,12 @@ table {
       .anouncement:hover a {
         color: #17afdb; }
     .anouncement i {
-      margin-right: 10px; } }
+      margin-right: 10px; }
+
+  .alert {
+    background: #e7f7cf; }
+    .alert:hover {
+      cursor: pointer; } }
 @media only screen and (min-width: 600px) {
   #top-header h1,
   .post .date {
@@ -574,8 +585,11 @@ table {
   .tags {
     display: block;
     position: absolute;
-    right: -7em;
+    right: 0;
     top: 0;
+    padding: 0;
+    margin: 0;
+    margin-right: -7em;
     list-style: none;
     font-size: 14px;
     font-size: 1.4rem; } }
