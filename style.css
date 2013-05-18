@@ -341,8 +341,8 @@ table {
 
 @font-face {
   font-family: 'fontello';
-  src: url("https://dl.dropboxusercontent.com/u/2243605/site/font/fontello.eot?91592966");
-  src: url("https://dl.dropboxusercontent.com/u/2243605/site/font/fontello.eot?91592966#iefix") format("embedded-opentype"), url("https://dl.dropboxusercontent.com/u/2243605/site/font/fontello.woff?91592966") format("woff"), url("https://dl.dropboxusercontent.com/u/2243605/site/font/fontello.ttf?91592966") format("truetype"), url("https://dl.dropboxusercontent.com/u/2243605/site/font/fontello.svg?91592966#fontello") format("svg");
+  src: url("../font/fontello.eot?46345363");
+  src: url("../font/fontello.eot?46345363#iefix") format("embedded-opentype"), url("../font/fontello.woff?46345363") format("woff"), url("../font/fontello.ttf?46345363") format("truetype"), url("../font/fontello.svg?46345363#fontello") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -352,7 +352,7 @@ table {
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?91592966#fontello') format('svg');
+    src: url('../font/fontello.svg?46345363#fontello') format('svg');
   }
 }
 */
@@ -380,10 +380,22 @@ table {
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
 
+.icon-cancel-circled:before {
+  content: '\e800'; }
+
+/* '' */
+.icon-right-open-mini:before {
+  content: '\e801'; }
+
+/* '' */
 .icon-twitter:before {
   content: '\f309'; }
 
 /* '' */
+.icon-megaphone:before {
+  content: '\e802'; }
+
+/* '' */
 @media only screen and (min-width: 320px) {
   html {
     font-size: 62.5%;
@@ -508,7 +520,28 @@ table {
     padding: 20px;
     font-size: 14px;
     font-size: 1.4rem;
-    max-width: 700px; } }
+    max-width: 700px; }
+
+  .anouncement {
+    background: #17afdb;
+    width: 34em;
+    margin: 8px auto;
+    padding: 4px 0;
+    text-align: center;
+    transition: all .2s;
+    font-size: 14px;
+    font-size: 1.4rem;
+    border-radius: 20px; }
+    .anouncement a {
+      color: #fff;
+      text-decoration: none;
+      transition: all .2s; }
+    .anouncement:hover {
+      background: transparent; }
+      .anouncement:hover a {
+        color: #17afdb; }
+    .anouncement i {
+      margin-right: 10px; } }
 @media only screen and (min-width: 600px) {
   #top-header h1,
   .post .date {
@@ -540,4 +573,9 @@ table {
 
   .tags {
     display: block;
-    position: absolute; } }
+    position: absolute;
+    right: -7em;
+    top: 0;
+    list-style: none;
+    font-size: 14px;
+    font-size: 1.4rem; } }

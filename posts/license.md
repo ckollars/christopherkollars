@@ -1,6 +1,7 @@
 ---
 Title: The MIT License (MIT)
 Type: page
+Slug: license
 ---
 
 Copyright (c) 2013 Christopher Kollars
