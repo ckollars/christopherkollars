@@ -26,7 +26,7 @@
 <body>
   <header id="top-header" class="group">
     <div class="colophon">
-      <nav id="main-nav">
+      <nav id="main-nav" class="group">
         <ul>
           <li><a href="http://twitter.com/ckollars">twitter</a></li>
           <li><a href="http://github.com/ckollars">github</a></li>
@@ -58,27 +58,21 @@
     <article>
       <div class="article-header">
         <header>
-          <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+          <h2>{{title}}</h2>
         </header>
         {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
         {{#date}}<div class="date">⌘ {{prettydate}}</div>{{/date}}
       </div>
       <div class="content">
       {{content}}
-      <p>-----</p>
+      <p>----- <a href="https://twitter.com/intent/tweet?text={{title}}&url={{permalink}}&via=ckollars" class="twitter" data-text=""><i class="icon-twitter"></i>Comment</a></p><! -- Tweet button / Comments-->
       </div>
-      <div class="social">
-        <! -- Tweet button / Comments-->
-        <a href="https://twitter.com/share" class="twitter-share-button" data-text="Currently reading: {{title}} by {{author}}" data-related="scriptogram" data-count="none">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
-      {{#if_tags}}
-        <ul class="tags">
-          {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
-        </ul>
-      {{/if_tags}}
-
     </article>
+    {{#if_tags}}
+      <ul class="tags">
+        {{#tags}}<li><a href="{{base_url}}/tag/{{name}}">{{name}}</a></li>{{/tags}}
+      </ul>
+    {{/if_tags}}
     {{/is_post}}
     {{/is_archive}}
   {{/posts}}
@@ -93,3 +87,4 @@
   </footer>
 </body>
 </html>
+
