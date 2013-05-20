@@ -27,6 +27,21 @@ var twitComment = {
   }
 };
 
+// var about = {
+
+//   var specialties = [
+//     'Front-end architect',
+//     'Subaru fanatic',
+//     'local music lover',
+//     'Instagram user',
+//     'new to static site philosophy'
+//   ]
+
+//   init: function() {
+
+//   }
+// };
+
 $(function(){
   // $('#top-header').waypoint('sticky');
 });
