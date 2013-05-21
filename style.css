@@ -489,11 +489,14 @@ table {
     article .date {
       margin-top: 20px; }
 
-  .index article {
+  .index article,
+  .tag article {
     padding: 0 20px; }
-    .index article a {
+    .index article a,
+    .tag article a {
       transition: all .2s; }
-      .index article a:hover {
+      .index article a:hover,
+      .tag article a:hover {
         color: #6e6e6e; }
 
   .post .date {
@@ -502,7 +505,8 @@ table {
     font-weight: 200; }
 
   .index article,
-  .article-header {
+  .article-header,
+  .tag article {
     border-left: 10px solid #7ed21d;
     padding: 0 20px; }
 
@@ -528,9 +532,10 @@ table {
     font-size: 1.4rem;
     max-width: 700px; }
 
-  .anouncement {
+  .announcement {
     background: #17afdb;
-    width: 34em;
+    max-width: 34em;
+    display: none;
     margin: 8px auto;
     padding: 4px 0;
     text-align: center;
@@ -538,22 +543,22 @@ table {
     font-size: 14px;
     font-size: 1.4rem;
     border-radius: 20px; }
-    .anouncement a {
+    .announcement a {
       color: #fff;
       text-decoration: none;
       transition: all .2s; }
-    .anouncement:hover {
+    .announcement:hover {
       background: transparent; }
-      .anouncement:hover a {
+      .announcement:hover a {
         color: #17afdb; }
-    .anouncement i {
+    .announcement i {
       margin-right: 10px; }
 
   .alert {
     background: #e7f7cf; }
     .alert:hover {
       cursor: pointer; } }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 568px) {
   #top-header h1,
   .post .date {
     display: block; }
@@ -592,4 +597,7 @@ table {
     margin-right: -7em;
     list-style: none;
     font-size: 14px;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+
+  .announcement {
+    display: block; } }

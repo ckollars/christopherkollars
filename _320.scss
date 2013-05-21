@@ -98,7 +98,8 @@ article{
     margin-top: 20px;
   }
 }
-.index article{
+.index article,
+.tag article{
   padding: 0 20px;
   a{
     transition: all .2s;
@@ -116,7 +117,8 @@ article{
   }
 }
 .index article,
-.article-header{
+.article-header,
+.tag article{
   border-left: 10px solid $green;
   padding: 0 20px;
 }
@@ -143,10 +145,10 @@ footer{
   @include font-size(14);
   max-width: 700px;
 }
-.anouncement{
+.announcement{
   background: #17afdb;
-  width: 34em;
-  // height: 2em;
+  max-width: 34em;
+  display: none;
   margin: 8px auto;
   padding: 4px 0;
   text-align: center;
