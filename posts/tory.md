@@ -1,6 +1,10 @@
+---
 Title: To answer your question.
 Date: 2012-6-17 10:25
 Excerpt:
+Published: false
+Tags:
+---
 
 A good friend, Tory Burke, sent me an email a few weeks ago wondering what I my thoughts were on a few questions he had. It was a busy day and I didn't have enough time to give a better explanation and answer so I thought it would be a good idea to bring it to the web.
 
