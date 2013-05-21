@@ -557,7 +557,11 @@ table {
   .alert {
     background: #e7f7cf; }
     .alert:hover {
-      cursor: pointer; } }
+      cursor: pointer; }
+
+  .tags,
+  .twitter {
+    display: none; } }
 @media only screen and (min-width: 568px) {
   #top-header h1,
   .post .date {
@@ -576,6 +580,7 @@ table {
       float: right; }
 
   .twitter {
+    display: block;
     float: right;
     background: #7ed21d;
     border-radius: 3px;
@@ -592,9 +597,10 @@ table {
     position: absolute;
     right: 0;
     top: 0;
-    padding: 0;
+    padding: 0 0 24px 10px;
+    border-left: 1px solid #3e3e3e;
     margin: 0;
-    margin-right: -7em;
+    margin-right: -11em;
     list-style: none;
     font-size: 14px;
     font-size: 1.4rem; }
