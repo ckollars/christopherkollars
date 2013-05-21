@@ -23,7 +23,6 @@
   <script src="https://dl.dropboxusercontent.com/u/2243605/site/js/libs/modernizr.js"></script>
 </head>
 <body>
-  <!-- <p class="anouncement"><a href=""><i class="icon-megaphone"></i>I am currently available for web development <i class="icon-right-open-mini"></a></p> -->
   <header id="top-header" class="group">
     <div class="colophon">
       <nav id="main-nav" class="group">
@@ -36,6 +35,11 @@
       <h1>Hi! My name is Christopher Kollars.<br />
         I am a <span class="alert">web developer</span> currently living in Omaha, NE. These our my thoughts. Mostly good and somtimes bad.</a>
       </h1>
+      {{^is_archive}}
+      {{#is_index}}
+        <p class="announcement"><a href="/projects"><i class="icon-megaphone"></i>I am currently available for web projects</a></p>
+      {{/is_index}}
+      {{/is_archive}}
     </div>
     <div class="avatar"><a href="{{base_url}}"><img src="https://dl.dropboxusercontent.com/u/2243605/site/img/avatar.jpg" alt="Christopher Kollars avatar"></a></div>
   </header>
@@ -90,6 +94,15 @@
     </article>
     {{/is_page}}
     <!-- endif -->
+    {{/is_archive}}
+    {{#is_archive}}
+    <article>
+      <header>
+        <h2><a href="{{permalink}}">{{title}}</a> {{#post_permalink}}<a href="{{post_permalink}}">#</a>{{/post_permalink}}</h2>
+      </header>
+      {{#excerpt}}<span class="introduction">{{excerpt}}</span>{{/excerpt}}
+      {{#date}}<div class="date">⌘ {{prettydate}}</div>{{/date}}
+    </article>
     {{/is_archive}}
   {{/posts}}
   </section>
