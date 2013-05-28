@@ -75,6 +75,8 @@ article{
   position: relative;
   margin-bottom: 70px;
   margin-right: 40px;
+  @include font-size(18);
+  line-height: 2em;
   .content{
     padding: 0 20px;
     position: relative;
@@ -180,4 +182,13 @@ footer{
 .tags,
 .twitter{
   display: none;
+}
+
+// code snippets form gist
+.gist-meta{
+  display: none;
+}
+.gist{
+  @include font-size(14);
+  line-height: 1.5em;
 }

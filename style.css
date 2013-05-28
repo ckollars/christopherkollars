@@ -469,7 +469,10 @@ table {
   article {
     position: relative;
     margin-bottom: 70px;
-    margin-right: 40px; }
+    margin-right: 40px;
+    font-size: 18px;
+    font-size: 1.8rem;
+    line-height: 2em; }
     article .content {
       padding: 0 20px;
       position: relative; }
@@ -561,7 +564,15 @@ table {
 
   .tags,
   .twitter {
-    display: none; } }
+    display: none; }
+
+  .gist-meta {
+    display: none; }
+
+  .gist {
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 1.5em; } }
 @media only screen and (min-width: 568px) {
   #top-header h1,
   .post .date {
