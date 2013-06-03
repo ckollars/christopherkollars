@@ -27,23 +27,43 @@ var twitComment = {
   }
 };
 
-// var about = {
 
-//   var specialties = [
-//     'Front-end architect',
-//     'Subaru fanatic',
-//     'local music lover',
-//     'Instagram user',
-//     'new to static site philosophy'
-//   ]
 
-//   init: function() {
+var chris = {
 
-//   }
-// };
+  skills: [
+    'web developer',
+    'front-end developer',
+    'designer',
+    'Subaru lover',
+    'bike enthusiast',
+    'local music lover',
+    'besnonite',
+    'beer enthusiast'
+  ],
+
+  log: function(data) {
+    if(typeof console != 'undefined'){
+       console.log(data);
+    }
+  },
+
+  swap: function(descrip) {
+    var min = 0;
+    var max = chris.skills.length;
+    var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+    $(descrip).fadeOut(200, function(){
+      $(descrip).fadeIn(200).text(chris.skills[rand]);
+    });
+  }
+
+};
+
+
+
 
 $(function(){
-  // $('#top-header').waypoint('sticky');
+  $('body').on('click', 'h1 span', function(){ chris.swap(this); });
 });
 
 $(window).load(function() {

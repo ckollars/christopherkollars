@@ -400,6 +400,11 @@ table {
   background: none; }
 
 @media only screen and (min-width: 320px) {
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
   html {
     font-size: 62.5%;
     -webkit-overflow-scrolling: touch;
@@ -464,17 +469,17 @@ table {
 
   #articles {
     max-width: 700px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-right: 30px; }
 
   article {
     position: relative;
     margin-bottom: 70px;
-    margin-right: 40px;
     font-size: 18px;
     font-size: 1.8rem;
     line-height: 2em; }
     article .content {
-      padding: 0 20px;
+      padding: 0 0 0 30px;
       position: relative; }
       article .content p {
         margin: 2.1em 0;
@@ -572,7 +577,51 @@ table {
   .gist {
     font-size: 14px;
     font-size: 1.4rem;
-    line-height: 1.5em; } }
+    line-height: 1.5em; }
+
+  code {
+    font-family: Courier,monospace;
+    background: #f8f8ff;
+    font-size: 16px;
+    font-size: 1.6rem;
+    padding: .1em .3em;
+    border: 1px solid #dedede;
+    color: #000; }
+
+  ul.projects {
+    list-style: none;
+    margin: 0 0 0 -30px;
+    padding: 0;
+    font-size: 16px;
+    font-size: 1.6rem; }
+    ul.projects li {
+      position: relative;
+      padding-left: 30px;
+      background: #7ed21d;
+      margin-bottom: 30px;
+      line-height: 0;
+      transition: all .3s; }
+      ul.projects li:hover span {
+        transition: all .3s;
+        display: block; }
+      ul.projects li:hover img {
+        zoom: 1;
+        filter: alpha(opacity=10);
+        opacity: 0.1;
+        transition: all .3s; }
+    ul.projects img {
+      width: 100%; }
+    ul.projects span {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      bottom: 30px;
+      left: 60px;
+      line-height: 1.5em; }
+    ul.projects div {
+      border: 3px solid #e7f7cf;
+      border-left: 0;
+      background: #e7f7cf; } }
 @media only screen and (min-width: 568px) {
   #top-header h1,
   .post .date {
@@ -591,13 +640,16 @@ table {
       float: right; }
 
   .twitter {
+    font-size: 16px;
+    font-size: 1.6rem;
     display: block;
     float: right;
     background: #7ed21d;
     border-radius: 3px;
     border: 1px solid #a6a6a6;
     box-shadow: inset 0 -1px #67ac18;
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    line-height: 1.5em; }
     .twitter:hover {
       background: #e7f7cf; }
     .twitter i {
@@ -617,4 +669,37 @@ table {
     font-size: 1.4rem; }
 
   .announcement {
-    display: block; } }
+    display: block; }
+
+  ul.projects {
+    list-style: none;
+    margin: 0 0 0 -30px;
+    padding: 0;
+    font-size: 16px;
+    font-size: 1.6rem; }
+    ul.projects li {
+      position: relative;
+      padding-left: 30px;
+      background: #7ed21d;
+      margin-bottom: 30px;
+      line-height: 0;
+      transition: all .3s; }
+      ul.projects li:hover span {
+        transition: all .3s;
+        display: block; }
+      ul.projects li:hover img {
+        zoom: 1;
+        filter: alpha(opacity=10);
+        opacity: 0.1;
+        transition: all .3s; }
+    ul.projects span {
+      display: none;
+      position: absolute;
+      z-index: 1;
+      bottom: 30px;
+      left: 60px;
+      line-height: 1.5em; }
+    ul.projects div {
+      border: 3px solid #e7f7cf;
+      border-left: 0;
+      background: #e7f7cf; } }

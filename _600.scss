@@ -17,6 +17,7 @@ nav ul li{
   }
 }
 .twitter{
+  @include font-size();
   display: block;
   float: right;
   background: $green;
@@ -24,6 +25,7 @@ nav ul li{
   border: 1px solid #a6a6a6;
   box-shadow: inset 0 -1px #67ac18;
   padding: 5px 10px;
+  line-height: 1.5em;
   &:hover{
     background: #e7f7cf;
   }
@@ -46,3 +48,47 @@ nav ul li{
 .announcement{
   display: block;
 }
+
+// Web Projects page
+ul.projects{
+  list-style: none;
+  margin: 0 0 0 -30px;
+  padding: 0;
+  @include font-size();
+  li{
+    position: relative;
+    padding-left: 30px;
+    background: $green;
+    margin-bottom: 30px;
+    line-height: 0;
+    transition: all .3s;
+    &:hover{
+      span{
+        transition: all .3s;
+        display: block;
+      }
+      img{
+        zoom: 1;
+        filter: alpha(opacity=10);
+        opacity: 0.1;
+        transition: all .3s;
+      }
+
+    }
+  }
+  span{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 60px;
+    line-height: 1.5em;
+  }
+  div{
+    border: 3px solid #e7f7cf;
+    border-left: 0;
+    background: #e7f7cf;
+  }
+
+}
+

@@ -1,3 +1,4 @@
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 html{
   font-size : 62.5%;
   -webkit-overflow-scrolling : touch;
@@ -17,6 +18,8 @@ body{
   font-weight: 400;
   color: $gray;
 }
+
+
 article a,
 footer a{
   color: $gray;
@@ -70,15 +73,15 @@ footer{
 #articles{
   max-width: 700px;
   margin: 0 auto;
+  padding-right: 30px;
 }
 article{
   position: relative;
   margin-bottom: 70px;
-  margin-right: 40px;
   @include font-size(18);
   line-height: 2em;
   .content{
-    padding: 0 20px;
+    padding: 0 0 0 30px;
     position: relative;
     p{
       margin: 2.1em 0;
@@ -191,4 +194,58 @@ footer{
 .gist{
   @include font-size(14);
   line-height: 1.5em;
+}
+
+code{
+  font-family: Courier,monospace;
+  background: #f8f8ff;
+  @include font-size();
+  padding: .1em .3em;
+  border: 1px solid #dedede;
+  color: #000;
+}
+
+ul.projects{
+  list-style: none;
+  margin: 0 0 0 -30px;
+  padding: 0;
+  @include font-size();
+  li{
+    position: relative;
+    padding-left: 30px;
+    background: $green;
+    margin-bottom: 30px;
+    line-height: 0;
+    transition: all .3s;
+    &:hover{
+      span{
+        transition: all .3s;
+        display: block;
+      }
+      img{
+        zoom: 1;
+        filter: alpha(opacity=10);
+        opacity: 0.1;
+        transition: all .3s;
+      }
+
+    }
+  }
+  img{
+    width: 100%;
+  }
+  span{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    left: 60px;
+    line-height: 1.5em;
+  }
+  div{
+    border: 3px solid #e7f7cf;
+    border-left: 0;
+    background: #e7f7cf;
+  }
+
 }
