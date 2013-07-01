@@ -38,7 +38,7 @@ var chris = {
     'Subaru lover',
     'bike enthusiast',
     'local music lover',
-    'besnonite',
+    'Besnonite',
     'beer enthusiast'
   ],
 
@@ -51,9 +51,13 @@ var chris = {
   swap: function(descrip) {
     var min = 0;
     var max = chris.skills.length;
-    var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+    var current = $('.alert').text();
+    do{
+      var rand = Math.floor(Math.random() * (max - min + 1)) + min;
+      var newThing = chris.skills[rand];
+    } while(current == newThing || typeof newThing === "undefined");
     $(descrip).fadeOut(200, function(){
-      $(descrip).fadeIn(200).text(chris.skills[rand]);
+      $(descrip).fadeIn(200).text(newThing);
     });
   }
 
