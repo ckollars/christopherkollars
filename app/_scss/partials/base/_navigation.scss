@@ -1,0 +1,42 @@
+.main-nav{
+  @media screen and (max-width: em(1200)) {
+    padding-left: 30px;
+  }
+  ul{
+    @extend %hlist;
+    padding: 18px 0;
+    li{
+      margin-right: 40px;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+  a{
+    @extend %color-white;
+    @include transition(border, 0.2s);
+    background: none;
+    border-bottom: 3px solid $green;
+    &:hover,
+    &.active{
+      border-bottom: 3px solid $white;
+    }
+  }
+}
+.social ul{
+  @extend %hlist;
+  @extend %display-inline-block;
+  li:first-child{
+    margin-right: 20px;
+  }
+  a{
+    @extend %color-grey2;
+  }
+}
+.gist{
+  margin-bottom: 56px;
+  a{
+    background: transparent;
+    color: inherit;
+  }
+}

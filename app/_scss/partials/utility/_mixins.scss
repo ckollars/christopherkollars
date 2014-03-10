@@ -1,0 +1,24 @@
+@function strip-units($val) {
+  @return ($val / ($val * 0 + 1));
+}
+
+@function em($pxval, $base: $base-font-size) {
+  @if not unitless($pxval) {
+      $pxval: strip-units($pxval);
+  }
+  @if not unitless($base) {
+      $base: strip-units($base);
+  }
+  @return ($pxval / $base) * 1em;
+}
+
+@mixin font-size($pxval: 16, $lineHeight: 1.625 ) {
+  @if not unitless($pxval) {
+    $pxval: strip-units($pxval);
+  }
+  @if not unitless($lineHeight) {
+    $lineHeight: strip-units($lineHeight);
+  }
+  font-size: em($pxval);
+  line-height: ($pxval * $lineHeight);
+}

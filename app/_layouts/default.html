@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    <header class="main-header">
+      <nav class="main-nav" role="navigation">
+        <ul class="wrapper">
+          <li><a href="/">home</a></li>
+          <li><a href="/articles.html">articles</a></li>
+          <li><a href="/contact.html">contact</a></li>
+        </ul>
+      </nav>
+      <div class="feature">
+        {% include front-page-meta.html %}
+      </div>
+    </header>
+    <main id="main" role="main">
+
+      {{ content }}
+
+      {% include footer.html %}
+
+    </main>
+    <aside class="sidebar">
+
+      <div class="wrapper">
+        <img class="avatar" src="/img/avatar.png" alt="Christopher Kollars">
+        <div class="alert">
+          <p>I am available for development and consultant projects starting in July 2014.</p>
+        </div>
+        <h3><span class="cursor">&nbsp;</span>Journaled Thoughts</h3>
+        <ul class="posts">
+          {% for post in site.posts limit:3 %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <hr>
+        <nav class="social" role="navigation">
+          <ul>
+            <ul><a href="" class="">twitter</a></ul>
+            <ul><a href="" class="">github</a></ul>
+          </ul>
+        </nav>
+      </div>
+
+    </aside>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!-- build:js(app) /js/scripts.js -->
+  <script src="/js/compiled.min.js"></script>
+  <!-- endbuild -->
+  </body>
+</html>

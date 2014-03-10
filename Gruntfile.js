@@ -1,174 +1,194 @@
-/*global module:false,require:false,console:false */
 module.exports = function(grunt) {
 
-  require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
+  // Show elapsed time after tasks run
+  require('time-grunt')(grunt);
+  // Load all Grunt tasks
+  require('load-grunt-tasks')(grunt);
 
   // Project configuration.
   grunt.initConfig({
-    // Metadata.
-    pkg: grunt.file.readJSON('package.json'),
-    siteConfig: grunt.file.readJSON('site-config.json'),
-    banner: '/*! <%= pkg.title || pkg.name %> - v<%= pkg.version %> - ' +
-      '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
-      '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
-      '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author %>;' +
-      ' <%= pkg.license %> License */\n',
-    urls: {
-      // from domain root, do not include the first slash, do include a trailing slash
-      root: '<%= siteConfig.rootDir %>',
-      jsSrc: '<%= urls.root %>js/',
-      cssSrc: '<%= urls.root %>css/',
-      scssSrc: '<%= urls.root %>scss/',
-      imgSrc: '<%= urls.root %>img/',
-      svgSrc: '<%= urls.imgSrc %>svg/',
-      distFolder: '<%= urls.root %>dist/<%= pkg.version %>/',
-      distFeed: '<%= urls.root %>_site/feed/atom.xml'
+    kollab: {
+      app: 'app',
+      dev: '_dev',
+      dist: '_dist'
     },
-    yaml: {
-      file: '<%= urls.root %>_config.yml',
-      vars: {
-        safe: false,
-        markdown: 'rdiscount',
-        permalink: '<%= urls.root %>/:title/',
-        pygments: true,
-        exclude: 'node_modules, README.md, build.sh',
-        distFolder: '/<%= urls.distFolder %>',
-        rssRoot: '<%= siteConfig.rssRoot %>',
-        author: '<%= pkg.author.name %>',
-        authorEmail: '<%= pkg.author.email %>',
-        title: '<%= siteConfig.title %>',
-        twitter: '<%= siteConfig.twitter %>',
-        github: '<%= siteConfig.github %>'
-      }
-    },
-    // Task configuration.
-    concat: {
-      options: {
-        banner: '<%= banner %>',
-        stripBanners: true
+    clean: {
+      grunticon: {
+        src: ['<%= kollab.app %>/svgs/grunticon', '<% kollab.app %>/svgs/images']
       },
-      js: {
-        src: ['<%= urls.jsSrc %>site.js', '<%= urls.jsSrc %>vendor/**/*'],
-        dest: '<%= urls.distFolder %>site.js'
-      }
-      // CSS Concat handled by SASS
-    },
-    sass: {
-      dist: {
-        options: {
-          style: 'expanded'
-        },
-        files: {
-          '<%= urls.distFolder %>site.css': ['<%= urls.scssSrc %>/**/*', '<%= urls.cssSrc %>socialmenu.scss', '<%= urls.cssSrc %>thirdparty.scss', '<%= urls.cssSrc %>pygments.css', '<%= urls.cssSrc %>custom.css']
-        }
-      }
-    },
-    uglify: {
-      options: {
-        banner: '<%= banner %>'
-      },
-      js: {
-        src: '<%= concat.js.dest %>',
-        dest: '<%= urls.distFolder %>initial.min.js'
-      }
-    },
-    cssmin: {
-      dist: {
-        options: {
-          banner: '<%= banner %>'
-        },
-        files: {
-          '<%= urls.distFolder %>global.min.css': ['<%= urls.distFolder %>global.css']
-        }
-      }
+      server: [
+        '_dev'
+      ],
+      dist: [
+        '_dist'
+      ]
     },
     grunticon: {
       icons: {
         options: {
-          svgo: true,
-          src: '<%= urls.iconsSrc %>',
-          dest: "<%= urls.distFolder %>icons/"
+          src: '<%= kollab.app %>/svgs/',
+          dest: '<%= kollab.app %>/svgs/grunticon',
+          pngfolder: '<%= kollab.app %>/images/',
+          datasvgcss: '_icons.data.svg.scss',
+          datapngcss: '_icons.data.png.scss',
+          urlpngcss: '_icons.fallback.scss'
         }
       }
     },
-    shell: {
-      jekyll: {
-        command: 'jekyll --no-auto',
+    compass: {
+      options: {
+        sassDir: '<%= kollab.app %>/_scss',
+        imagesDir: '<%= kollab.app %>/img',
+        generatedImagesDir: '<%= kollab.app %>/img',
+        javascriptsDir: '<%= kollab.app %>/js',
+        fontsDir: '<%= kollab.app %>/fonts',
+        assetCacheBuster: 'none',
+        require: [
+          'sass-globbing',
+          'toolkit',
+          'rgbapng'
+        ]
+      },
+      server: {
         options: {
-          stdout: true,
-          execOptions: {
-            cwd: '<%= urls.root %>'
-          }
+          cssDir: '<%= kollab.dev %>/css',
+          environment: 'development',
+          outputStyle: 'expanded',
+          relativeAssets: true,
+          raw: 'line_numbers = :true\n'
         }
       },
-      presenters: {
-        command: 'node fetch.js',
+      dist: {
         options: {
-          stdout: true,
-          execOptions: {
-            cwd: '_presenters'
-          }
+          cssDir: '<%= kollab.dist %>/css',
+          environment: 'production',
+          outputStyle: 'compressed',
+          force: true
         }
       }
     },
     watch: {
-      assets: {
-        files: ['<%= urls.scssSrc %>**/*', '<%= urls.jsSrc %>**/*'],
-        tasks: ['default']
+      compass: {
+        files: ['<%= kollab.app %>/_scss/**/*.scss'],
+        tasks: ['compass:server']
       },
+      jekyll: {
+        files: [
+          '<%= kollab.app %>/**/*.{html,yml,md,mkd,markdown}'
+        ],
+        tasks: ['jekyll:server', 'copy:server']
+      },
+      js: {
+        files: ['<%= kollab.app %>/js/*.js','<%= kollab.app %>/js/vendor/*.js'],
+        tasks: ['concat:server', 'uglify:server']
+      },
+      copy: {
+        files: [
+          '<%= kollab.app %>css/*}',
+          '<%= kollab.app %>img/*}',
+          '<%= kollab.app %>js/*}'
+        ],
+        tasks: ['copy:server']
+      }
+    },
+    jekyll: {
+      options: {
+        // bundleExec: true,
+        config: '_config.yml',
+        src: '<%= kollab.app %>'
+      },
+      dist: {
+        options: {
+          dest: '<%= kollab.dist %>',
+        }
+      },
+      server: {
+        options: {
+          config: '_config.yml',
+          dest: '_dev'
+        }
+      }
+    },
+    copy: {
       grunticon: {
-        files: ['<%= urls.svgSrc %>**/*'],
-        tasks: ['grunticon']
+        files: [
+          {expand: true, flatten: true, src: ['svgs/images/**'], dest: '../images/', filter: 'isFile'},
+          {expand: true, flatten: true, src: ['svgs/grunticon/*.scss'], dest: 'scss/partials/utility/'},
+        ]
       },
-      content: {
-        files: ['<%= urls.root %>dist/**/*', '<%= urls.root %>_posts/**/*', '<%= urls.root %>_layouts/**/*', '<%= urls.root %>about/**/*', '<%= urls.root %>license/**/*', '<%= urls.root %>feed/**/*', '<%= urls.root %>index.html', '<%= urls.root %>_plugins/**/*', '<%= urls.root %>_includes/**/*' ],
-        tasks: ['content']
+      server: {
+        files: [
+          { expand: true, cwd: '<%= kollab.app %>/css', src: '**/*.css', dest: '<%= kollab.dev %>/css' },
+          { expand: true, cwd: '<%= kollab.app %>/img', src: '**', dest: '<%= kollab.dev %>/img' },
+          { expand: true, cwd: '<%= kollab.app %>/js', src: '**/*.js', dest: '<%= kollab.dev %>/js' }
+        ]
       },
-      config: {
-        files: ['Gruntfile.js'],
-        tasks: ['config']
+      dist: {
+        files: [
+          {expand: true, src: ['../images/**'], dest: '_dist/images'},
+          {expand: true, src: ['js/no-concat/modernizr.js'], dest: '_dist/'},
+        ]
       }
+    },
+    concat: {
+      options: {
+        separator: ';'
+      },
+      server: {
+        src: ['<%= kollab.app %>/js/vendor/*.js','<%= kollab.app %>/js/*.js'],
+        dest: '<%= kollab.dev %>/js/compiled.js'
+      },
+      dist: {
+        src: ['js/vendor/*.js','js/*.js'],
+        dest: '_dist/js/compiled.js'
+      }
+    },
+    uglify: {
+      server: {
+        files: {
+          '<%= kollab.dev %>/js/compiled.min.js': '<%= kollab.dev %>/js/compiled.js'
+        }
+      },
+      dist: {
+        files: {
+          '_dist/js/compiled.min.js': '_dist/js/compiled.js'
+        }
+      }
+    },
+    concurrent: {
+      server: [
+        'compass:server',
+        'jekyll:server'
+      ],
+      dist: [
+        'compass:dist',
+        'copy:dist'
+      ]
     }
   });
 
-  grunt.registerTask( 'yaml', function() {
-    var output = grunt.config( 'yaml.file' ),
-      vars = grunt.config( 'yaml.vars' ),
-      fs = require('fs'),
-      str = [ '# Autogenerated by `grunt config`' ];
+  // Create svg stylesheets and fallback from svgs
+  grunt.registerTask('images', ['grunticon', 'copy:grunticon', 'clean:grunticon']);
 
-    for( var j in vars ) {
-      str.push( j + ': ' + vars[ j ] );
-    }
-    grunt.log.writeln( 'Writing ' + output );
-    fs.writeFile( output, str.join( '\n' ), function(err) {
-      if(err) {
-        console.log(err);
-      }
-    });
-  });
+  // Development build on all assets
+  grunt.registerTask(
+    'serve',
+    'Serves the Jekyll Site for development',
+    ['clean:server', 'jekyll:server', 'compass:server', 'copy:server', 'watch' ]
+  );
 
-  // grunt.registerTask( 'feedburner-size', function() {
-  //   var feed = grunt.config.get( 'urls.distFeed' ),
-  //     fs = require('fs');
+  // Development build on all assets
+  grunt.registerTask(
+    'dev',
+    'Compiles all of the assets moves them to correct places for the theme to run on development',
+    ['images', 'compass:dev', 'concat:dev', 'uglify:dev']
+  );
 
-  //   var stats = fs.statSync( feed ),
-  //     kbSize = Math.ceil( stats.size / 1024 ),
-  //     isTooLarge = kbSize > 512,
-  //     msg = 'Your atom.xml is ' + ( isTooLarge ? 'too large' : 'ok' ) + ' (' + kbSize + 'KB) for Feedburner (512KB max).';
-
-  //   if( isTooLarge ) {
-  //     grunt.fail.warn( msg );
-  //   } else {
-  //     grunt.log.writeln( msg );
-  //   }
-  // });
-
-  // Default task.
-  grunt.registerTask('assets', ['concat:js', 'sass', 'uglify', 'cssmin']);
-  grunt.registerTask('images', ['grunticon']);
-  grunt.registerTask('config', ['yaml']);
-  grunt.registerTask('content', ['shell:jekyll']);
-  grunt.registerTask('default', ['config', 'assets', 'images', 'content']);
-
+  // Distribution build on all assets. These then will need to be
+  // manually moved to correct directories from "_dist" directory
+  grunt.registerTask(
+    'dist',
+    'Compiles all of the assets and copies the files to the distribution directory.',
+    ['clean:dist', 'images', 'compass:dist', 'concat:dist', 'uglify:dist', 'copy:dist']
+  );
 };

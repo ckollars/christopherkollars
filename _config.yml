@@ -1,0 +1,17 @@
+name: Christopher Kollars Co
+description: Front-End Developer Consultant
+author:
+  name: Christopher Kollars
+  email: chris@christopherkollars.com
+
+
+# Grunt handles images and assets.
+# exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'config.rb']
+
+include: ['.htaccess']
+
+future: true
+show_drafts: true
+
+markdown: redcarpet
+pygments: true
