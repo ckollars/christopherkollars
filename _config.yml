@@ -6,7 +6,7 @@ author:
 
 
 # Grunt handles images and assets.
-# exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'config.rb']
+exclude: ['img', 'css', 'js', 'fonts', '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico', 'config.rb']
 
 include: ['.htaccess']
 

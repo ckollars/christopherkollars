@@ -189,6 +189,6 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'dist',
     'Compiles all of the assets and copies the files to the distribution directory.',
-    ['clean:dist', 'images', 'compass:dist', 'concat:dist', 'uglify:dist', 'copy:dist']
+    ['clean:dist', 'jekyll:dist', 'compass:dist', 'concat:dist', 'uglify:dist', 'copy:dist']
   );
 };

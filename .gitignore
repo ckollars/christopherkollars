@@ -31,7 +31,7 @@ Thumbs.db
 *.zip
 
 # Ignore for Jekyll projects #
-dist
+_dist
 node_modules
 .tmp
 _dev
