@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Follow-up to My Pedge"
+title: "A Follow-up to My Pledge"
 excerpt: "A while back, actually a year ago, I pledged few things and I wanted to follow up on a few of these pledges."
 date: 2013-7-1 3:00
 tags: github, sublime text 2, scss
