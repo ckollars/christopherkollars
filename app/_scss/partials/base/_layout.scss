@@ -128,6 +128,14 @@ figure{
   &:first-child{
     margin-left: 0;
   }
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @media screen and (max-width: em(480)) {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
   a{
     @include transition(border, 0.2s);
     background: none;
@@ -194,11 +202,22 @@ article{
     border-left: 6px solid $green;
     padding: 0 22px;
     margin-bottom: 48px;
+    @media screen and (max-width: em(480)) {
+      border-left: none;
+      padding: 0;
+    }
   }
   .content{
     padding-left: 30px;
+    @media screen and (max-width: em(480)) {
+      padding-left: 0;
+    }
     p{
       margin: 0 80px 56px 0;
+
+      @media screen and (max-width: em(480)) {
+        margin: 0 0 56px 0;
+      }
     }
   }
 }

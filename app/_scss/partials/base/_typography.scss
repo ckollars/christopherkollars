@@ -52,6 +52,10 @@ h1.entry-title{
 h1.motto{
   @include adjust-font-size-to(30px, 2);
   margin: 80px 0 40px;
+  @media screen and (max-width: em(567)) {
+    @include adjust-font-size-to(24px, 1.5);
+    margin-top: 50px;
+  }
 }
 h2{
   @extend %color-grey2;
