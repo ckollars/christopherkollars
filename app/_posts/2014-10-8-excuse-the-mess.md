@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Excuse the mess"
+excerpt: "Working with BEM"
 date: 2014-10-8 3:00
 ---
 
