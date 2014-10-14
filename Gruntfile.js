@@ -139,7 +139,7 @@ module.exports = function(grunt) {
         dest: '<%= kollab.dev %>/js/compiled.js'
       },
       dist: {
-        src: ['js/vendor/*.js','js/*.js'],
+        src: ['<%= kollab.app %>/js/vendor/*.js','<%= kollab.app %>/js/*.js'],
         dest: '_dist/js/compiled.js'
       }
     },
