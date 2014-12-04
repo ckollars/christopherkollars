@@ -1,0 +1,600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"text-",
+				"text-transform"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ba",
+				"background-clip"
+			],
+			[
+				"tran",
+				"transition: "
+			],
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"pos",
+				"position: "
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 5256,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 360.0,
+		"selected_items":
+		[
+			[
+				"tw",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"twig",
+				"Set Syntax: HTML (Twig)"
+			],
+			[
+				"INST",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"HTMLPrettify"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 453.0
+	},
+	"console":
+	{
+		"height": 173.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/ckollars/Sites/christopherkollars",
+		"/Users/ckollars/Sites/christopherkollars/app"
+	],
+	"file_history":
+	[
+		"/Users/ckollars/Dropbox/Public/unl/css/styles.css",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_cost_blocks.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_fp_3_featured_imags.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_fp_body_section.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_full_content_row.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_group_listing.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_list_item.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_project_student.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_related_content.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_sig_faculty.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_sig_student_mentors.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_tan_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_two_col_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_white_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_white_row_content.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_students.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_student_name.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_tan_file_uploads.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_white_row_text.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_2col_band_content.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_accreditation.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_admissions_blue_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_blue_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_college_address.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_body_title.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_title_position.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_project_image.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_image.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_link.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_link_opt.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_right_featured_img__field_3_featured_images.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_faculty__initiatives_page.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_student_mentors__initiatives_page.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_image.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_group_listing.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_left_featured_img__field_3_featured_images.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_list_item__field_group_listing.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_listing_title__field_group_listing.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_middle_featured_img__field_3_featured_images.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_body_band_title.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_image.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_image_headline.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_full_content_row__field_admissions_blue_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_blue_right_column.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_cost_blocks__field_admissions_blue_band.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_address.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_address2.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_city_state_zip.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_college_name.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_oncampus_phone.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_phone.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_3_featured_images.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_admission_copy_disclaimer.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_band_intro.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_blue_left_column.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/block__block__106.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__body__scholarship.twig",
+		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_2col_band_content__field_two_col_band.twig",
+		"/Users/ckollars/Sites/omaha_gives/_dev/js/modernizr.js",
+		"/Users/ckollars/Sites/omaha_gives/_source/index.php",
+		"/Users/ckollars/Sites/omaha_gives/_source/scss/utilities/_variables.scss",
+		"/Users/ckollars/Sites/omaha_gives/_source/scss/base/_typography.scss",
+		"/Users/ckollars/Sites/omaha_gives/grunt/tasks.js",
+		"/Users/ckollars/Sites/omaha_gives/_source/scss/base/_root.scss",
+		"/Users/ckollars/Sites/omaha_gives/grunt/config-lib/copy.js",
+		"/Users/ckollars/Sites/omaha_gives/_source/scss/main.scss",
+		"/Users/ckollars/Sites/omaha_gives/_dev/index.html",
+		"/Users/ckollars/Sites/omaha_gives/grunt/config-lib/watch.js",
+		"/Users/ckollars/Sites/omaha_gives/_source/index.html",
+		"/Users/ckollars/Sites/omaha_gives/_source/img/.gitkeep",
+		"/Users/ckollars/Sites/omaha_gives/_source/js/libs/.gitkeep",
+		"/Users/ckollars/Sites/omaha_gives/index.html",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/single-recipe.php",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/functions.php",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/preview.html",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/concat.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/autoprefixer.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/copy.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/tasks.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/pages/_home.scss",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-contrib-clean/AUTHORS",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-grunticon/example/source/Home_Media.svg",
+		"/Users/ckollars/Sites/_tools/dropdabase/app/_bower_components/jquery/src/var/hasOwn.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/utilities/_helpers.scss",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/region-usage-json/HK.json",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-sass/node_modules/node-sass/test/sass-spec/spec/maps/map-has-key/expected_output.css",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/hooker/dist/ba-hooker.min.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-modernizr/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/hooker/README.md",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-grunticon/node_modules/phantomjs/lib/phantom/examples/walk_through_frames.coffee",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-modernizr/node_modules/request/node_modules/hawk/node_modules/sntp/examples/offset.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/rimraf/test/test-async.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/main.scss",
+		"/Users/ckollars/Sites/_tools/dropdabase/bower.json",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/sass.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/watch.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/_source/js/script.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/scsslint.js",
+		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/uglify.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/grunt/config-lib/concat.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/comments.php",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/partials/_sidebar.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/js/script.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/lib/source-map/source-node.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/main.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/utilities/_variables.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/components/_comments.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-wrapper/node_modules/bin-version-check/readme.md",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/vinyl-fs/node_modules/glob-stream/node_modules/glob/test/readme-issue.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-favicons/node_modules/cheerio/node_modules/htmlparser2/tests/Events/02-template.json",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-grunticon/node_modules/directory-colorfy/node_modules/fs-extra/node_modules/ncp/test/ncp-test.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-favicons/node_modules/cheerio/node_modules/htmlparser2/tests/Events/12-long-comment-end.json",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-contrib-clean/docs/clean-options.md",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/css/main.css",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/pages/_home.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/components/_recipe-details.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/front-page.php",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/page-recipe-index.php",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/svg/recipe-card.svg",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/components/_recipe-info.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-grunticon/node_modules/grunt-svgmin/node_modules/svgo/plugins/removeEmptyContainers.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/node_modules/grunt-grunticon/node_modules/directory-encoder/lib/directory-encoder.js",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/partials/_header.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/components/_buttons.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss/components/_navigation.scss",
+		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/header.php"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 107.0,
+		"where_history":
+		[
+			"<open files>",
+			"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"</h3>",
+			"<h3>",
+			"</div>",
+			"<div class=\"cell\">",
+			"featured--reci",
+			"about",
+			"nav__",
+			"callout--ing",
+			"large",
+			"article--title",
+			"article--header"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"</h4>",
+			"<h4>",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gruntfile.js",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5256,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2 (SL).tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3812.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 150.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "ckollars.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"201",
+				"_source/splash-2015.php"
+			],
+			[
+				"var",
+				"_source/scss/utilities/_variables.scss"
+			],
+			[
+				"",
+				"_source/scss/base/_typography.scss"
+			],
+			[
+				"typ",
+				"_source/scss/base/_typography.scss"
+			],
+			[
+				"script",
+				"_source/js/script.js"
+			],
+			[
+				"autop",
+				"grunt/config-lib/autoprefixer.js"
+			],
+			[
+				"home.",
+				"_source/scss/pages/_home.scss"
+			],
+			[
+				"conc",
+				"grunt/config-lib/concat.js"
+			],
+			[
+				"task",
+				"grunt/tasks.js"
+			],
+			[
+				"copy",
+				"grunt/config-lib/copy.js"
+			],
+			[
+				"conca",
+				"grunt/config-lib/concat.js"
+			],
+			[
+				"concat",
+				"grunt/config-lib/concat.js"
+			],
+			[
+				"single",
+				"single-recipe.php"
+			],
+			[
+				"vari",
+				"_source/scss/utilities/_variables.scss"
+			],
+			[
+				"fun",
+				"functions.php"
+			],
+			[
+				"comm",
+				"comments.php"
+			],
+			[
+				"main",
+				"_source/scss/main.scss"
+			],
+			[
+				"_com",
+				"_source/scss/components/_comments.scss"
+			],
+			[
+				"comments",
+				"comments.php"
+			],
+			[
+				"func",
+				"functions.php"
+			],
+			[
+				"recipe",
+				"single-recipe.php"
+			],
+			[
+				"front",
+				"front-page.php"
+			],
+			[
+				"navig",
+				"_source/scss/components/_navigation.scss"
+			],
+			[
+				"butt",
+				"_source/scss/components/_buttons.scss"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"all",
+				"page-all.php"
+			],
+			[
+				"recipe-in",
+				"page-recipe-index.php"
+			],
+			[
+				"filter",
+				"partials/filter-ingredients.php"
+			],
+			[
+				"header",
+				"header.php"
+			],
+			[
+				"mix",
+				"_source/scss/utilities/_mixins.scss"
+			],
+			[
+				"help",
+				"_source/scss/utilities/_helpers.scss"
+			],
+			[
+				"mixin",
+				"_source/scss/utilities/_mixins.scss"
+			],
+			[
+				"medi",
+				"_source/scss/components/_media.scss"
+			],
+			[
+				"detai",
+				"_source/scss/components/_recipe-details.scss"
+			],
+			[
+				"arti",
+				"_source/scss/pages/_article.scss"
+			],
+			[
+				"article",
+				"_source/scss/components/_article-details.scss"
+			],
+			[
+				"side",
+				"_source/scss/partials/_sidebar.scss"
+			],
+			[
+				"media",
+				"_source/scss/components/_media.scss"
+			],
+			[
+				"details",
+				"_source/scss/components/_article-details.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 288.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

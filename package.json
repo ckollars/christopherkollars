@@ -7,9 +7,12 @@
     "url": "christopherkollars.com"
   },
   "private": true,
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.2",
     "load-grunt-tasks": "~0.4.0",
+    "glob": "~3.2.9",
+    "matchdep": "~0.3.0",
     "grunt-concurrent": "~0.4.3",
     "grunt-grunticon": "~0.6.14",
     "grunt-contrib-clean": "~0.5.0",
@@ -21,9 +24,19 @@
     "grunt-contrib-watch": "~0.5.3",
     "grunt-contrib-jshint": "~0.6.3",
     "grunt-jekyll": "~0.4.1",
-    "time-grunt": "~0.2.8"
+    "time-grunt": "~0.2.8",
+    "grunt-autoprefixer": "~2.0.0",
+    "grunt-modernizr": "~0.5.2",
+    "grunt-favicons": "~0.6.4"
   },
   "licenses": {
     "MIT": true
+  },
+  "config": {
+    "grunt": "grunt",
+    "app": "app",
+    "dist": "_dist",
+    "dev": "_dev",
+    "bower": "bower_components"
   }
 }
