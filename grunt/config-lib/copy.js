@@ -12,8 +12,7 @@ module.exports = {
   },
   dist: {
     files: [
-      {expand: true, src: ['../images/**'], dest: '_dist/images'},
-      {expand: true, src: ['js/no-concat/modernizr.js'], dest: '_dist/'},
+      { expand: true, cwd: '<%= pkg.config.app %>/img', src: '**', dest: '<%= pkg.config.dist %>/img' }
     ]
   }
 };

@@ -3,7 +3,7 @@ module.exports = {
     separator: ';'
   },
   server: {
-    src: ['<%= pkg.config.app %>/js/*.js'],
+    src: ['<%= pkg.config.app %>/js/*.js', '!<%= pkg.config.app %>/js/compiled.js', '<%= pkg.config.app %>/js/vendor/*.js'],
     dest: '<%= pkg.config.app %>/js/compiled.js'
   },
   dist: {

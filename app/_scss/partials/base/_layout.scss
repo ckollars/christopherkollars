@@ -6,16 +6,14 @@ $border-box: true !default;
   }
 }
 
-.main-header{
-  @extend %background-green;
-}
-.feature{
-  @extend %background-green;
-}
-.main-header{
+.main-header { @extend %background-green; }
+.feature{  @extend %background-green; }
+.main-header {
   @extend %background-green;
   @include clearfix;
-  border-bottom: 1px solid #d7d7d7;
+
+  // border-bottom: 1px solid #d7d7d7;
+
   .wrapper{
     max-width: em(760);
     margin-left: auto;
@@ -31,7 +29,7 @@ $border-box: true !default;
   }
   .feature{
     @extend %pull-right;
-    border-left: 1px solid #6ca925;
+    border-left: 1px solid darken($green, 6%);
     width: 36%;
     @media screen and (max-width: em(768)) {
       display: none;
@@ -58,85 +56,92 @@ $border-box: true !default;
   }
 
 }
-.sidebar{
+
+.sidebar {
   @extend %pull-right;
+
   position: absolute;
   right: 0;
   width: 36%;
   height: 100%;
-  background-color: #fbfef8;
-  border-left: 1px solid #dceacb;
+  background-color: rgba($green, 0.03);
+  border-left: 1px solid rgba($green, 0.24);
+
   @media screen and (max-width: em(1200)) {
     padding-right: 30px;
   }
+
   @media screen and (max-width: em(768)) {
     width: 100%;
     float: none;
     border-left: none;
     border-top: 1px solid #dceacb;
   }
-  .wrapper{
+
+  .wrapper {
     max-width: em(380);
     padding-left: 30px;
     padding-top: 60px;
+
     @media screen and (max-width: em(768)) {
       max-width: none;
     }
   }
-  ul{
+
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    &.posts{
+
+    &.posts {
       margin-bottom: 60px;
-      a{
-        @extend %color-grey2;
-      }
+
+      a { @extend %color-grey2; }
     }
-    li{
-      margin-bottom: 8px;
-    }
-    a{
-      background: none;
-    }
+
+    li { margin-bottom: 8px; }
+    a { background: none; }
   }
 }
-.meta{
-  @include clearfix;
-}
-.work-sample{
+
+.meta { @include clearfix; }
+
+.work-sample {
   @include clearfix;
   margin-bottom: 30px;
 }
-.description{
+
+.description {
   @include transition-duration(all, 0.7s);
+
   position: absolute;
   left: -9999em;
   margin: 40px 0;
-  &.active{
+
+  &.active {
     position: relative;
     left: auto;
   }
 }
-figure{
+
+figure {
   @extend %background-grey3;
   @extend %pull-left;
+
   display: table;
   width: 46.5%;
   height: 200px;
   margin: 0 0 0 7%;
-  &:first-child{
-    margin-left: 0;
-  }
-  &:last-child{
-    margin-bottom: 0;
-  }
+
+  &:first-child { margin-left: 0; }
+  &:last-child { margin-bottom: 0; }
+
   @media screen and (max-width: em(480)) {
     width: 100%;
     margin-bottom: 30px;
   }
 
-  a{
+  a {
     @include transition(border, 0.2s);
     background: none;
     padding: 0 30px;
@@ -186,47 +191,62 @@ footer{
 
 article{
   margin-top: 80px;
+
+  @media screen and (max-width: em(480)) { margin-top: 30px; }
+
   #articles &{
     border-left: 8px solid $green;
     padding-left: 22px;
+
     a{
       background: none;
       @extend %color-grey2;
     }
+
     h2{
       @include adjust-font-size-to(28px);
       margin: 0;
     }
   }
+
   header{
     border-left: 6px solid $green;
     padding: 0 22px;
     margin-bottom: 48px;
+
     @media screen and (max-width: em(480)) {
-      border-left: none;
-      padding: 0;
+      margin-left: -30px;
     }
   }
+
   .content{
     padding-left: 30px;
-    @media screen and (max-width: em(480)) {
-      padding-left: 0;
-    }
-    p{
-      margin: 0 80px 56px 0;
+    @media screen and (max-width: em(480)) { padding-left: 0; }
 
-      @media screen and (max-width: em(480)) {
-        margin: 0 0 56px 0;
-      }
+    p{
+      margin-right: 80px;
+      // margin: 0 80px 56px 0;
+      @media screen and (max-width: em(480)) { margin-right: 0; }
     }
   }
 }
 
 // Contact
-#contact{
-  margin-top: 80px;
-  .office-map{
-    margin-top: 60px;
-    margin-bottom: 56px;
-  }
+#contact { margin-top: 80px; }
+
+.office-map {
+  margin-top: 60px;
+  margin-bottom: 56px;
+}
+
+// Code
+.highlight {
+  @include adjust-font-size-to(14px);
+}
+
+:not(pre)>code {
+  background-color: rgba($green, 0.03);
+  border: 1px solid rgba($green, 0.08);
+  padding: .1em .3em;
+  border-radius: .1em;
 }

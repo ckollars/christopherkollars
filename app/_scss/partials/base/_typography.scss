@@ -2,14 +2,14 @@
 
 @include establish-baseline;
 
-html{
+html {
   @extend %color-grey1;
   font-family: $base-font;
   overflow-y: scroll;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
-body{
+body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: antialiased;
@@ -29,26 +29,32 @@ p a{
     background: transparent;
   }
 }
-.entry-excerpt{
+
+.entry-excerpt {
   @include adjust-font-size-to(18px);
   margin-top: 13px;
 }
-.date{
+
+.date {
   @include adjust-font-size-to(14px);
   margin: 0;
 }
+
 h1.motto,
-h1.entry-title{
+h1.entry-title {
   @extend %color-grey2;
   @include adjust-font-size-to(36px, 1);
+
   font-weight: 400;
   max-width: 660px;
   margin: 0;
+
   @media screen and (max-width: em(567)) {
-    @include adjust-font-size-to(24px, 1.5);
+    @include adjust-font-size-to(24px, 1.1);
     margin-top: 50px;
   }
 }
+
 h1.motto{
   @include adjust-font-size-to(30px, 2);
   margin: 80px 0 40px;

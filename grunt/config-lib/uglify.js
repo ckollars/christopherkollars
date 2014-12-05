@@ -6,7 +6,7 @@ module.exports = {
   },
   dist: {
     files: {
-      '_dist/js/compiled.min.js': '_dist/js/compiled.js'
+      '<%= pkg.config.dist %>/js/compiled.min.js': '<%= pkg.config.app %>/js/compiled.js'
     }
   }
 };
