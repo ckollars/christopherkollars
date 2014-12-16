@@ -7,8 +7,8 @@ module.exports = {
     assetCacheBuster: 'none',
     require: [
       'sass-globbing',
-      'toolkit',
-      'rgbapng'
+      // 'toolkit',
+      // 'rgbapng'
     ]
   },
   server: {
