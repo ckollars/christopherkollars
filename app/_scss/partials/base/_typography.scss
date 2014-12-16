@@ -40,8 +40,8 @@ p a{
   margin: 0;
 }
 
-h1.motto,
-h1.entry-title {
+.motto,
+.entry-title {
   @extend %color-grey2;
   @include adjust-font-size-to(36px, 1);
 
@@ -54,15 +54,19 @@ h1.entry-title {
     margin-top: 50px;
   }
 }
+.motto {
+  @include adjust-font-size-to(24px, 1.5);
+  margin: 30px 30px 30px 0;
+  color: $grey2;
+  font-weight: 400;
 
-h1.motto{
-  @include adjust-font-size-to(30px, 2);
-  margin: 80px 0 40px;
-  @media screen and (max-width: em(567)) {
-    @include adjust-font-size-to(24px, 1.5);
-    margin-top: 50px;
+  @include respond-to(small) {
+    @include adjust-font-size-to(30px, 2);
+    margin-top: 80px;
+    margin-bottom: 60px;
   }
 }
+
 h2{
   @extend %color-grey2;
   @include adjust-font-size-to(24px, 2/3);

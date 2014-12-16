@@ -31,19 +31,19 @@
 
       updateSidebar();
 
-      $('.work-sample').on('click', '.work', function(event){
-        event.preventDefault();
-        $('.description, .work').removeClass('active');
+      // $('.work-sample').on('click', '.work', function(event){
+      //   event.preventDefault();
+      //   $('.description, .work').removeClass('active');
 
-        $(this).addClass('active');
-        var curWork = $(this).attr('id');
-        var curDescription = '.' + curWork;
-        kollab.log(curDescription);
+      //   $(this).addClass('active');
+      //   var curWork = $(this).attr('id');
+      //   var curDescription = '.' + curWork;
+      //   kollab.log(curDescription);
 
-        $(curDescription).addClass("active");
-        updateSidebar();
+      //   $(curDescription).addClass("active");
+      //   updateSidebar();
 
-      });
+      // });
       $('.close').on('click', this, function(event){
         event.preventDefault();
 

@@ -1,0 +1,21 @@
+<aside class="sidebar">
+
+  <div class="wrapper">
+    <img class="avatar" src="/img/avatar.png" alt="Christopher Kollars">
+
+    <h3><span class="cursor">&nbsp;</span>Journaled Thoughts</h3>
+    <ul class="posts">
+      {% for post in site.posts limit:6 %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <hr>
+    <nav class="social" role="navigation">
+      <ul>
+        <ul><a href="https://twitter.com/ckollars" class="">twitter</a></ul>
+        <ul><a href="" class="https://github.com/ckollars">github</a></ul>
+      </ul>
+    </nav>
+  </div>
+
+</aside>

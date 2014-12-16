@@ -1,4 +1,8 @@
 module.exports = {
+  options: {
+    livereload: true,
+    reload: false
+  },
   compass: {
     files: ['<%= pkg.config.app %>/_scss/**/*.scss'],
     tasks: ['compass:server']

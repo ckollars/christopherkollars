@@ -250,3 +250,33 @@ article{
   padding: .1em .3em;
   border-radius: .1em;
 }
+
+
+// Alerts
+.alert--availability{
+  @include clearfix;
+  @include adjust-font-size-to(18px, 1);
+  margin: 60px 0;
+  padding: 30px;
+  // background-color: rgba($green, 0.01);
+  border: 1px solid rgba($green, 0.24);
+
+  p {
+    margin: 0;
+  }
+
+  @include respond-to(small) {
+    @include adjust-font-size-to(21px, 1.2);
+
+    p {
+      float: left;
+      max-width: 60%;
+      margin: 0 30px 0 0;
+    }
+
+    .btn {
+      float: right;
+    }
+  }
+
+}
