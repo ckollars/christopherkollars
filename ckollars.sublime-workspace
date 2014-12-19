@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"rb",
+				"rgba()"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"padi",
+				"padding-top"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
 				"margin-",
 				"margin-left"
 			],
 			[
 				"font",
 				"font-size"
-			],
-			[
-				"margin",
-				"margin-bottom"
 			],
 			[
 				"font-",
@@ -28,10 +48,6 @@
 				"width"
 			],
 			[
-				"ba",
-				"background-clip"
-			],
-			[
 				"tran",
 				"transition: "
 			],
@@ -42,52 +58,24 @@
 			[
 				"backgr",
 				"background-color"
-			],
-			[
-				"pos",
-				"position: "
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "app/_posts/2014-10-14-monday.md",
+			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 843,
+				"buffer_size": 1510,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "_dev/articles.html",
+			"file": "app/_scss/partials/base/_project.scss",
 			"settings":
 			{
-				"buffer_size": 6320,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/_includes/head.html",
-			"settings":
-			{
-				"buffer_size": 909,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/_scss/partials/base/_layout.scss",
-			"settings":
-			{
-				"buffer_size": 4234,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "grunt/tasks.js",
-			"settings":
-			{
-				"buffer_size": 1000,
+				"buffer_size": 932,
 				"line_ending": "Unix"
 			}
 		}
@@ -176,148 +164,154 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/ckollars/Sites/christopherkollars"
+		"/Users/ckollars/Sites/christopherkollars",
+		"/Users/ckollars/Sites/christopherkollars/app",
+		"/Users/ckollars/Sites/christopherkollars/grunt"
 	],
 	"file_history":
 	[
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/test/pause-resume.js",
+		"/Users/ckollars/Sites/christopherkollars/package.json",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/base/_project.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/base/_layout.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/base/_typography.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/abm.html",
+		"/Users/ckollars/Sites/christopherkollars/app/bold-nebraska.html",
+		"/Users/ckollars/Sites/christopherkollars/app/creighton.html",
+		"/Users/ckollars/Sites/christopherkollars/app/daoma.html",
+		"/Users/ckollars/Sites/christopherkollars/app/milestone-creative.html",
+		"/Users/ckollars/Sites/christopherkollars/app/ravel-unravel.html",
+		"/Users/ckollars/Sites/christopherkollars/app/unl.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_layouts/default.html",
+		"/Users/ckollars/Sites/christopherkollars/grunt/tasks.js",
+		"/Users/ckollars/Sites/christopherkollars/ckollars.sublime-project",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/node_modules/promised-io/lazy-array.js",
+		"/Users/ckollars/Sites/christopherkollars/_dev/license.html",
+		"/Users/ckollars/Sites/christopherkollars/app/index.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/sidebar.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/base/_buttons.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_variables.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_mixins.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/js/site.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/styles.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_base.scss",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-jekyll/node_modules/tmp/test/base.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-compass/node_modules/tmp/test/base.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/test/bash-comparison.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-scss-lint/node_modules/xmlbuilder/node_modules/lodash-node/compat/functions/bindAll.js",
+		"/Users/ckollars/Sites/christopherkollars/_dev/img/bold-logo.svg",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/node_modules/js-yaml/lib/js-yaml/type.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-imagemin/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/mout/date/totalDaysInYear.js",
+		"/Users/ckollars/Sites/christopherkollars/app/css/main.css",
+		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/watch.js",
+		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/compass.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/callout-availability.html",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/postcss/node_modules/js-base64/base64_utf8",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_layout.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/base/_root.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/main.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_utility.scss",
+		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/sass.js",
+		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/scsslint.js",
+		"/Users/ckollars/Sites/christopherkollars/app/scss-lint-report.xml",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-scss-lint/tasks/scss-lint.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-scss-lint/tasks/lib/scss-lint.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_normalize.scss",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-compass/node_modules/tmp/test-all.sh",
+		"/Users/ckollars/Sites/christopherkollars/.gitignore",
+		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/autoprefixer.js",
+		"/Users/ckollars/Sites/christopherkollars/bower.json",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_extends.scss",
+		"/Users/ckollars/Sites/christopherkollars/Gruntfile.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_dependencies.scss",
+		"/Users/ckollars/Sites/christopherkollars/_dev/2014/10/08/excuse-the-mess.html",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/node_modules/colors/example.html",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/lib/grunt/event.js",
+		"/Users/ckollars/Sites/christopherkollars/app/css/syntax.css",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/components/_buttons.scss",
+		"/Users/ckollars/Sites/christopherkollars/.bowerrc",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/components/_navigation.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/bourbon/settings/_prefixer.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/base/_typography.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/components/_project.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_helpers.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_header.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/navigation.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/projects.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_footer.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_sidebar.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/footer.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/components/_media.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_mixins.scss",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/chalk/node_modules/.bin/supports-color",
+		"/Users/ckollars/Sites/christopherkollars/_dev/scss-lint-report.xml",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/node_modules/uglify-js/test/unit/scripts.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/semver/foot.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-grunticon/example/source/gradients-flat-opacity.svg",
+		"/Users/ckollars/Sites/christopherkollars/_dev/index.html",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/lib/modulizr.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-grunticon/node_modules/svgo/plugins/moveElemsAttrsToGroup.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-grunticon/node_modules/svgo/node_modules/sax/test/trailing-attribute-no-value.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/front-page-meta.html",
 		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/concat.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_variables.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/base/_grid.scss",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/test/readme-issue.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/node_modules/glob/test/root.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/test/root-nomount.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/test/root.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-compass/node_modules/bin-version-check/node_modules/semver/head.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_includes/head.html",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_functions.scss",
+		"/Users/ckollars/Sites/christopherkollars/_dev/css/main.css",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/chalk/node_modules/.bin/strip-ansi",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_dependencies.scss",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/input-number.json",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/Users/ckollars/Sites/christopherkollars/_dev/articles.html",
+		"/Users/ckollars/Sites/christopherkollars/_dev/img/abm-logo.svg",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/region-usage-json/alt-eu.json",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/node_modules/js-yaml/node_modules/argparse/lib/argument/error.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/svg-img.json",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/node_modules/request/node_modules/http-signature/node_modules/ctype/tst/ctype/tst.writeStruct.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/node_modules/.bin/which",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-imagemin/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/mout/time/toTimeString.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/glob/README.md",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-uglify/test/fixtures/expected/compress_mangle.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-watch/test/tasks/helper.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt/lib/grunt/help.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-imagemin/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/mout/object/deepEquals.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/lib/modernizr-dev.js",
+		"/Users/ckollars/Sites/christopherkollars/_dev/2013/05/29/why-didnt-i-ever-do-this.html",
+		"/Users/ckollars/Sites/christopherkollars/config.rb",
+		"/Users/ckollars/Sites/christopherkollars/app/js/compiled.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/png-alpha.json",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-jshint/node_modules/jshint/src/vars.js",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-modernizr/test/css/vanilla.css",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/features-json/wai-aria.json",
+		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-imagemin/node_modules/pngquant-bin/node_modules/bin-wrapper/node_modules/mout/number/MAX_INT.js",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_normalize.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/base/_layout.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/utility/_extends.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_scss/base/_buttons.scss",
+		"/Users/ckollars/Sites/christopherkollars/app/_posts/2014-10-14-monday.md",
 		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/uglify.js",
 		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/copy.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/tasks.js",
-		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/base/_typography.scss",
-		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/utility/_variables.scss",
-		"/Users/ckollars/Sites/christopherkollars/app/_includes/footer.html",
-		"/Users/ckollars/Sites/christopherkollars/app/_layouts/post.html",
-		"/Users/ckollars/Sites/christopherkollars/app/_scss/partials/_utility.scss",
-		"/Users/ckollars/Library/Application Support/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
-		"/Users/ckollars/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
-		"/Users/ckollars/Library/Application Support/Sublime Text 3/Packages/Color Highlighter/Default (OSX).sublime-keymap",
-		"/Users/ckollars/Sites/christopherkollars/app/_scss/styles.scss",
-		"/Users/ckollars/Sites/christopherkollars/app/js/compiled.js",
-		"/Users/ckollars/Sites/christopherkollars/_dev/css/styles.css",
-		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-watch/node_modules/gaze/test/safewrite_test.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/jekyll.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/clean.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/compass.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/concurrent.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/grunticon.js",
-		"/Users/ckollars/Sites/christopherkollars/grunt/config-lib/watch.js",
-		"/Users/ckollars/Sites/christopherkollars/node_modules/grunt-contrib-jshint/docs/jshint-examples.md",
-		"/Users/ckollars/Sites/christopherkollars/Gruntfile.js",
-		"/Users/ckollars/Sites/christopherkollars/package.json",
-		"/Users/ckollars/Sites/christopherkollars/app/_layouts/default.html",
-		"/Users/ckollars/Dropbox/Public/unl/css/styles.css",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_cost_blocks.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_fp_3_featured_imags.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_fp_body_section.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_full_content_row.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_group_listing.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_list_item.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_project_student.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_related_content.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_sig_faculty.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_sig_student_mentors.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_tan_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_two_col_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_white_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_white_row_content.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_students.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_student_name.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_tan_file_uploads.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_white_row_text.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_2col_band_content.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_accreditation.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_admissions_blue_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_blue_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field_collection_item__field_college_address.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_body_title.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_title_position.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_project_image.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_image.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_link.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_related_link_opt.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_right_featured_img__field_3_featured_images.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_faculty__initiatives_page.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_sig_student_mentors__initiatives_page.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_people_image.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_group_listing.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_left_featured_img__field_3_featured_images.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_list_item__field_group_listing.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_listing_title__field_group_listing.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_middle_featured_img__field_3_featured_images.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_body_band_title.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_image.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_fp_image_headline.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_full_content_row__field_admissions_blue_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_blue_right_column.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_cost_blocks__field_admissions_blue_band.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_address.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_address2.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_city_state_zip.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_college_name.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_oncampus_phone.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_degree_phone.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_3_featured_images.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_admission_copy_disclaimer.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_band_intro.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_blue_left_column.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/block__block__106.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__body__scholarship.twig",
-		"/Users/ckollars/Sites/unlcoarch/app/_twig/field__field_2col_band_content__field_two_col_band.twig",
-		"/Users/ckollars/Sites/omaha_gives/_dev/js/modernizr.js",
-		"/Users/ckollars/Sites/omaha_gives/_source/index.php",
-		"/Users/ckollars/Sites/omaha_gives/_source/scss/utilities/_variables.scss",
-		"/Users/ckollars/Sites/omaha_gives/_source/scss/base/_typography.scss",
-		"/Users/ckollars/Sites/omaha_gives/grunt/tasks.js",
-		"/Users/ckollars/Sites/omaha_gives/_source/scss/base/_root.scss",
-		"/Users/ckollars/Sites/omaha_gives/grunt/config-lib/copy.js",
-		"/Users/ckollars/Sites/omaha_gives/_source/scss/main.scss",
-		"/Users/ckollars/Sites/omaha_gives/_dev/index.html",
-		"/Users/ckollars/Sites/omaha_gives/grunt/config-lib/watch.js",
-		"/Users/ckollars/Sites/omaha_gives/_source/index.html",
-		"/Users/ckollars/Sites/omaha_gives/_source/img/.gitkeep",
-		"/Users/ckollars/Sites/omaha_gives/_source/js/libs/.gitkeep",
-		"/Users/ckollars/Sites/omaha_gives/index.html",
-		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/single-recipe.php",
-		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/functions.php",
-		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/preview.html",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/concat.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/autoprefixer.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/copy.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/tasks.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/pages/_home.scss",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-contrib-clean/AUTHORS",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-grunticon/example/source/Home_Media.svg",
-		"/Users/ckollars/Sites/_tools/dropdabase/app/_bower_components/jquery/src/var/hasOwn.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/utilities/_helpers.scss",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-autoprefixer/node_modules/autoprefixer-core/node_modules/caniuse-db/region-usage-json/HK.json",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-sass/node_modules/node-sass/test/sass-spec/spec/maps/map-has-key/expected_output.css",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/hooker/dist/ba-hooker.min.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-modernizr/node_modules/request/node_modules/hawk/node_modules/hoek/lib/escape.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/hooker/README.md",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-grunticon/node_modules/phantomjs/lib/phantom/examples/walk_through_frames.coffee",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-modernizr/node_modules/request/node_modules/hawk/node_modules/sntp/examples/offset.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt-contrib-uglify/node_modules/uglify-js/node_modules/source-map/test/source-map/test-array-set.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/node_modules/grunt/node_modules/rimraf/test/test-async.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/_source/scss/main.scss",
-		"/Users/ckollars/Sites/_tools/dropdabase/bower.json",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/sass.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/watch.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/_source/js/script.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/scsslint.js",
-		"/Users/ckollars/Sites/_tools/dropdabase/grunt/config-lib/uglify.js",
-		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/grunt/config-lib/concat.js",
-		"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/comments.php"
+		"/Users/ckollars/Sites/christopherkollars/app/_layouts/post.html"
 	],
 	"find":
 	{
-		"height": 41.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
 		"height": 107.0,
 		"where_history":
 		[
+			"<open files>",
+			"",
+			"/Users/ckollars/Sites/christopherkollars/app/_scss",
+			"<project>",
 			"<open files>",
 			"/Users/ckollars/Sites/thekitchenarium/wp-content/themes/kitchenarium/_source/scss",
 			""
@@ -328,6 +322,32 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"work",
+			" class=\"project\"",
+			"class=\"project\"",
+			"sample",
+			"clearfix",
+			"transition",
+			"%hlist",
+			"%h-list",
+			".feature",
+			".motto",
+			".location",
+			".meta",
+			"meta",
+			"project--",
+			".feature",
+			"main-header",
+			"header",
+			"$base-font-size",
+			"adjust",
+			"hr{",
+			".wrapper",
+			"wrapper",
+			".wrapper",
+			"#home",
+			"footer",
+			"wrapper",
 			"sidebar",
 			"jekyll",
 			"</h3>",
@@ -348,6 +368,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"logo",
+			"",
 			"</h4>",
 			"<h4>",
 			""
@@ -361,111 +383,53 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/_posts/2014-10-14-monday.md",
+					"file": "app/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 843,
+						"buffer_size": 1510,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								297,
-								297
+								305,
+								319
 							]
 						],
 						"settings":
 						{
 							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2 (SL).tmTheme",
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 37.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "_dev/articles.html",
+					"file": "app/_scss/partials/base/_project.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6320,
+						"buffer_size": 932,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								454,
-								454
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2 (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 78.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "app/_includes/head.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 909,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								460,
-								460
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2 (SL).tmTheme",
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "app/_scss/partials/base/_layout.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1352,
-								1352
+								514,
+								514
 							]
 						],
 						"settings":
@@ -474,36 +438,7 @@
 							"syntax": "Packages/SCSS/SCSS.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1413.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "grunt/tasks.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1000,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								989,
-								989
-							]
-						],
-						"settings":
-						{
-							"color_scheme": "Packages/User/Color Highlighter/themes/cobalt2 (SL).tmTheme",
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 55.0,
+						"translation.y": 590.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -514,7 +449,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -554,7 +489,7 @@
 	"project": "ckollars.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -563,8 +498,236 @@
 		"selected_items":
 		[
 			[
+				"proj",
+				"app/_scss/partials/base/_project.scss"
+			],
+			[
+				"ty",
+				"app/_scss/partials/base/_typography.scss"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"typo",
+				"app/_scss/partials/base/_typography.scss"
+			],
+			[
+				"layou",
+				"app/_scss/partials/base/_layout.scss"
+			],
+			[
+				"def",
+				"app/_layouts/default.html"
+			],
+			[
+				"site",
+				"app/js/site.js"
+			],
+			[
+				"base",
+				"app/_scss/partials/_base.scss"
+			],
+			[
+				"wat",
+				"grunt/config-lib/watch.js"
+			],
+			[
+				"compa",
+				"grunt/config-lib/compass.js"
+			],
+			[
+				"butt",
+				"app/_scss/partials/base/_buttons.scss"
+			],
+			[
+				"sass",
+				"grunt/config-lib/sass.js"
+			],
+			[
+				"scss",
+				"grunt/config-lib/scsslint.js"
+			],
+			[
 				"task",
 				"grunt/tasks.js"
+			],
+			[
+				"exten",
+				"app/_scss/partials/utility/_extends.scss"
+			],
+			[
+				"depen",
+				"app/_scss/partials/utility/_dependencies.scss"
+			],
+			[
+				"compas",
+				"grunt/config-lib/compass.js"
+			],
+			[
+				"au",
+				"grunt/config-lib/autoprefixer.js"
+			],
+			[
+				"auto",
+				"grunt/config-lib/autoprefixer.js"
+			],
+			[
+				"main",
+				"app/_scss/main.scss"
+			],
+			[
+				"but",
+				"app/_scss/components/_buttons.scss"
+			],
+			[
+				"helper",
+				"app/_scss/utility/_helpers.scss"
+			],
+			[
+				"navi",
+				"app/_scss/components/_navigation.scss"
+			],
+			[
+				"scs",
+				"grunt/config-lib/scsslint.js"
+			],
+			[
+				"scsslint",
+				"grunt/config-lib/scsslint.js"
+			],
+			[
+				"foot",
+				"app/_scss/partials/_footer.scss"
+			],
+			[
+				"side",
+				"app/_scss/partials/_sidebar.scss"
+			],
+			[
+				"proje",
+				"app/_scss/components/_project.scss"
+			],
+			[
+				"ind",
+				"app/index.html"
+			],
+			[
+				"project",
+				"app/_scss/components/_project.scss"
+			],
+			[
+				"defa",
+				"app/_layouts/default.html"
+			],
+			[
+				"nav",
+				"app/_includes/navigation.html"
+			],
+			[
+				"typ",
+				"app/_scss/base/_typography.scss"
+			],
+			[
+				"pro",
+				"app/_scss/components/_project.scss"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"sideb",
+				"app/_scss/partials/_sidebar.scss"
+			],
+			[
+				"med",
+				"app/_scss/components/_media.scss"
+			],
+			[
+				"var",
+				"app/_scss/utility/_variables.scss"
+			],
+			[
+				"medi",
+				"app/_scss/components/_media.scss"
+			],
+			[
+				"head",
+				"app/_scss/partials/_header.scss"
+			],
+			[
+				"lay",
+				"app/_scss/partials/_layout.scss"
+			],
+			[
+				"grid",
+				"app/_scss/base/_grid.scss"
+			],
+			[
+				"root",
+				"app/_scss/base/_root.scss"
+			],
+			[
+				"de",
+				"app/_layouts/default.html"
+			],
+			[
+				"vari",
+				"app/_scss/utility/_variables.scss"
+			],
+			[
+				"wa",
+				"grunt/config-lib/watch.js"
+			],
+			[
+				"watch",
+				"grunt/config-lib/watch.js"
+			],
+			[
+				"helpers",
+				"app/_scss/utility/_helpers.scss"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"dep",
+				"app/_scss/utility/_dependencies.scss"
+			],
+			[
+				"tas",
+				"grunt/tasks.js"
+			],
+			[
+				"defau",
+				"app/_layouts/default.html"
+			],
+			[
+				"call",
+				"app/_includes/callout-availability.html"
+			],
+			[
+				"navig",
+				"app/_includes/navigation.html"
+			],
+			[
+				"root.sc",
+				"app/_scss/base/_root.scss"
+			],
+			[
+				"comp",
+				"grunt/config-lib/compass.js"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"mix",
+				"app/_scss/utility/_mixins.scss"
 			],
 			[
 				"conc",
@@ -595,15 +758,7 @@
 				"_source/splash-2015.php"
 			],
 			[
-				"var",
-				"_source/scss/utilities/_variables.scss"
-			],
-			[
 				"",
-				"_source/scss/base/_typography.scss"
-			],
-			[
-				"typ",
 				"_source/scss/base/_typography.scss"
 			],
 			[
@@ -627,20 +782,12 @@
 				"single-recipe.php"
 			],
 			[
-				"vari",
-				"_source/scss/utilities/_variables.scss"
-			],
-			[
 				"fun",
 				"functions.php"
 			],
 			[
 				"comm",
 				"comments.php"
-			],
-			[
-				"main",
-				"_source/scss/main.scss"
 			],
 			[
 				"_com",
@@ -663,18 +810,6 @@
 				"front-page.php"
 			],
 			[
-				"navig",
-				"_source/scss/components/_navigation.scss"
-			],
-			[
-				"butt",
-				"_source/scss/components/_buttons.scss"
-			],
-			[
-				"head",
-				"header.php"
-			],
-			[
 				"all",
 				"page-all.php"
 			],
@@ -691,20 +826,12 @@
 				"header.php"
 			],
 			[
-				"mix",
-				"_source/scss/utilities/_mixins.scss"
-			],
-			[
 				"help",
 				"_source/scss/utilities/_helpers.scss"
 			],
 			[
 				"mixin",
 				"_source/scss/utilities/_mixins.scss"
-			],
-			[
-				"medi",
-				"_source/scss/components/_media.scss"
 			],
 			[
 				"detai",
@@ -717,10 +844,6 @@
 			[
 				"article",
 				"_source/scss/components/_article-details.scss"
-			],
-			[
-				"side",
-				"_source/scss/partials/_sidebar.scss"
 			],
 			[
 				"media",

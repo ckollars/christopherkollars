@@ -39,7 +39,9 @@ p a{
   @include adjust-font-size-to(14px);
   margin: 0;
 }
-
+h1 {
+  @extend %color-grey2;
+}
 .motto,
 .entry-title {
   @extend %color-grey2;
@@ -93,17 +95,15 @@ a{
   @extend %background-light-green;
   text-decoration: none;
 }
-hr{
+hr {
   @extend %display-inline-block;
   width: 80px;
   margin: 20px 0;
   border: 0;
   border-bottom: 1px solid $green;
-  #main &{
-    margin-bottom: 70px;
-  }
 }
-.location{
+
+.location {
   @extend %pull-left;
   @extend %margin-0;
   @extend %color-white;

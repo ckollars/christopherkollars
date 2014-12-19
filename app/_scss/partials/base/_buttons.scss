@@ -14,6 +14,10 @@
     background-color: $green;
     border-color: rgba($green, 0.03);
   }
+
+  @include respond-to(mobile) {
+    margin-top: 20px;
+  }
 }
 
 
