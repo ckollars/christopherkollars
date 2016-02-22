@@ -1,42 +1,28 @@
 {
-  "name": "christopherkollarscom",
-  "version": "0.1.0",
-  "author": {
-    "name": "Christopher Kollars",
-    "email": "chris@christopherkollars.com",
-    "url": "christopherkollars.com"
-  },
+  "name": "ckollars",
+  "version": "1.0.0",
+  "description": "ChristopherKollars.com site pre-process",
+  "author": "Christopher James Kollars",
+  "license": "Apache-2.0",
   "private": true,
-  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ckollars/christopherkollars"
+  },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "load-grunt-tasks": "~0.4.0",
-    "glob": "~3.2.9",
-    "matchdep": "~0.3.0",
-    "grunt-concurrent": "~0.4.3",
-    "grunt-grunticon": "~0.6.14",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-imagemin": "~0.2.0",
-    "grunt-contrib-compass": "~0.7.2",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-concat": "~0.3.0",
-    "grunt-contrib-uglify": "~0.2.0",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-contrib-jshint": "~0.6.3",
-    "grunt-jekyll": "~0.4.1",
-    "time-grunt": "~0.2.8",
-    "grunt-autoprefixer": "~2.0.0",
-    "grunt-modernizr": "~0.5.2",
-    "grunt-favicons": "~0.6.4"
-  },
-  "licenses": {
-    "MIT": true
-  },
-  "config": {
-    "grunt": "grunt",
-    "app": "app",
-    "dist": "_dist",
-    "dev": "_dev",
-    "bower": "bower_components"
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.0.4",
+    "gulp-size": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-uglify": "^1.4.1"
   }
 }

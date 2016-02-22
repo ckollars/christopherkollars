@@ -1,0 +1,166 @@
+.wrap {
+  @include container;
+  // padding-top: 80px;
+
+  @include respond-to(medium) { padding-top: 0; }
+}
+
+
+
+.main {
+  @include span(12 of 12);
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include respond-to(medium) {
+    @include span(10 of 12 last);
+    padding-top: 0;
+  }
+
+  @include respond-to(large) {
+    padding-left: gutter();
+    padding-right: 0;
+  }
+}
+
+.content-wrap { @include container(11); }
+
+
+.project-photos__large:not(.project-photos__full-width) {
+  @include respond-to(small) {
+    @include span(7 of 11);
+  }
+}
+.project-photos__small {
+  @include respond-to(small) {
+    @include span(4 of 11 last);
+  }
+}
+
+
+.main-content {
+  position: relative;
+  @include respond-to(small) {
+    @include span(7 of 11);
+  }
+
+  .page-id-25 & {
+    @include span(11 of 11);
+    padding-bottom: 40px;
+    background: transparent url(../img/fence-border.png) repeat-x 0 bottom;
+
+    @include respond-to(mobile) {
+      padding-bottom: 20px;
+    }
+  }
+}
+.sidebar {
+  @include respond-to(small) {
+    @include span(4 of 11 last);
+  }
+}
+
+.wrap--one-third {
+  width: 34%;
+
+  @media (max-width: 639px) {
+    width: 100%;
+  }
+
+  .service-listing & {
+    @media (min-width: 640px) {
+      margin-left: 20px;
+    }
+  }
+
+  .project-archive & {
+    @media (min-width: 640px) {
+      margin-left: 20px;
+    }
+  }
+
+  .wrap--thirds & {
+
+    @media (min-width: 640px) {
+      width: 32%;
+
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        width: 34%;
+      }
+    }
+  }
+
+}
+
+
+.wrap--two-thirds {
+  width: 66%;
+
+  @media (max-width: 639px) {
+    width: 100%;
+  }
+}
+
+
+// Flex box grid
+
+.row {
+  @media (min-width: 640px) {
+    margin-bottom: 20px;
+    // max-height: 380px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: stretch;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .service-listing &,
+  .project-archive & {
+    max-height: none;
+  }
+
+  .no-flexbox & {
+    display: table;
+  }
+}
+
+// IE9 flex fix
+.no-flexbox .service-listing {
+
+  .row:not(.wrap--thirds) > .wrap--two-thirds,
+  .row:not(.wrap--thirds) > .wrap--one-third {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  .wrap--thirds {
+    > .wrap--one-third {
+      display: table-cell;
+      vertical-align: top;
+    }
+
+    .summary-block {
+      display: table;
+    }
+  }
+}
+
+.no-flexbox .project-archive {
+  > .row { width: 100%; }
+  .wrap--two-thirds,
+  .wrap--one-third {
+    display: table-cell;
+    vertical-align: top;
+    // margin: 0;
+  }
+}

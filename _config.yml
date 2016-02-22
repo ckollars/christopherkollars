@@ -1,5 +1,8 @@
-name: Christopher Kollars Co
-description: Front-End Developer Consultant
+name: Christopher Kollars
+description: Front-End Developer
+highlighter: pygments
+url: http://christopherkollars.com
+imgSrc: /img
 author:
   name: Christopher Kollars
   email: chris@christopherkollars.com
@@ -13,5 +16,4 @@ include: ['.htaccess']
 future: true
 show_drafts: true
 
-markdown: redcarpet
-pygments: true
+

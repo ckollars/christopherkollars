@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  cursor: default;
+  padding: 20px 0 60px 0;
+
+  @include respond-to(mobile) {
+    padding-top: 0;
+  }
+}
+
+img,
+media,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+figure { margin: 0; }
+
+nav ul{ list-style: none; }
+
+a { outline: 0; }
