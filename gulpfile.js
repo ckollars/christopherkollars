@@ -1,52 +1,116 @@
-var gulp = require('gulp');
-$ = require('gulp-load-plugins')(); // Note the extra parens
+var gulp = require('gulp'),
+    autoprefixer = require('gulp-autoprefixer'),
+    browserSync = require('browser-sync'),
+    concat = require('gulp-concat'),
+    eslint = require('gulp-eslint'),
+    cssnano = require('gulp-cssnano'),
+    rename = require('gulp-rename'),
+    sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
+    favicons = require('gulp-favicons'),
+    uglify = require('gulp-uglify');
 
-var config = {
-     sassPath: './_scss',
-     bowerDir: './bower_components' 
-}
 
-gulp.task('sass', function () {
-  return sass(config.sassPath + '/styles.scss', {
-      style: 'expanded',
-      sourcemap: true
-    })
-    .pipe(autoprefixer({                                 // Autoprefixer all css
+/**
+ * CSS
+ */
+
+gulp.task('css', function () {
+    return gulp.src('./_scss/styles.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(autoprefixer({
       browsers: [
-        'last 20 versions',
         '> 5%',
-        'ie 9',
         'ie 10'
       ],
       remove: true,
       cascade: true
     }))
     .pipe(gulp.dest('./_site/css/'))
-    .pipe(minifycss())                                   // Minify the CSS
-    .pipe(rename({suffix: '.min'}))                      // Rename it
-    .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(cssnano({processImport: false}))
+    .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./_site/css/'))
-    .pipe(livereload())                                  // Reloads server
-    .pipe(notify('Sass prefixed, compiled & minified')); // Output to notification
+    .pipe(browserSync.reload({stream:true}));
 });
 
-gulp.task('css', function() { 
-    return gulp.src(config.sassPath + '/styles.scss')
-         .pipe(sass({
-             style: 'expanded',
-            sourcemap: true,
-             loadPath: [
-                 './_scss',
-                 config.bowerDir + '/bourbon/app/assets/bourbon',
-                 config.bowerDir + '/susy/sass/susy',
-             ]
-         }) 
-            .on("error", notify.onError(function (error) {
-                 return "Error: " + error.message;
-             }))) 
-         .pipe(gulp.dest('./public/css')); 
+
+/**
+ * ES Lint
+ */
+
+gulp.task('lint', function() {
+  return gulp.src('./js/*.js')
+    .pipe(eslint({
+      rules: {
+        'quotes': 0,
+        'no-multi-spaces': [
+          1, {
+            'exceptions': {
+              'VariableDeclarator': true
+            }
+          }
+        ]
+      },
+      globals: {
+        'jQuery':            false,
+        '$':                 true,
+        'imagesLoaded':      false,
+        'Modernizr':         false,
+        'templateDirectory': false,
+        'Handlebars':        false,
+        'IconicJS':          false,
+        'ajaxpagination':    false
+      },
+      envs: [
+        'browser'
+      ]
+    }))
+    .pipe(eslint.format());
 });
 
-gulp.task('default', function() {
-  // place code for your default task here
+/**
+ * Javascripts
+ */
+gulp.task('js', function(){
+  return gulp.src([
+      './js/plugins/**/*.js',
+      './js/*.js'
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(concat('scripts.js'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(uglify())
+    .on('error', handleError)
+    .pipe(sourcemaps.write('./maps/'))
+    .pipe(gulp.dest('./_site/js/'))
+    .pipe(browserSync.reload({stream:true, once: true}));
 });
+
+gulp.task('browser-sync', function() {
+    // Documentaion on browser sync is at: browsersync.io
+    // It's really rad.
+    browserSync.init(null, {
+        proxy: "commonhouse.dev",
+        open: false
+    });
+});
+
+gulp.task('bs-reload', function () {
+    browserSync.reload();
+});
+
+gulp.task('default', ['css', 'lint', 'js', 'browser-sync'], function () {
+    gulp.watch("-/scss/**/*.scss", ['css']);
+    gulp.watch(["-/js/**/*.js", "!-/js/vendor/**.*.js"], ['lint', 'js']);
+    gulp.watch("./**/*.php", ['bs-reload']);
+});
+
+
+// Handle errors
+function handleError (error) {
+  //If you want details of the error in the console
+  console.log('WARNING!', error.message.toString());
+  this.emit('end');
+}
