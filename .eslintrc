@@ -1,0 +1,21 @@
+{
+  // http://eslint.org/docs/rules/
+
+  rules: {
+    'quotes': 0,
+    'no-multi-spaces': [
+      1, {
+        'exceptions': {
+          'VariableDeclarator': true
+        }
+      }
+    ]
+  },
+  globals: {
+    'jQuery': false,
+    '$': true,
+  },
+  envs: {
+    'browser': true
+  }
+}

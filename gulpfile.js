@@ -2,14 +2,52 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
-    eslint = require('gulp-eslint'),
     cssnano = require('gulp-cssnano'),
     rename = require('gulp-rename'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
-    favicons = require('gulp-favicons'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    cp = require('child_process');
 
+var messages = {
+  jekyllDev: 'Running: $ jekyll build for dev',
+  jekyllProd: 'Running: $ jekyll build for prod'
+};
+
+/**
+ * Jekyll Site - Development build
+ */
+gulp.task('jekyll-dev', function (done) {
+  browserSync.notify(messages.jekyllDev);
+  return cp.spawn('jekyll', ['build', '--drafts', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
+ .on('close', done);
+});
+
+/**
+ * Jekyll Site - Production build
+ */
+gulp.task('jekyll-prod', function (done) {
+  browserSync.notify(messages.jekyllProd);
+  return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+  .on('close', done);
+});
+
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
+  browserSync.reload();
+});
+
+/**
+ * Wait for jekyll-build, then launch the Server
+ */
+gulp.task('browser-sync', ['css', 'scripts', 'jekyll-dev'], function() {
+  browserSync.init({
+    server: "_site",
+    port: 1234
+  });
+});
 
 /**
  * CSS
@@ -18,7 +56,10 @@ var gulp = require('gulp'),
 gulp.task('css', function () {
     return gulp.src('./_scss/styles.scss')
     .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+        includePaths: ['scss'],
+        onError: browserSync.notify
+    }))
     .pipe(autoprefixer({
       browsers: [
         '> 5%',
@@ -27,53 +68,18 @@ gulp.task('css', function () {
       remove: true,
       cascade: true
     }))
-    .pipe(gulp.dest('./_site/css/'))
     .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano({processImport: false}))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./_site/css/'))
-    .pipe(browserSync.reload({stream:true}));
-});
-
-
-/**
- * ES Lint
- */
-
-gulp.task('lint', function() {
-  return gulp.src('./js/*.js')
-    .pipe(eslint({
-      rules: {
-        'quotes': 0,
-        'no-multi-spaces': [
-          1, {
-            'exceptions': {
-              'VariableDeclarator': true
-            }
-          }
-        ]
-      },
-      globals: {
-        'jQuery':            false,
-        '$':                 true,
-        'imagesLoaded':      false,
-        'Modernizr':         false,
-        'templateDirectory': false,
-        'Handlebars':        false,
-        'IconicJS':          false,
-        'ajaxpagination':    false
-      },
-      envs: [
-        'browser'
-      ]
-    }))
-    .pipe(eslint.format());
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('css'));
 });
 
 /**
  * Javascripts
  */
-gulp.task('js', function(){
+gulp.task('scripts', function(){
   return gulp.src([
       './js/plugins/**/*.js',
       './js/*.js'
@@ -85,27 +91,28 @@ gulp.task('js', function(){
     .on('error', handleError)
     .pipe(sourcemaps.write('./maps/'))
     .pipe(gulp.dest('./_site/js/'))
-    .pipe(browserSync.reload({stream:true, once: true}));
+    .pipe(browserSync.reload({stream:true, once: true}))
+    .pipe(gulp.dest('js'));
 });
 
-gulp.task('browser-sync', function() {
-    // Documentaion on browser sync is at: browsersync.io
-    // It's really rad.
-    browserSync.init(null, {
-        proxy: "commonhouse.dev",
-        open: false
-    });
+
+/**
+ * Watch scss files for changes & recompile
+ * Watch html/md files, run jekyll & reload BrowserSync
+ */
+gulp.task('watch', function () {
+  gulp.watch(['_scss/**/*.scss','_scss/*.scss'], ['css']);
+  gulp.watch(['_js/**/*.js'], ['scripts']);
+  gulp.watch(['index.html', '_layouts/*.html', '_posts/*', '_includes/*.html', '_drafts/*', '**/*.html'], ['jekyll-rebuild']);
 });
 
-gulp.task('bs-reload', function () {
-    browserSync.reload();
-});
+/**
+ * Default task, running just `gulp` will compile the sass,
+ * compile the jekyll site, launch BrowserSync & watch files.
+ */
+gulp.task('default', ['browser-sync', 'watch']);
 
-gulp.task('default', ['css', 'lint', 'js', 'browser-sync'], function () {
-    gulp.watch("-/scss/**/*.scss", ['css']);
-    gulp.watch(["-/js/**/*.js", "!-/js/vendor/**.*.js"], ['lint', 'js']);
-    gulp.watch("./**/*.php", ['bs-reload']);
-});
+gulp.task('build', ['scripts', 'css', 'jekyll-prod']);
 
 
 // Handle errors
