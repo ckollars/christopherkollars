@@ -35,4 +35,4 @@ _dist
 node_modules
 .tmp
 _dev
-_sites
+_site

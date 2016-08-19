@@ -7,9 +7,7 @@ author:
   name: Christopher Kollars
   email: chris@christopherkollars.com
 
-
-# Grunt handles images and assets.
-exclude: ['package.json', 'gulpfile.js', 'node_modules', '_source']
+exclude: ["gulpfile.js", "node_modules", "package.json"]
 
 include: ['.htaccess']
 

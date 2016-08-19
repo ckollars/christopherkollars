@@ -19,7 +19,7 @@ var messages = {
  */
 gulp.task('jekyll-dev', function (done) {
   browserSync.notify(messages.jekyllDev);
-  return cp.spawn('jekyll', ['build', '--drafts', '--config', '_config.yml,_config_dev.yml'], {stdio: 'inherit'})
+  return cp.spawn('jekyll', ['build', '--drafts', '--config', '_config.yml'], {stdio: 'inherit'})
  .on('close', done);
 });
 
@@ -45,7 +45,7 @@ gulp.task('jekyll-rebuild', ['jekyll-dev'], function () {
 gulp.task('browser-sync', ['css', 'scripts', 'jekyll-dev'], function() {
   browserSync.init({
     server: "_site",
-    port: 1234
+    port: 3000
   });
 });
 
@@ -68,12 +68,11 @@ gulp.task('css', function () {
       remove: true,
       cascade: true
     }))
-    .pipe(rename({ suffix: '.min' }))
     .pipe(cssnano({processImport: false}))
+    .pipe(rename({ suffix: '.min' }))
     .pipe(sourcemaps.write('./maps'))
     .pipe(gulp.dest('./_site/css/'))
     .pipe(browserSync.reload({stream:true}))
-    .pipe(gulp.dest('css'));
 });
 
 /**
