@@ -1,4 +1,5 @@
 var gulp = require('gulp'),
+    gutil = require('gulp-util'),
     autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     concat = require('gulp-concat'),
@@ -7,9 +8,10 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
-    bourbon = require('bourbon'),
-    neat = require('bourbon-neat'),
+    bourbon = require('bourbon').includePaths,
+    neat = require('bourbon-neat').includePaths,
     cp = require('child_process');
+
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -48,12 +50,13 @@ gulp.task('browser-sync', ['css', 'jekyll-build'], function() {
  * CSS
  */
 gulp.task('css', function () {
-    return gulp.src('./assets/scss/styles.scss')
+  return gulp.src('./assets/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-        includePaths: ['bourbon', 'bourbon-neat', 'scss'],
+        includePaths: ['assets/scss'].concat([bourbon, neat]),
         onError: browserSync.notify
     }))
+    // .on('end', function(){ gutil.log('Almost there...'); })
     .pipe(autoprefixer({
       browsers: [
         '> 5%',
@@ -96,8 +99,8 @@ gulp.task('scripts', function(){
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_scss/*.scss', ['css']);
-    gulp.watch('js/*.js', ['scripts']);
+    gulp.watch('assets/scss/**/*.scss', ['css']);
+    gulp.watch('assets/js/*.js', ['scripts']);
     gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
