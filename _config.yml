@@ -1,17 +1,32 @@
-name: Christopher Kollars
+# Site settings
+title: Christopher Kollars
 description: Front-End Developer
-highlighter: pygments
-url: http://christopherkollars.com
-imgSrc: /img
-author:
-  name: Christopher Kollars
-  email: chris@christopherkollars.com
+baseurl: ""
+url: "http://christopherkollars.com"
+author: Christopher Kollars
 
-exclude: ["gulpfile.js", "node_modules", "package.json"]
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-include: ['.htaccess']
+# Sass settings
+sass:
+  sass_dir: assets/scss
 
-future: true
-show_drafts: true
+# Build settings
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - gulpfile.js
+  - README.md
+  - CNAME
+  - node_modules
+  - assets/scss
 
-
+# Plugin settings
+gems:
+  - jekyll-feed
+  - jekyll-sitemap

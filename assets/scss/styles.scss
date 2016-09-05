@@ -1,7 +1,11 @@
+@charset "utf-8";
+
+@import "vendor/normalize";
+
 @import "utilities/config";
 @import "utilities/functions";
 @import "utilities/variables";
 @import "utilities/mixins";
 
-@import "base/base";
+@import "base/root";
 @import "base/typography";
