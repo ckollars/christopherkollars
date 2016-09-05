@@ -10,8 +10,6 @@
     "url": "https://github.com/ckollars/christopherkollars"
   },
   "devDependencies": {
-    "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.8.0",
     "browser-sync": "^2.14.3",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
@@ -24,5 +22,9 @@
     "gulp-shell": "^0.5.2",
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "bourbon-neat": "^1.8.0"
   }
 }
