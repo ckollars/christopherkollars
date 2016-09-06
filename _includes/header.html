@@ -1,14 +1,16 @@
 <header class="header" role="banner">
-  {% if page.url != '/' %}
-  <h1 class="header__title"><a href="">Christopher Kollars</a></h1>
-  {% endif %}
-  <nav class="nav" role="navigation">
-    <ul class="nav__list">
-      {% for item in site.nav %}
-        <li class="nav__item{% if page.url == item.url %}  is-active{% endif %}">
-          <a href="{{ item.url }}" class="nav__link">{{ item.label }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  </nav>
+  <div class="container">
+    {% if page.url != '/' %}
+    <h1 class="header__title"><a href="/" title="Home">{{ site.title }}</a></h1>
+    {% endif %}
+    <nav class="nav" role="navigation">
+      <ul class="nav__list">
+        {% for item in site.nav %}
+          <li class="nav__item{% if page.url == item.url %}  is-active{% endif %}">
+            <a href="{{ item.url }}" class="nav__link">{{ item.label }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
 </header>

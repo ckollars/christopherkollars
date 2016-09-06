@@ -9,7 +9,6 @@ var gulp = require('gulp'),
     sourcemaps = require('gulp-sourcemaps'),
     uglify = require('gulp-uglify'),
     bourbon = require('bourbon').includePaths,
-    neat = require('bourbon-neat').includePaths,
     cp = require('child_process');
 
 
@@ -53,7 +52,7 @@ gulp.task('css', function () {
   return gulp.src('./assets/scss/styles.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({
-        includePaths: ['assets/scss'].concat([bourbon, neat]),
+        includePaths: ['assets/scss'].concat(bourbon),
         onError: browserSync.notify
     }))
     // .on('end', function(){ gutil.log('Almost there...'); })
@@ -101,7 +100,7 @@ gulp.task('scripts', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/scss/**/*.scss', ['css']);
     gulp.watch('assets/js/*.js', ['scripts']);
-    gulp.watch(['*.html', '*.md', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '*.md', '_includes/*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**

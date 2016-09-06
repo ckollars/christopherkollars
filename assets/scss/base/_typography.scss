@@ -2,6 +2,8 @@ body {
   -webkit-text-size-adjust: none;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font: 1em / 1.5 $base-font-stack;
+  color: $gray;
 }
 
 h1, .h1
@@ -12,14 +14,47 @@ h4, .h4 {
 }
 
 a {
-  color: blue;
   text-decoration: none;
-  background-color: rgba(blue, 0.25);
+  color: currentColor;
+}
+
+h2 a {
+  border-bottom: 2px solid currentColor;
+
+}
+p a {
+  position: relative;
+  color: $gray;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
 
   &:hover,
   &:focus {
-    border-bottom: 1px solid currentColor;
+    &:after {
+      bottom: -1px;
+      height: 10%;
+    }
+  }
+
+  &:after {
+    display: inline-block;
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: -4%;
+    z-index: -1;
+    height: 30%;
+    width: 108%;
+    background-color: rgba($green, 0.25);
+    transition: bottom 0.25s, height 0.25s;
   }
 }
-p {}
+
+p {
+  margin: 0 0 1.85em 0;
+
+  @include mq(m) {
+    font-size: 1.4rem;
+  }
+}
 p a {}

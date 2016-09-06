@@ -1,0 +1,15 @@
+.header {
+  padding: 36px 0;
+
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+
+.header__title {
+  flex: 1;
+  margin: 0;
+  line-height: 1;
+}
