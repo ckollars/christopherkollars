@@ -5,13 +5,15 @@
   {% include head.html %}
 
   <body>
+    {% include header.html %}
+
     <main id="main" role="main">
-
-      {{ content }}
-
+      <div class="container">
+        {{ content }}
+      </div>
     </main>
 
     {% include footer.html %}
-    <script src="/js/scripts.min.js"></script>
+    {% include scripts.html %}
   </body>
 </html>

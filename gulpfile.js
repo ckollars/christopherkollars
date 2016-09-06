@@ -101,7 +101,7 @@ gulp.task('scripts', function(){
 gulp.task('watch', function () {
     gulp.watch('assets/scss/**/*.scss', ['css']);
     gulp.watch('assets/js/*.js', ['scripts']);
-    gulp.watch(['*.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '*.md', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
 });
 
 /**

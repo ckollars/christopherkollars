@@ -30,3 +30,12 @@ exclude:
 gems:
   - jekyll-feed
   - jekyll-sitemap
+
+# Navigation
+nav:
+  - label: About
+    url: /about/
+  - label: '@ckollars'
+    url: 'http://twitter.com/ckollars'
+  - label: Github
+    url: 'http://github.com/ckollars'

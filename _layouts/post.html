@@ -2,12 +2,19 @@
 layout: default
 ---
 
-<article class="post wrapper">
-  <header>
-    <h1 class="entry-title">{{ page.title }}</h1>
-    <p class="entry-excerpt">{{ page.excerpt }}</p>
-  </header>
-  <div class="content">
+<article class="article" itemscope itemtype="http://schema.org/Article">
+  <div class="masthead">
+    <h1 class="title" itemprop="title">{{ page.title }}</h1>
+    {% if page.date %}
+      <div class="post-meta">
+        <p itemprop="datePublished" class="post-date">
+          {{ page.date | date: "%B %d, %Y" }}
+          <span itemtype="timeRequired">{{ reading_time | strip }}</span>
+        </p>
+      </div>
+    {% endif %}
+  </div>
+  <div itemtype="articleBody">
     {{ content }}
   </div>
 </article>
