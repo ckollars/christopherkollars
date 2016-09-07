@@ -73,6 +73,31 @@ gulp.task('css', function () {
 });
 
 /**
+ * CSS Production
+ */
+gulp.task('css-prod', function () {
+  return gulp.src('./assets/scss/styles.scss')
+    .pipe(sass({
+        includePaths: ['assets/scss'].concat(bourbon),
+        onError: browserSync.notify
+    }))
+    // .on('end', function(){ gutil.log('Almost there...'); })
+    .pipe(autoprefixer({
+      browsers: [
+        '> 5%',
+        'ie 10'
+      ],
+      remove: true,
+      cascade: true
+    }))
+    .pipe(cssnano({processImport: false}))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./_site/assets/css/'))
+    .pipe(browserSync.reload({stream:true}))
+    .pipe(gulp.dest('assets/css'));
+});
+
+/**
  * Javascripts
  */
 gulp.task('scripts', function(){
@@ -109,6 +134,7 @@ gulp.task('watch', function () {
  */
 gulp.task('default', ['browser-sync', 'watch']);
 
+gulp.task('build', ['css-prod', 'jekyll-build']);
 // Handle errors
 function handleError (error) {
   //If you want details of the error in the console
