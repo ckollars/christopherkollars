@@ -33,8 +33,6 @@ gems:
 
 # Navigation
 nav:
-  - label: About
-    url: /about/
   - label: '@ckollars'
     url: 'http://twitter.com/ckollars'
   - label: Github
