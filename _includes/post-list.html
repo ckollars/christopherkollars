@@ -1,3 +1,8 @@
+{% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
+{% if currentyear != year %}
+  <h4 class="subhed">{{ currentyear }}</h4>
+  {% capture year %}{{currentyear}}{% endcapture %}
+{% endif %}
 <article class="article" itemscope itemtype="http://schema.org/Article">
   <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
 </article>
