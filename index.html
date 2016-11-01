@@ -6,7 +6,8 @@ layout: page
   <p>I’m currently writing code at <a href="http://fuzzco.com" title="">Fuzzco</a>. I sometimes go on adventures around Oregon's great outdoors.</p>
 </div>
 
-
-{% for post in site.posts %}
-  {% include post-list.html %}
-{% endfor %}
+<ol class="article-list">
+  {% for post in site.posts %}
+    {% include post-list.html %}
+  {% endfor %}
+</ol>

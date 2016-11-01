@@ -1,3 +1,41 @@
 .article {
-  max-width: 70%;
+  @include mq(s) {
+    max-width: 70%;
+  }
+
+  &-meta {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
+    padding-left: 10px;
+    line-height: 1;
+    border-left: 6px solid rgba($gray-light, 0.2);
+    border-bottom: 1px solid rgba($gray-light, 0.2);
+    font-size: 1.4rem;
+    color: rgba($gray-light, 0.35);
+    transition: color 0.2s ease-out,
+                border 0.2s ease-out;
+
+    &:hover {
+      color: rgba($green, 1);
+      border-color: rgba($green, 0.5);
+    }
+    span {
+      display: inline-block;
+      line-height: 1.5;
+
+      &:nth-child(2) {
+        padding-left: 6px;
+      }
+    }
+  }
+
+  &-header {
+    margin-bottom: 48px;
+  }
+}
+
+.article__title {
+  margin-bottom: 0.5em;
+  line-height: 1.1;
 }

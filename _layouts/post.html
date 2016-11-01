@@ -3,17 +3,24 @@ layout: default
 ---
 
 <article class="article" itemscope itemtype="http://schema.org/Article">
-  <div class="masthead">
-    <h1 class="title" itemprop="title">{{ page.title }}</h1>
+  <header class="article-header">
+    <h1 class="article__title" itemprop="title">{{ page.title }}</h1>
     {% if page.date %}
-      <div class="post-meta">
-        <p itemprop="datePublished" class="post-date">
+      <div class="article-meta">
+        <span itemprop="datePublished" class="post-date">
           {{ page.date | date: "%B %d, %Y" }}
-          <span itemtype="timeRequired">{{ reading_time | strip }}</span>
-        </p>
+        </span>
+        <span itemtype="timeRequired">
+        {% assign words = content | number_of_words %}
+        {% if words < 360 %}
+          ~ 1 min
+        {% else %}
+          ~ {{ words | divided_by:180 }} mins
+        {% endif %}
+        </span>
       </div>
     {% endif %}
-  </div>
+  </header>
   <div itemtype="articleBody">
     {{ content }}
   </div>
