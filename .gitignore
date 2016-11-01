@@ -11,5 +11,6 @@ Thumbs.db
 # Ignore for Jekyll projects #
 .jekyll-metadata
 _site
+styles.min.css
 node_modules
 CNAME
