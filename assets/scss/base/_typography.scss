@@ -61,6 +61,7 @@ p {
 
   @include mq(m) {
     font-size: 2rem;
+    line-height: 1.8;
   }
 }
 p a {}
