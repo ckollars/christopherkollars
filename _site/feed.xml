@@ -1,4 +1,38 @@
+<<<<<<< 9eec134a1efaa573fa4c48f39619755183a18464
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://christopherkollars.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://christopherkollars.com/" rel="alternate" type="text/html" /><updated>2016-10-31T22:31:47-07:00</updated><id>http://christopherkollars.com/</id><title>Christopher Kollars</title><subtitle>Front-End Developer</subtitle><author><name>Christopher Kollars</name></author><entry><title>To Snippets and Beyond</title><link href="http://christopherkollars.com/2016/09/09/to-snippets-and-beyond.html" rel="alternate" type="text/html" title="To Snippets and Beyond" /><published>2016-09-09T00:00:00-07:00</published><updated>2016-09-09T00:00:00-07:00</updated><id>http://christopherkollars.com/2016/09/09/to-snippets-and-beyond</id><content type="html" xml:base="http://christopherkollars.com/2016/09/09/to-snippets-and-beyond.html">&lt;p&gt;I’ve recently added a few snippets to my editor, Sublime Text and it’s been a really great help. Snippets is definitely something I’ve been wanting to start using but just hadn’t taken the time to setup. No clue why but now I wish I would have sooner.&lt;/p&gt;
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.2.1">Jekyll</generator><link href="http://christopherkollars.com/feed.xml" rel="self" type="application/atom+xml" /><link href="http://christopherkollars.com/" rel="alternate" type="text/html" /><updated>2016-10-31T23:11:58-07:00</updated><id>http://christopherkollars.com/</id><title>Christopher Kollars</title><subtitle>Front-End Developer</subtitle><author><name>Christopher Kollars</name></author><entry><title>Options page with Advanced Custom Fields</title><link href="http://christopherkollars.com/2016/10/31/options-page-with-advanced-custom-fields.html" rel="alternate" type="text/html" title="Options page with Advanced Custom Fields" /><published>2016-10-31T00:00:00-07:00</published><updated>2016-10-31T00:00:00-07:00</updated><id>http://christopherkollars.com/2016/10/31/options-page-with-advanced-custom-fields</id><content type="html" xml:base="http://christopherkollars.com/2016/10/31/options-page-with-advanced-custom-fields.html">&lt;p&gt;Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not “blow you away” eye opener. &lt;/p&gt;
+
+&lt;p&gt;Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use &lt;a href=&quot;http://advancecustomfields.com&quot;&gt;Advance Custom Fields&lt;/a&gt; (ACF) and add them as a field per page use. &lt;/p&gt;
+
+&lt;p&gt;There is actually a better way to set up some of these global content and information by using what’s called the &lt;a href=&quot;https://www.advancedcustomfields.com/add-ons/options-page/&quot;&gt;Options Page&lt;/a&gt; with ACF. First you have to activate it within the &lt;code class=&quot;highlighter-rouge&quot;&gt;functions.php&lt;/code&gt; file of your theme.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if( function_exists('acf_add_options_page') ) {
+
+  acf_add_options_page();
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is just a simple starting point to turn on this page feature but you can dive a  deeper and setup it’s menu name and page title for the admin page.&lt;/p&gt;
+
+&lt;div class=&quot;language-php highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;if( function_exists('acf_add_options_page') ) {
+  acf_add_options_page(array(
+    'page_title'  =&amp;gt; 'Options for this theme',
+    'menu_title'  =&amp;gt; 'Options',
+    'redirect'    =&amp;gt; false
+  ));
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;There is even more available &lt;a href=&quot;https://www.advancedcustomfields.com/resources/acf_add_options_page/&quot;&gt;options&lt;/a&gt; but for now this is what I’m currently using for my theme. As you can see you might want to change the page and menu title from option to say “Global Settings” or “Theme Settings”.&lt;/p&gt;
+
+&lt;p&gt;To add any ACF field to this page you’ll have to set the ACF Location option “Show this field group if” dropdown to be &lt;code class=&quot;highlighter-rouge&quot;&gt;Options page&lt;/code&gt; and is equal to “Theme Options” or whatever value you gave to the &lt;code class=&quot;highlighter-rouge&quot;&gt;menu_title&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s basically it. Easy peasy.&lt;/p&gt;</content><author><name>Christopher Kollars</name></author><category term="Wordpress" /><category term="ACF" /><summary>Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not “blow you away” eye opener. </summary></entry><entry><title>To Snippets and Beyond</title><link href="http://christopherkollars.com/2016/09/09/to-snippets-and-beyond.html" rel="alternate" type="text/html" title="To Snippets and Beyond" /><published>2016-09-09T00:00:00-07:00</published><updated>2016-09-09T00:00:00-07:00</updated><id>http://christopherkollars.com/2016/09/09/to-snippets-and-beyond</id><content type="html" xml:base="http://christopherkollars.com/2016/09/09/to-snippets-and-beyond.html">&lt;p&gt;I’ve recently added a few snippets to my editor, Sublime Text and it’s been a really great help. Snippets is definitely something I’ve been wanting to start using but just hadn’t taken the time to setup. No clue why but now I wish I would have sooner.&lt;/p&gt;
+>>>>>>> Build new site with post
 
 &lt;p&gt;I just add a few basic ones that I seem to have to write frequently. On of those is my SASS media query include.&lt;/p&gt;
 
