@@ -28,5 +28,7 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.16.4"
   },
-  "dependencies": {}
+  "dependencies": {
+    "luxon": "^1.15.0"
+  }
 }

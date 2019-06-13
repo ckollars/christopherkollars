@@ -43,6 +43,10 @@
 
   </head>
   <body>
-    {{ content | safe }}
+    <main>
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
   </body>
 </html>
