@@ -1,0 +1,23 @@
+---
+layout: base
+eleventyNavigation:
+  key: Articles
+  order: 2
+---
+
+<h1>Archive</h1>
+
+{% set postslistCounter = collections.articles | length %}
+
+<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or collections.articles.length) + 1 }}">
+{% for post in collections.articles | reverse %}
+  <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+    {% for tag in post.data.tags | filterTagList %}
+      {% set tagUrl %}/tags/{{ tag | slug }}/{% endset %}
+      <a href="{{ tagUrl | url }}" class="post-tag">{{ tag }}</a>
+    {% endfor %}
+  </li>
+{% endfor %}
+</ol>

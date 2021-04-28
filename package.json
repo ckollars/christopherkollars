@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.8.3",
+    "@11ty/eleventy-navigation": "^0.2.0",
     "babel-eslint": "^9.0.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
@@ -29,6 +30,7 @@
     "prettier": "^1.16.4"
   },
   "dependencies": {
-    "luxon": "^1.15.0"
+    "luxon": "^1.15.0",
+    "postcss": "^7.0.17"
   }
 }

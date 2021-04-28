@@ -1,0 +1,19 @@
+---
+layout: base
+---
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+    <header class="article-header">
+        <h1 class="article__title" itemprop="title">{{ title | safe }}</h1>
+        {% if page.date %}
+            <div class="article-meta">
+                <span itemprop="datePublished" class="post-date">
+                    {{ date | readableDate | safe }}
+                </span>
+            </div>
+        {% endif %}
+    </header>
+    <div itemtype="articleBody">
+        {{ content | safe }}
+    </div>
+</article>

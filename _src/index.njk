@@ -1,5 +1,8 @@
 ---
 layout: base
-body: home
+eleventyNavigation:
+    key: Home
+    order: 1
 ---
-
+{% set navPages = collections.all | eleventyNavigation %}
+{{ navPages | eleventyNavigationToHtml | safe }}
