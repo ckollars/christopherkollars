@@ -1,5 +1,6 @@
 const { DateTime } = require("luxon");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const CleanCSS = require("clean-css");
 
 const isProduction = process.env.NODE_ENV === 'production'
 
@@ -13,6 +14,15 @@ module.exports = config => {
     // Date formatting (human readable)
     config.addFilter("readableDate", dateObj => {
       return DateTime.fromJSDate(dateObj).toFormat("dd LLL yyyy");
+    });
+
+    // CSS Minify
+    config.addFilter("cssmin", function(code) {
+      if(process.env.ELEVENTY_PRODUCTION) {
+        return new CleanCSS({}).minify(code).styles;
+      }
+
+      return code;
     });
 
     // Date formatting (machine readable)
@@ -35,10 +45,12 @@ module.exports = config => {
       return [...tagSet];
     });
 
+    // config.addPassthroughCopy("_assets/style");
+
     // Layout Aliases
     config.addLayoutAlias('base', 'templates/base.njk');
     config.addLayoutAlias('page', 'templates/page.njk');
-    config.addLayoutAlias('post', 'templates/article.njk');
+    config.addLayoutAlias('post', 'templates/post.njk');
     config.addLayoutAlias('note', 'templates/note.njk');
     config.addLayoutAlias('home', 'templates/home.njk');
 

@@ -1,0 +1,7 @@
+<header role="banner">
+    <a href="/" class="mark">
+        <span class="visually-hidden">Christopher Kollars</span>
+    </a>
+    {% set navPages = collections.all | eleventyNavigation %}
+    {{ navPages | eleventyNavigationToHtml | safe }}
+</header>

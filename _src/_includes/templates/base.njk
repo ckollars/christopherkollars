@@ -39,14 +39,16 @@
 
     <meta name="author" content="{{ data.name }}">
 
-    <link rel="stylesheet" type="text/css" href="/_assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/styles/async.css" onload="this.media='all'">
 
   </head>
   <body>
+    {% include "partials/site.header.njk" %}
     <main>
-      {% block content %}
-        {{ content | safe }}
-      {% endblock %}
+        {% block content %}
+            {{ content | safe }}
+        {% endblock %}
     </main>
+    {% include "partials/site.footer.njk" %}
   </body>
 </html>

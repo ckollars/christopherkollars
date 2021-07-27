@@ -1,0 +1,85 @@
+---
+permalink: /styles/async.css
+---
+
+{%- set css %}
+{% include '../_includes/components/reset.css' %}
+{% endset %}
+
+/* Colors */
+:root {
+    --lightgray: #F1F1F1;
+    --gray: #C0C0C0;
+    --darkgray: #333;
+    --navy: #17050F;
+    --blue: #082840;
+    --white: #fff;
+}
+
+/* Global stylesheet */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, system-ui, sans-serif;
+  color: var(--darkgray);
+  background-color: var(--white);
+}
+
+body {
+    padding: 2em;
+    background: linear-gradient(135deg, var(--lightgray), var(--white));
+    border-top: 1em solid var(--white);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+p,
+img {
+  max-width: 37.5em; /* 600px /16 */
+}
+p {
+  line-height: 1.45;
+}
+a[href] {
+  color: var(--blue);
+}
+a[href]:visited {
+  color: var(--navy);
+}
+
+pre,
+code {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  line-height: 1.5;
+}
+pre {
+  font-size: 14px;
+  line-height: 1.375;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  -moz-tab-size: 2;
+  -o-tab-size: 2;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+  padding: 1em;
+  margin: .5em 0;
+  background-color: #f6f6f6;
+}
+code {
+  word-break: break-all;
+}
+
+{{ css | cssmin | safe }}
