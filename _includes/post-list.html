@@ -1,7 +1,0 @@
-{% capture currentyear %}{{post.date | date: "%Y"}}{% endcapture %}
-{% if currentyear != year %}
-  <li class="subhead"><h4>{{ currentyear }}</h4></li>
-  {% capture year %}{{currentyear}}{% endcapture %}
-{% endif %}
-
-<li><a href="{{ post.url }}">{{ post.title }}</a></li>
