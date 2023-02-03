@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SASS and the ampersand selector</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Eleventy Base Blog v8">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Eleventy Base Blog v8">
+		
+		<link rel="stylesheet" href="/bundle/5WxHZVGwiA.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Eleventy Base Blog v8</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>SASS and the ampersand selector</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-02-03">03 February 2023</time></li>
+</ul>
+
+<h2 id="sass-and-the-ampersand-selector" tabindex="-1">SASS and the ampersand selector <a class="header-anchor" href="#sass-and-the-ampersand-selector">#</a></h2>
+<p>Recently I was tasked to add a new feature on a website's code base that was developed by another developer. This wasn't my first rodeo especially with working with multiple developers. What was needed was pretty simple. So I first started viewing things in the Chrome's inspector just to get a sense of what and where I needed to make the changes. Thanks to source maps, it was pretty straight forward.</p>
+<p>I pulled up the SASS file where I need to make the change. I did a little jump to a line feature in Sublime Text but the class I was looking for wasn't on that line. It was about a 30 or so lines down further.</p>
+<p>Everyone is aware of the ampersand selector with sass. If the <code>&amp;</code> is before a declaration it's part of the declarations parent. If it's after the declaration then that class has to become before all the other classes in it's declaration.</p>
+<pre><code>  .block {
+    &amp;.block--modifier {
+      display: block;
+    }
+
+    .block__parent &amp; {
+      display: inline-block;
+    }
+  }
+</code></pre>
+<p>Got it — Good!</p>
+<p>Now I've been using SASS this way since I started but on this project I seen that the previous developer started using the <code>&amp;</code> for declaring it's children classes. For instance:</p>
+<pre><code>.block {
+    display: inline-block;
+
+    &amp;--modifier {
+      display: block;
+    }
+}
+</code></pre>
+<p>Now when that outputs it'll be 2 separate classes.</p>
+<pre><code>.block {
+  display: inline-block;
+}
+.block--modifier {
+    display: block;
+}
+</code></pre>
+<p>When I looked at this I totally get it. I see the benefits of how this will speed up coding, leaner modular code; but there was an issue I jumped at me right away.</p>
+<p>When using source maps and inspecting an element it doesn't show exactly where this declaration is in the sass file. It ends up showing where it's parent was first declared. Now if your code is lean and which I try to strive to have mine but honestly this isn't always the case and in my case there was a lot of modifiers and elements being declared this way.</p>
+<p>So I looked past this and tried to do a project search for <code>.block--modifier</code> but the search came up empty as it should. This class was never fully written out since it was nested inside the parent and declared as <code>&amp;--modifier</code>.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2016-9-24-options-and-acf/">Options page with Advanced Custom Fields</a></li><li>Next: <a href="/blog/2016-9-9-to-snippets-and-beyond/">To Snippets and Beyond</a></li>
+</ul>
+
+		</main>
+
+		<footer></footer>
+
+		<!-- Current page: /blog/2016-9-24-sass-ampersand/ -->
+	</body>
+</html>

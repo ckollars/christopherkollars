@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
+	<title>Eleventy Base Blog v8</title>
+	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
+	<link href="https://example.com/feed/feed.xml" rel="self"/>
+	<link href="https://example.com/"/>
+	<updated>2023-02-03T03:16:23Z</updated>
+	<id>https://example.com/</id>
+	<author>
+		<name>Your Name Here</name>
+		<email>youremailaddress@example.com</email>
+	</author>
+	
+	<entry>
+		<title>Reflection: Oregon and the Great Outdoors</title>
+		<link href="https://example.com/blog/one-year/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/one-year/</id>
+		<content type="html">&lt;p&gt;It was just a little over a year ago I packed up my belongs, almost all, and drove West. It was something I&#39;ve never done, just move to a whole new city let alone state. Well I take that back. I moved from small town of less than 300 to the big city that&#39;s Omaha for college. I had been there ever since.&lt;/p&gt;
+&lt;p&gt;In all honesty I wasn&#39;t sure if this is what I wanted or needed but I had to try. I knew a few friends from Omaha that moved out a few years before so I wasn&#39;t moving to a new city without knowing anyone. I atleast had that.&lt;/p&gt;
+&lt;p&gt;Since I&#39;ve been out here I&#39;ve experience things on a regular basis that seem just a part of a normal life. For starters, commuting by other means. What I mean is I commute regularly by bike and occasionally by bus, tram, Lyft. Just having these options within a city is something I look back thinking why wouldn&#39;t a city have these options.&lt;/p&gt;
+&lt;p&gt;I had a few goals I was wanting to accomplish&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;date&lt;/li&gt;
+&lt;li&gt;up my career level&lt;/li&gt;
+&lt;li&gt;have more outdoor adventures in actual mountains and forests&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Apple App Store Connect</title>
+		<link href="https://example.com/blog/2022-2-7-apple-appstoreconnect/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2022-2-7-apple-appstoreconnect/</id>
+		<content type="html">&lt;p&gt;Ran into this weird quirk with the Apple App Store Connect. When adding new screenshots, it showed thumbs like it was uploaded but once clicking the submit for review it was telling me how it had images uploaded but still processing.&lt;/p&gt;
+&lt;p&gt;Next thing I see is almost all my screenshots were just grey with a cloud icon. I tried updating screenshots multiple times a day but still ran into this issue. I found this &lt;a href=&quot;https://developer.apple.com/forums/thread/649241?page=10&quot;&gt;article&lt;/a&gt; which made me think I was seeing an error but decided to wait. After 4 hours all the screenshots are there and I was able to submit.&lt;/p&gt;
+&lt;p&gt;What I learned is Apple is looked at as the holy grail of design but this experience was less to be desired.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Eleventy</title>
+		<link href="https://example.com/blog/2022-11-1/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2022-11-1/</id>
+		<content type="html">&lt;p&gt;Been really wanting to dive deeper into eleventy for my personal use. Along that utilize modern css.&lt;/p&gt;
+&lt;p&gt;Found an article talking about sass module and getting away from css-in-js. I should write blog about it.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>To Snippets and Beyond</title>
+		<link href="https://example.com/blog/2016-9-9-to-snippets-and-beyond/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2016-9-9-to-snippets-and-beyond/</id>
+		<content type="html">&lt;p&gt;I&#39;ve recently added a few snippets to my editor, Sublime Text and it&#39;s been a really great help. Snippets is definitely something I&#39;ve been wanting to start using but just hadn&#39;t taken the time to setup. No clue why but now I wish I would have sooner.&lt;/p&gt;
+&lt;p&gt;I just add a few basic ones that I seem to have to write frequently. On of those is my SASS media query include.&lt;/p&gt;
+&lt;pre class=&quot;language-sass&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-sass&quot;&gt;&lt;span class=&quot;token atrule-line&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;@include&lt;/span&gt; mq(m) {&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;I hope to keep adding more so if you want to use some of them for yourself head on over to &lt;a href=&quot;https://github.com/ckollars/snippets&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>SASS and the ampersand selector</title>
+		<link href="https://example.com/blog/2016-9-24-sass-ampersand/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2016-9-24-sass-ampersand/</id>
+		<content type="html">&lt;h2 id=&quot;sass-and-the-ampersand-selector&quot; tabindex=&quot;-1&quot;&gt;SASS and the ampersand selector &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2016-9-24-sass-ampersand/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Recently I was tasked to add a new feature on a website&#39;s code base that was developed by another developer. This wasn&#39;t my first rodeo especially with working with multiple developers. What was needed was pretty simple. So I first started viewing things in the Chrome&#39;s inspector just to get a sense of what and where I needed to make the changes. Thanks to source maps, it was pretty straight forward.&lt;/p&gt;
+&lt;p&gt;I pulled up the SASS file where I need to make the change. I did a little jump to a line feature in Sublime Text but the class I was looking for wasn&#39;t on that line. It was about a 30 or so lines down further.&lt;/p&gt;
+&lt;p&gt;Everyone is aware of the ampersand selector with sass. If the &lt;code&gt;&amp;amp;&lt;/code&gt; is before a declaration it&#39;s part of the declarations parent. If it&#39;s after the declaration then that class has to become before all the other classes in it&#39;s declaration.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  .block {
+    &amp;amp;.block--modifier {
+      display: block;
+    }
+
+    .block__parent &amp;amp; {
+      display: inline-block;
+    }
+  }
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Got it — Good!&lt;/p&gt;
+&lt;p&gt;Now I&#39;ve been using SASS this way since I started but on this project I seen that the previous developer started using the &lt;code&gt;&amp;amp;&lt;/code&gt; for declaring it&#39;s children classes. For instance:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.block {
+    display: inline-block;
+
+    &amp;amp;--modifier {
+      display: block;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now when that outputs it&#39;ll be 2 separate classes.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;.block {
+  display: inline-block;
+}
+.block--modifier {
+    display: block;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;When I looked at this I totally get it. I see the benefits of how this will speed up coding, leaner modular code; but there was an issue I jumped at me right away.&lt;/p&gt;
+&lt;p&gt;When using source maps and inspecting an element it doesn&#39;t show exactly where this declaration is in the sass file. It ends up showing where it&#39;s parent was first declared. Now if your code is lean and which I try to strive to have mine but honestly this isn&#39;t always the case and in my case there was a lot of modifiers and elements being declared this way.&lt;/p&gt;
+&lt;p&gt;So I looked past this and tried to do a project search for &lt;code&gt;.block--modifier&lt;/code&gt; but the search came up empty as it should. This class was never fully written out since it was nested inside the parent and declared as &lt;code&gt;&amp;amp;--modifier&lt;/code&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Options page with Advanced Custom Fields</title>
+		<link href="https://example.com/blog/2016-9-24-options-and-acf/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2016-9-24-options-and-acf/</id>
+		<content type="html">&lt;p&gt;Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not &amp;quot;blow you away&amp;quot; eye opener.&lt;/p&gt;
+&lt;p&gt;Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use &lt;a href=&quot;http://advancecustomfields.com&quot;&gt;Advance Custom Fields&lt;/a&gt; (ACF) and add them as a field per page use.&lt;/p&gt;
+&lt;p&gt;There is actually a better way to set up some of these global content and information by using what&#39;s called the &lt;a href=&quot;https://www.advancedcustomfields.com/add-ons/options-page/&quot;&gt;Options Page&lt;/a&gt; with ACF. First you have to activate it within the &lt;code&gt;functions.php&lt;/code&gt; file of your theme.&lt;/p&gt;
+&lt;pre class=&quot;language-php&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;function_exists&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;acf_add_options_page&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;&lt;br&gt;  &lt;span class=&quot;token function&quot;&gt;acf_add_options_page&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is just a simple starting point to turn on this page feature but you can dive a deeper and setup it&#39;s menu name and page title for the admin page.&lt;/p&gt;
+&lt;pre class=&quot;language-php&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;function_exists&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;acf_add_options_page&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token function&quot;&gt;acf_add_options_page&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;page_title&#39;&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;Options for this theme&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;menu_title&#39;&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;Options&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;redirect&#39;&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token constant boolean&quot;&gt;false&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is even more available &lt;a href=&quot;https://www.advancedcustomfields.com/resources/acf_add_options_page/&quot;&gt;options&lt;/a&gt; but for now this is what I&#39;m currently using for my theme. As you can see you might want to change the page and menu title from option to say “Global Settings” or “Theme Settings”.&lt;/p&gt;
+&lt;p&gt;To add any ACF field to this page you&#39;ll have to set the ACF Location option &amp;quot;Show this field group if&amp;quot; dropdown to be &lt;code&gt;Options page&lt;/code&gt; and is equal to &amp;quot;Theme Options&amp;quot; or whatever value you gave to the &lt;code&gt;menu_title&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&#39;s basically it. Easy peasy.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Reflection: Oregon and the Great Outdoors</title>
+		<link href="https://example.com/blog/2016-9-24-one-year/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2016-9-24-one-year/</id>
+		<content type="html">&lt;p&gt;It was just a little over a year ago I packed up my belongs, almost all, and drove West. It was something I&#39;ve never done, just move to a whole new city let alone state. Well I take that back. I moved from small town of less than 300 to the big city that&#39;s Omaha for college. I had been there ever since.&lt;/p&gt;
+&lt;p&gt;In all honesty I wasn&#39;t sure if this is what I wanted or needed but I had to try. I knew a few friends from Omaha that moved out a few years before so I wasn&#39;t moving to a new city without knowing anyone. I atleast had that.&lt;/p&gt;
+&lt;p&gt;Since I&#39;ve been out here I&#39;ve experience things on a regular basis that seem just a part of a normal life. For starters, commuting by other means. What I mean is I commute regularly by bike and occasionally by bus, tram, Lyft. Just having these options within a city is something I look back thinking why wouldn&#39;t a city have these options.&lt;/p&gt;
+&lt;p&gt;I had a few goals I was wanting to accomplish&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;date&lt;/li&gt;
+&lt;li&gt;up my career level&lt;/li&gt;
+&lt;li&gt;have more outdoor adventures in actual mountains and forests&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Sass map and my breakpoints</title>
+		<link href="https://example.com/blog/2014-12-5-sass-map-and-my-breakpoints/"/>
+		<updated>2023-02-03T03:16:23Z</updated>
+		<id>https://example.com/blog/2014-12-5-sass-map-and-my-breakpoints/</id>
+		<content type="html">&lt;p&gt;My most recent project I decided to use Sass maps. It all started from an &lt;a href=&quot;http://www.sitepoint.com/managing-responsive-breakpoints-sass/&quot;&gt;article&lt;/a&gt; in which I basically took the example and applied it to my project.&lt;/p&gt;
+&lt;p&gt;It&#39;s been really useful. I can see setting up a config file with a huge map of all your variables, colors, breakpoints and so on. For now though here is the what I used for my breakpoints and it&#39;s mixin if you didn&#39;t read the article.&lt;/p&gt;
+&lt;p&gt;In my &lt;code&gt;_variables.scss&lt;/code&gt; I declare my breakpoint Sass map.&lt;/p&gt;
+&lt;pre class=&quot;language-scss&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-scss&quot;&gt;&lt;span class=&quot;token property&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$breakpoints&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token string&quot;&gt;&quot;mobile&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;max-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 767px&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token string&quot;&gt;&quot;small&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 768px&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token string&quot;&gt;&quot;medium&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 960px&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token string&quot;&gt;&quot;large&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1200px&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then in my &lt;code&gt;_mixins.scss&lt;/code&gt; I have this nice little function called &lt;code&gt;respond-to()&lt;/code&gt; that I use to filter through my map.&lt;/p&gt;
+&lt;pre class=&quot;language-scss&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-scss&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;@mixin&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;respond-to&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token property&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$value&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;map-get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$breakpoints&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;	&lt;span class=&quot;token keyword&quot;&gt;@if&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;map-has-key&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$breakpoints&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;		@media #&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;inspect&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;map-get&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$breakpoints&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;			&lt;span class=&quot;token keyword&quot;&gt;@content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;@else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token keyword&quot;&gt;@warn&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Unfortunately, no value could be retrieved from &#39;#{$name}&#39;. &quot;&lt;/span&gt;&lt;br&gt;        &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;Please make sure it is defined in &#39;$breakpoints&#39; map.&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Now whenever I need to define a breakpoint in one of my styles I just include my mixin.&lt;/p&gt;
+&lt;pre class=&quot;language-scss&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-scss&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.class-name &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;	&lt;span class=&quot;token keyword&quot;&gt;@include&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;respond-to&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;medium&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 60%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Then you end up with this css.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;.class-name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@media&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;min-width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 960px&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token selector&quot;&gt;.class-name&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;		&lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 60%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>This is a fifth post (draft)</title>
+		<link href="https://example.com/blog/fifthpost/"/>
+		<updated>2023-01-23T00:00:00Z</updated>
+		<id>https://example.com/blog/fifthpost/</id>
+		<content type="html">&lt;p&gt;This is a draft post&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title></title>
+		<link href="https://example.com/blog/2022-11-02/"/>
+		<updated>2022-11-02T00:00:00Z</updated>
+		<id>https://example.com/blog/2022-11-02/</id>
+		<content type="html"></content>
+	</entry>
+	
+	<entry>
+		<title>Expo Updates</title>
+		<link href="https://example.com/blog/2022-10-31/"/>
+		<updated>2022-10-31T00:00:00Z</updated>
+		<id>https://example.com/blog/2022-10-31/</id>
+		<content type="html">&lt;p&gt;I&#39;ve been wanting for 2+ years to get QR codes into PRs for our Expo apps. I think I found a good start &lt;a href=&quot;https://github.com/expo/eas-cli/issues/898#issuecomment-1028273014&quot;&gt;here&lt;/a&gt;. Looking forward to working through this with devops durring my next SID&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Jest and unit tests</title>
+		<link href="https://example.com/blog/2022-10-29-jest/"/>
+		<updated>2022-10-29T00:00:00Z</updated>
+		<id>https://example.com/blog/2022-10-29-jest/</id>
+		<content type="html">&lt;p&gt;Had to tackle a simple bug but seen the feature was using momentjs which we are trying to get away from in favor of date-fns.js. So I implement this with a helper method. Simple but it was something I needed to verify would work in other possible scenarios and not just the current implementation. I wrote some unit tests. Something I rarely do in javascript. I know it&#39;s bad but I just have a hard time doing so. This helped me realize it wasn&#39;t so scary and looking forward to writing more.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Appium Testing with React Native</title>
+		<link href="https://example.com/blog/2022-10-19-appium/"/>
+		<updated>2022-10-19T00:00:00Z</updated>
+		<id>https://example.com/blog/2022-10-19-appium/</id>
+		<content type="html">&lt;p&gt;Last SID I worked with a few people to rework our mobile testing frameworks. The current setup is using Appium and what I&#39;m seeing so far is I&#39;m not a fan yet. It just seems so combersome to get anything working and especially on iOS. I hope this doesn&#39;t steer me away and I can get into learning this process for end 2 end testing.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>This is my fourth post.</title>
+		<link href="https://example.com/blog/fourthpost/"/>
+		<updated>2018-09-30T00:00:00Z</updated>
+		<id>https://example.com/blog/fourthpost/</id>
+		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.avif 350w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.webp 350w&quot;&gt;&lt;img alt=&quot;A possum parent and two possum kids hanging from the iconic red balloon&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/IdthKOzqFA-350.png&quot; width=&quot;350&quot; height=&quot;685&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>This is my third post.</title>
+		<link href="https://example.com/blog/thirdpost/"/>
+		<updated>2018-08-24T00:00:00Z</updated>
+		<id>https://example.com/blog/thirdpost/</id>
+		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;styled-with-syntax&quot; tabindex=&quot;-1&quot;&gt;Styled (with Syntax) &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&quot;unstyled&quot; tabindex=&quot;-1&quot;&gt;Unstyled &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;// this is a command
+function myCommand() {
+	let counter = 0;
+	counter++;
+}
+
+// Test with a line break above this line.
+console.log(&#39;Test&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>This is my second post with a much longer title.</title>
+		<link href="https://example.com/blog/secondpost/"/>
+		<updated>2018-07-04T00:00:00Z</updated>
+		<id>https://example.com/blog/secondpost/</id>
+		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://example.com/blog/firstpost/&quot;&gt;First post&lt;/a&gt;
+&lt;a href=&quot;https://example.com/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>This is my first post.</title>
+		<link href="https://example.com/blog/firstpost/"/>
+		<updated>2018-05-01T00:00:00Z</updated>
+		<id>https://example.com/blog/firstpost/</id>
+		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
+&lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+&lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token inserted-sign inserted language-js&quot;&gt;&lt;span class=&quot;token prefix inserted&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token deleted-sign deleted language-js&quot;&gt;&lt;span class=&quot;token prefix deleted&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;  counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Options page with Advanced Custom Fields</title>
+		<link href="https://example.com/blog/2016-10-31-options-page-with-advanced-custom-fields/"/>
+		<updated>2016-10-31T00:00:00Z</updated>
+		<id>https://example.com/blog/2016-10-31-options-page-with-advanced-custom-fields/</id>
+		<content type="html">&lt;p&gt;Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not &amp;quot;blow you away&amp;quot; eye opener.&lt;/p&gt;
+&lt;p&gt;Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use &lt;a href=&quot;http://advancecustomfields.com&quot;&gt;Advance Custom Fields&lt;/a&gt; (ACF) and add them as a field per page use.&lt;/p&gt;
+&lt;p&gt;There is actually a better way to set up some of these global content and information by using what&#39;s called the &lt;a href=&quot;https://www.advancedcustomfields.com/add-ons/options-page/&quot;&gt;Options Page&lt;/a&gt; with ACF. First you have to activate it within the &lt;code&gt;functions.php&lt;/code&gt; file of your theme.&lt;/p&gt;
+&lt;pre class=&quot;language-php&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;function_exists&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;acf_add_options_page&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;&lt;br&gt;  &lt;span class=&quot;token function&quot;&gt;acf_add_options_page&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This is just a simple starting point to turn on this page feature but you can dive a deeper and setup it&#39;s menu name and page title for the admin page.&lt;/p&gt;
+&lt;pre class=&quot;language-php&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;function_exists&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;acf_add_options_page&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token function&quot;&gt;acf_add_options_page&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;page_title&#39;&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;Options for this theme&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;menu_title&#39;&lt;/span&gt;  &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;Options&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br&gt;    &lt;span class=&quot;token string single-quoted-string&quot;&gt;&#39;redirect&#39;&lt;/span&gt;    &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token constant boolean&quot;&gt;false&lt;/span&gt;&lt;br&gt;  &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;There is even more available &lt;a href=&quot;https://www.advancedcustomfields.com/resources/acf_add_options_page/&quot;&gt;options&lt;/a&gt; but for now this is what I&#39;m currently using for my theme. As you can see you might want to change the page and menu title from option to say “Global Settings” or “Theme Settings”.&lt;/p&gt;
+&lt;p&gt;To add any ACF field to this page you&#39;ll have to set the ACF Location option &amp;quot;Show this field group if&amp;quot; dropdown to be &lt;code&gt;Options page&lt;/code&gt; and is equal to &amp;quot;Theme Options&amp;quot; or whatever value you gave to the &lt;code&gt;menu_title&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;That&#39;s basically it. Easy peasy.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Google code</title>
+		<link href="https://example.com/blog/2016-10-31-google/"/>
+		<updated>2016-10-31T00:00:00Z</updated>
+		<id>https://example.com/blog/2016-10-31-google/</id>
+		<content type="html">&lt;p&gt;Sometimes, well most times, I need to look up a code snippet or common design trend. I forget quite often how to do the most common tasks. I feel bad having to do this. Why don&#39;t I have this saved in a tool chest?&lt;/p&gt;
+&lt;p&gt;I think about this every time and every time I Google, find an example and go from there. This weeks it&#39;s a modal. Next week it&#39;s an ajax form. Yet still I&#39;m here Googleing, &amp;quot;How do I do that thing...&amp;quot;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Monday</title>
+		<link href="https://example.com/blog/2014-10-14-monday/"/>
+		<updated>2014-10-13T00:00:00Z</updated>
+		<id>https://example.com/blog/2014-10-14-monday/</id>
+		<content type="html">&lt;p&gt;Today an old friend and fellow collaborator Carl Avidano of &lt;a href=&quot;http://milestone-creative.com&quot;&gt;Milestone Creative&lt;/a&gt; hit me up on chat. The normal conversation of how&#39;s work and life. We then moved it over to a Skype call and an hour letter I feel reenergized.&lt;/p&gt;
+&lt;p&gt;From this conversation it made me think that my life and work balance has the same struggles that other people have. What&#39;s great though is hearing how these people have overcome these or even steps they do to help improve themselves is always invigorating.&lt;/p&gt;
+&lt;p&gt;So by the end of it all Carl and I came to the conclusion that I need to start reading books and Carl is back to reading two a week. As we laugh about it, this is the start of our &amp;quot;book club&amp;quot;. An hour on a Monday morning.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Excuse the mess</title>
+		<link href="https://example.com/blog/2014-10-8-excuse-the-mess/"/>
+		<updated>2014-10-08T00:00:00Z</updated>
+		<id>https://example.com/blog/2014-10-8-excuse-the-mess/</id>
+		<content type="html">&lt;p&gt;Over the last month I&#39;ve been working implementing the philosophy of &lt;a href=&quot;https://bem.info/method/&quot;&gt;BEM&lt;/a&gt; ( Block, Element, Modifier ) with my CSS. I have to admit it&#39;s been tough. I feel the frustrations are coming from keeping all my class and files orgainized. I do tend to fall back to old ways which makes things even more difficult. Also I&#39;m not saying my old ways are bad but they weren&#39;t great.&lt;/p&gt;
+&lt;p&gt;As of now I&#39;m only following this method on my current project which is a bit messy. I will be going back to clean things up when I&#39;m done but for now excuse my mess.&lt;/p&gt;
+&lt;p&gt;In all I&#39;m enjoying writing my CSS in this fasion with hopes of making a &amp;quot;boilerplate/styleguide&amp;quot; going forward.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>A Follow-up to My Pledge</title>
+		<link href="https://example.com/blog/2013-7-1-followup-to-my-pledge/"/>
+		<updated>2013-07-01T00:00:00Z</updated>
+		<id>https://example.com/blog/2013-7-1-followup-to-my-pledge/</id>
+		<content type="html">&lt;p&gt;###Github&lt;/p&gt;
+&lt;p&gt;I continue to use this but even more with a few projects just in the past few weeks. Can&#39;t say how much I love this product. It has so much to offer. Colaboration, project management, to-dos and of course git versioning.&lt;/p&gt;
+&lt;p&gt;###Sublime Text 2&lt;/p&gt;
+&lt;p&gt;I enjoy this editor greatly. It&#39;s the simple but I still am learning to get more use out of it&#39;s features. My next move is to start making code snippets as well as a good boilplate/framework. I&#39;d hate to call it that but basically I want a standardize my developing techniques.&lt;/p&gt;
+&lt;p&gt;###SCSS/SASS&lt;/p&gt;
+&lt;p&gt;I can&#39;t go forward on any project without implementing this. Such a better way of writting CSS. I did use SCSS for about 6 months with Compass. It was a nice addition but I don&#39;t think it&#39;s for me. &lt;a href=&quot;http://codyjamespeterson.com&quot;&gt;Cody&lt;/a&gt; has turned me onto &lt;a href=&quot;http://bourbon.io/&quot;&gt;Bourbon&lt;/a&gt;. It&#39;s a great mixin library with less overhead then Compass.&lt;/p&gt;
+&lt;p&gt;New to the list is a few other techniques. Grunt, ruby and node.js. I&#39;m really new with these, 4 weeks new, but from my short use I see huge benefits with them.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Taking Chances with No Regrets</title>
+		<link href="https://example.com/blog/2013-6-3-taking-chances-with-no-regrets/"/>
+		<updated>2013-06-03T00:00:00Z</updated>
+		<id>https://example.com/blog/2013-6-3-taking-chances-with-no-regrets/</id>
+		<content type="html">&lt;p&gt;On May 29th, I started a new path I thought I&#39;d never take; I became a full-time freelancer. Many of you may know me, so you&#39;ve heard me talk about this idea for a few years but I finally made the decision.&lt;/p&gt;
+&lt;p&gt;How did I come to this decision? I&#39;m not 100% sure. It&#39;s something I&#39;ve been afraid of, but I thought to myself, &amp;quot;why not?&amp;quot;. Over the years I&#39;ve met and worked with some amazing people. I&#39;ve learned a lot from them and I am very grateful.&lt;/p&gt;
+&lt;p&gt;Moving forward, I&#39;m still going to do development work but move my focus more away from CMS-driven marketing sites and heavier on campaign-driven applications. I&#39;ll likely still be working with CMSs like Wordpress or Drupal, but I want to learn new techniques like site generators, Ruby, APIs and new processes that allow me to work as efficiently as possible.&lt;/p&gt;
+&lt;p&gt;Along the way I also hope to work with some talented people with whom I can share my experiences and learn from theirs. I &lt;a href=&quot;http://christopherkollars.com/post/christopherkollars.com-v2.0-i-guess&quot;&gt;mentioned&lt;/a&gt; this before, I plan to continue to blog once a week, sharing new ideas, thoughts and tools I&#39;ve learned as well as projects I hope to be a part of.&lt;/p&gt;
+&lt;p&gt;For now I plan to work from my home office (which is actually my living room). It&#39;s pretty tiny, but it works. I&#39;ll also work from local coffee shops such as &lt;a href=&quot;http://www.omahabicycleco.com/&quot;&gt;Omaha Bicycle Co.&lt;/a&gt; and &lt;a href=&quot;https://www.facebook.com/pages/Aromas-Coffeehouse/193049144080984?fref=ts&quot;&gt;Aromas&lt;/a&gt; to name a few. Since I now office out of my house, I wanted to share my setup. I re-arranged my living room/office to help me get a window view while working.&lt;/p&gt;
+&lt;img src=&quot;https://dl.dropboxusercontent.com/u/2243605/site/img/office.jpg&quot;&gt;
+&lt;p&gt;Stay in touch as I make this journey. &lt;em&gt;Salute and here&#39;s to changes&lt;/em&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Why didn&#39;t I ever do this?</title>
+		<link href="https://example.com/blog/2013-5-29-why-didnt-i-ever-do-this/"/>
+		<updated>2013-05-29T00:00:00Z</updated>
+		<id>https://example.com/blog/2013-5-29-why-didnt-i-ever-do-this/</id>
+		<content type="html">&lt;p&gt;Recently I was working on a javascript project that someone else created. I needed to fix a few things and add a new feature. The person previously created this little log function that was part of the main object.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/ckollars/5665348.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Now I know it&#39;s the simplest thing but totally takes care of having to delete &lt;code&gt;console.log()&lt;/code&gt; on code going to a production site. I know it&#39;s the little things but this is something I&#39;m going to include in all my projects going forward.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Hacking Code to Help a Friend</title>
+		<link href="https://example.com/blog/2013-5-18-hacking-code-to-help-friend/"/>
+		<updated>2013-05-22T00:00:00Z</updated>
+		<id>https://example.com/blog/2013-5-18-hacking-code-to-help-friend/</id>
+		<content type="html">&lt;p&gt;The other day my friend Carl sent me a Google chat asking how much I know about javascript. I first thought to myself, hey I&#39;m somewhat decent instead I replied back with I&#39;m pretty good. Once saying this I realized I may be in a world of hurt so he sent me over a code snippet.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/ckollars/5632128.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;My first glance it looked simple enough. Carl wanted to use classes instead of an ID. Doing this would we could specify one class and use it on multiple DOM elements on the page.&lt;/p&gt;
+&lt;p&gt;I started with changing the javascript to jQuery. I didn&#39;t change much of logic since it was already working but doing just this ended up as a fail. A couple more changes and I got things working, well sort of. It was animating the scroll effect but it was doing this on all classes on the page. Plus it was only scrolling the width of the container not the inner content width.&lt;/p&gt;
+&lt;p&gt;I started dissecting the code more and decided to do this as OOP programming. It&#39;s something I haven&#39;t had a lot of experience with but I wanted to learn and needed to learn. Referencing code samples across the internet. This got me understanding creating objects. I ended up looking at the jQuery from a Drupal module called Quicktabs that I was using on another project. From this I really started to understand objects and extending them.&lt;/p&gt;
+&lt;p&gt;It was a lot of trial and error; reading Stackoverflow and watching tutorials on jquery.com. And with all this I ended up get things working.&lt;/p&gt;
+&lt;script src=&quot;https://gist.github.com/ckollars/5632122.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Now the only thing is to slow down the speed of scrolling so it&#39;s legible. The culprit is &lt;code&gt;animate()&lt;/code&gt; so I&#39;m looking at implementing &lt;code&gt;setTimeout()&lt;/code&gt; that would move in increments per millisecond. I&#39;m still working through this problem and hope to add to the functionality.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Christopherkollars.com v2.0 I guess?</title>
+		<link href="https://example.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/"/>
+		<updated>2013-05-20T00:00:00Z</updated>
+		<id>https://example.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/</id>
+		<content type="html">&lt;p&gt;Well I started this blog to learn to communicate and write my thoughts better. It was almost a year ago and I only submitted 3 posts. Even though I failed first time around I&#39;m getting back on the horse.&lt;/p&gt;
+&lt;p&gt;I hope to write once a week. In fact I&#39;m going to put it as a daily todo until it&#39;s finished for that week. To celebrate this new pledge to my writing I decided to give my site design a refresh. I am happier with this layout then the previous but as always I hope to tweak and add a few features I didn&#39;t get completed.&lt;/p&gt;
+&lt;p&gt;You can see that I put all of the source code on GitHub. Now it&#39;s a bit messy with some bad practice that might make you (Hell, even me) cringe but I&#39;ll be cleaning this up over the next 30 days. In fact, down the road, I might even look at moving away from Scriptogram and try out other static site generators, such as &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you stumble across any issues please submit an issue through &lt;a href=&quot;https://github.com/ckollars/christopherkollars&quot;&gt;GitHub&lt;/a&gt;. Stay tuned as I have more to write.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Fireworks</title>
+		<link href="https://example.com/blog/2012-7-22-fireworks/"/>
+		<updated>2012-06-22T00:00:00Z</updated>
+		<id>https://example.com/blog/2012-7-22-fireworks/</id>
+		<content type="html">&lt;p&gt;My usual photo editing application and what I usually receive web layouts in is Photoshop. Since I&#39;am working with Matt Linder and his choice of application, Fireworks, I&#39;ll will be slicing his layouts from Fireworks instead of exporting the layout to Photoshop.&lt;/p&gt;
+&lt;p&gt;The major issue I&#39;ve had between Photoshop and Fireworks has been Fireworks slower responsiveness. I always feel when you select an objects in Fireworks and look at the properties palette that I am either really fast or the application takes a second to populate with its properties. That is my number one issue with the application.&lt;/p&gt;
+&lt;p&gt;Window focus is another. More often then not I usually have to click twice on an object because it seems I need to set focus to the window first before I can click on an object. This happens the most when switching between apps.&lt;/p&gt;
+&lt;p&gt;Groups, I dig this idea because I was Freehand fan but I feel this concept is a little archaic. I&#39;m not sure if I feel this way because I&#39;m used to Photoshop and the use of folders to group things. I don&#39;t have a huge issue with this. I think I just like my folders versus groups.&lt;/p&gt;
+&lt;p&gt;A few really positive things would be the vector capabilities and slicing techniques. It makes more sense than Photoshops slice tool but in the end I feel just these 2 things can&#39;t trump the sluggishness I get from Fireworks.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>I pledge to the next 60 days</title>
+		<link href="https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/"/>
+		<updated>2012-06-17T00:00:00Z</updated>
+		<id>https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/</id>
+		<content type="html">&lt;p&gt;This is just a portion of a larger list where I feel I can really achieve setting into place over the next 60 days.&lt;/p&gt;
+&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;Github &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been using git little over 8 months but I feel I don&#39;t use it to its full advantage. I want to start incorporating Github into my workflow so I can always have backups and versioning online.&lt;/p&gt;
+&lt;h2 id=&quot;sass-less&quot; tabindex=&quot;-1&quot;&gt;Sass/Less &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I feel using either one would be a great advantage but I need to choose one and start using.&lt;/p&gt;
+&lt;h2 id=&quot;css3&quot; tabindex=&quot;-1&quot;&gt;CSS3 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I&#39;ve been using CSS3 techniques for a while but I feel I need to expand upon my use case and make sure I look at CSS3 first before I start slicing and dicing.&lt;/p&gt;
+&lt;h2 id=&quot;notebooks&quot; tabindex=&quot;-1&quot;&gt;Notebooks &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I&#39;ve started carrying around 3.5&amp;quot;x5&amp;quot; Moleskin notebook, thanks to &lt;a href=&quot;http://codyjamespeterson.com&quot;&gt;Cody&lt;/a&gt;, which has helped out tremendously in remembering ideas, thoughts and to-dos. I need to continue with this.&lt;/p&gt;
+&lt;h2 id=&quot;file-and-code-organization&quot; tabindex=&quot;-1&quot;&gt;File &amp;amp; Code organization &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I want to start storing libraries and snippets of code that I can reference quickly and efficiently. Currently I just open up old site files and copy paste which isn&#39;t the best.&lt;/p&gt;
+&lt;h2 id=&quot;coda-2&quot; tabindex=&quot;-1&quot;&gt;Coda 2 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I currently use Coda 2 as my current editor for wrangling code but I feel I don&#39;t use it to its full potential. I want to explore my options I have Coda vs other editors. Plus I need to incoporate Coda clips.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>And here we go</title>
+		<link href="https://example.com/blog/2012-5-25-the-next-steps/"/>
+		<updated>2012-05-29T00:00:00Z</updated>
+		<id>https://example.com/blog/2012-5-25-the-next-steps/</id>
+		<content type="html">&lt;p&gt;Over my career in the web arena I really never had a solid website I could call home. For some reason I just never focused on my web presence but over the last few months I&#39;ve been wanting to do so.&lt;/p&gt;
+&lt;p&gt;I&#39;ve finally decided to just start a blog. A place to write my thoughts, show some code examples and to speak my mind. Basically learn to write and do it well.&lt;/p&gt;
+&lt;p&gt;So a few weeks ago it came up in discussion with &lt;a href=&quot;http://blog.codyjamespeterson.com&quot;&gt;Cody Peterson&lt;/a&gt; of &lt;a href=&quot;http://secretpenguin.com&quot;&gt;Secret Penguin&lt;/a&gt; that I&#39;ve been wanting to just start a site, a blog, where I could have place to do all of this. He was actually wanting to do the same and had been writing down his ideas for awhile but never had time come up with a site for himself.&lt;/p&gt;
+&lt;p&gt;Last week Cody said he has a site built. I couldn&#39;t believe it. How does this guy have the time with his busy schedule but then he showed me a simple solution. It&#39;s called &lt;a href=&quot;http://scriptogr.am&quot;&gt;scriptogr.am&lt;/a&gt;. A simple platform that uses Markdown and Dropbox. Well of course this got me interested so I signed up and spent few hours playing around with the CMS and settled on what you are seeing now. It&#39;s not even close to being finished but I felt it&#39;s a good start. It&#39;s simple and focused on the writing, which is what I wanted.&lt;/p&gt;
+&lt;p&gt;Going forward I hope to be sharing more, at least once a week, so if you&#39;d like, which I hope you do, come back and ready my fumblings as I explore my writing ability and code antics.&lt;/p&gt;
+</content>
+	</entry>
+</feed>

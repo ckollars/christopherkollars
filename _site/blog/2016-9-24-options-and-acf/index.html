@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Options page with Advanced Custom Fields</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Eleventy Base Blog v8">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Eleventy Base Blog v8">
+		
+		<link rel="stylesheet" href="/bundle/5WxHZVGwiA.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Eleventy Base Blog v8</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Options page with Advanced Custom Fields</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2023-02-03">03 February 2023</time></li>
+	<li><a href="/tags/wordpress/" class="post-tag">Wordpress</a>, </li>
+	<li><a href="/tags/acf/" class="post-tag">ACF</a></li>
+</ul>
+
+<p>Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not &quot;blow you away&quot; eye opener.</p>
+<p>Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use <a href="http://advancecustomfields.com">Advance Custom Fields</a> (ACF) and add them as a field per page use.</p>
+<p>There is actually a better way to set up some of these global content and information by using what's called the <a href="https://www.advancedcustomfields.com/add-ons/options-page/">Options Page</a> with ACF. First you have to activate it within the <code>functions.php</code> file of your theme.</p>
+<pre class="language-php" tabindex="0"><code class="language-php"><span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token function">function_exists</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'acf_add_options_page'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span><br><br>  <span class="token function">acf_add_options_page</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token punctuation">}</span></code></pre>
+<p>This is just a simple starting point to turn on this page feature but you can dive a deeper and setup it's menu name and page title for the admin page.</p>
+<pre class="language-php" tabindex="0"><code class="language-php"><span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token function">function_exists</span><span class="token punctuation">(</span><span class="token string single-quoted-string">'acf_add_options_page'</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token function">acf_add_options_page</span><span class="token punctuation">(</span><span class="token keyword">array</span><span class="token punctuation">(</span><br>    <span class="token string single-quoted-string">'page_title'</span>  <span class="token operator">=></span> <span class="token string single-quoted-string">'Options for this theme'</span><span class="token punctuation">,</span><br>    <span class="token string single-quoted-string">'menu_title'</span>  <span class="token operator">=></span> <span class="token string single-quoted-string">'Options'</span><span class="token punctuation">,</span><br>    <span class="token string single-quoted-string">'redirect'</span>    <span class="token operator">=></span> <span class="token constant boolean">false</span><br>  <span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>There is even more available <a href="https://www.advancedcustomfields.com/resources/acf_add_options_page/">options</a> but for now this is what I'm currently using for my theme. As you can see you might want to change the page and menu title from option to say “Global Settings” or “Theme Settings”.</p>
+<p>To add any ACF field to this page you'll have to set the ACF Location option &quot;Show this field group if&quot; dropdown to be <code>Options page</code> and is equal to &quot;Theme Options&quot; or whatever value you gave to the <code>menu_title</code>.</p>
+<p>That's basically it. Easy peasy.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2016-9-24-one-year/">Reflection: Oregon and the Great Outdoors</a></li><li>Next: <a href="/blog/2016-9-24-sass-ampersand/">SASS and the ampersand selector</a></li>
+</ul>
+
+		</main>
+
+		<footer></footer>
+
+		<!-- Current page: /blog/2016-9-24-options-and-acf/ -->
+	</body>
+</html>

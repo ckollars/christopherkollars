@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Hacking Code to Help a Friend</title>
+		<meta name="description" content="I am writing about my experiences as a naval navel-gazer.">
+		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Eleventy Base Blog v8">
+		<link rel="alternate" href="/feed/feed.json" type="application/json" title="Eleventy Base Blog v8">
+		
+		<link rel="stylesheet" href="/bundle/5WxHZVGwiA.css">
+	</head>
+	<body>
+		<a href="#skip" class="visually-hidden">Skip to main content</a>
+
+		<header>
+			<a href="/" class="home-link">Eleventy Base Blog v8</a>
+			<nav>
+				<h2 class="visually-hidden">Top level navigation menu</h2>
+				<ul class="nav">
+					<li class="nav-item"><a href="/">Home</a></li>
+					<li class="nav-item"><a href="/blog/">Archive</a></li>
+					<li class="nav-item"><a href="/about/">About Me</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main id="skip">
+			
+<h1>Hacking Code to Help a Friend</h1>
+
+<ul class="post-metadata">
+	<li><time datetime="2013-05-22">22 May 2013</time></li>
+	<li><a href="/tags/learn-solve-problems-javascript/" class="post-tag">learn, solve problems, javascript</a></li>
+</ul>
+
+<p>The other day my friend Carl sent me a Google chat asking how much I know about javascript. I first thought to myself, hey I'm somewhat decent instead I replied back with I'm pretty good. Once saying this I realized I may be in a world of hurt so he sent me over a code snippet.</p>
+<script src="https://gist.github.com/ckollars/5632128.js"></script>
+<p>My first glance it looked simple enough. Carl wanted to use classes instead of an ID. Doing this would we could specify one class and use it on multiple DOM elements on the page.</p>
+<p>I started with changing the javascript to jQuery. I didn't change much of logic since it was already working but doing just this ended up as a fail. A couple more changes and I got things working, well sort of. It was animating the scroll effect but it was doing this on all classes on the page. Plus it was only scrolling the width of the container not the inner content width.</p>
+<p>I started dissecting the code more and decided to do this as OOP programming. It's something I haven't had a lot of experience with but I wanted to learn and needed to learn. Referencing code samples across the internet. This got me understanding creating objects. I ended up looking at the jQuery from a Drupal module called Quicktabs that I was using on another project. From this I really started to understand objects and extending them.</p>
+<p>It was a lot of trial and error; reading Stackoverflow and watching tutorials on jquery.com. And with all this I ended up get things working.</p>
+<script src="https://gist.github.com/ckollars/5632122.js"></script>
+<p>Now the only thing is to slow down the speed of scrolling so it's legible. The culprit is <code>animate()</code> so I'm looking at implementing <code>setTimeout()</code> that would move in increments per millisecond. I'm still working through this problem and hope to add to the functionality.</p>
+
+<ul class="links-nextprev"><li>Previous: <a href="/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/">Christopherkollars.com v2.0 I guess?</a></li><li>Next: <a href="/blog/2013-5-29-why-didnt-i-ever-do-this/">Why didn&#39;t I ever do this?</a></li>
+</ul>
+
+		</main>
+
+		<footer></footer>
+
+		<!-- Current page: /blog/2013-5-18-hacking-code-to-help-friend/ -->
+	</body>
+</html>
