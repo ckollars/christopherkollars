@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="en">
-	<title>Eleventy Base Blog v8</title>
-	<subtitle>I am writing about my experiences as a naval navel-gazer.</subtitle>
-	<link href="https://example.com/feed/feed.xml" rel="self"/>
-	<link href="https://example.com/"/>
-	<updated>2023-02-03T03:16:23Z</updated>
-	<id>https://example.com/</id>
+	<title>Christopher Kollars</title>
+	<subtitle>My opinions and findings</subtitle>
+	<link href="https://christopherkollars.com/feed/feed.xml" rel="self"/>
+	<link href="https://christopherkollars.com/"/>
+	<updated>2023-03-26T13:37:14Z</updated>
+	<id>https://christopherkollars.com</id>
 	<author>
-		<name>Your Name Here</name>
-		<email>youremailaddress@example.com</email>
+		<name>Christopher Kollars</name>
+		<email>ckollars@gmail.com</email>
 	</author>
 	
 	<entry>
 		<title>Reflection: Oregon and the Great Outdoors</title>
-		<link href="https://example.com/blog/one-year/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/one-year/</id>
+		<link href="https://christopherkollars.com/blog/one-year/"/>
+		<updated>2023-03-26T13:37:14Z</updated>
+		<id>https://christopherkollars.com/blog/one-year/</id>
 		<content type="html">&lt;p&gt;It was just a little over a year ago I packed up my belongs, almost all, and drove West. It was something I&#39;ve never done, just move to a whole new city let alone state. Well I take that back. I moved from small town of less than 300 to the big city that&#39;s Omaha for college. I had been there ever since.&lt;/p&gt;
 &lt;p&gt;In all honesty I wasn&#39;t sure if this is what I wanted or needed but I had to try. I knew a few friends from Omaha that moved out a few years before so I wasn&#39;t moving to a new city without knowing anyone. I atleast had that.&lt;/p&gt;
 &lt;p&gt;Since I&#39;ve been out here I&#39;ve experience things on a regular basis that seem just a part of a normal life. For starters, commuting by other means. What I mean is I commute regularly by bike and occasionally by bus, tram, Lyft. Just having these options within a city is something I look back thinking why wouldn&#39;t a city have these options.&lt;/p&gt;
@@ -30,9 +30,9 @@
 	
 	<entry>
 		<title>Apple App Store Connect</title>
-		<link href="https://example.com/blog/2022-2-7-apple-appstoreconnect/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2022-2-7-apple-appstoreconnect/</id>
+		<link href="https://christopherkollars.com/blog/2022-2-7-apple-appstoreconnect/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2022-2-7-apple-appstoreconnect/</id>
 		<content type="html">&lt;p&gt;Ran into this weird quirk with the Apple App Store Connect. When adding new screenshots, it showed thumbs like it was uploaded but once clicking the submit for review it was telling me how it had images uploaded but still processing.&lt;/p&gt;
 &lt;p&gt;Next thing I see is almost all my screenshots were just grey with a cloud icon. I tried updating screenshots multiple times a day but still ran into this issue. I found this &lt;a href=&quot;https://developer.apple.com/forums/thread/649241?page=10&quot;&gt;article&lt;/a&gt; which made me think I was seeing an error but decided to wait. After 4 hours all the screenshots are there and I was able to submit.&lt;/p&gt;
 &lt;p&gt;What I learned is Apple is looked at as the holy grail of design but this experience was less to be desired.&lt;/p&gt;
@@ -41,9 +41,9 @@
 	
 	<entry>
 		<title>Eleventy</title>
-		<link href="https://example.com/blog/2022-11-1/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2022-11-1/</id>
+		<link href="https://christopherkollars.com/blog/2022-11-1/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2022-11-1/</id>
 		<content type="html">&lt;p&gt;Been really wanting to dive deeper into eleventy for my personal use. Along that utilize modern css.&lt;/p&gt;
 &lt;p&gt;Found an article talking about sass module and getting away from css-in-js. I should write blog about it.&lt;/p&gt;
 </content>
@@ -51,9 +51,9 @@
 	
 	<entry>
 		<title>To Snippets and Beyond</title>
-		<link href="https://example.com/blog/2016-9-9-to-snippets-and-beyond/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2016-9-9-to-snippets-and-beyond/</id>
+		<link href="https://christopherkollars.com/blog/2016-9-9-to-snippets-and-beyond/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2016-9-9-to-snippets-and-beyond/</id>
 		<content type="html">&lt;p&gt;I&#39;ve recently added a few snippets to my editor, Sublime Text and it&#39;s been a really great help. Snippets is definitely something I&#39;ve been wanting to start using but just hadn&#39;t taken the time to setup. No clue why but now I wish I would have sooner.&lt;/p&gt;
 &lt;p&gt;I just add a few basic ones that I seem to have to write frequently. On of those is my SASS media query include.&lt;/p&gt;
 &lt;pre class=&quot;language-sass&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-sass&quot;&gt;&lt;span class=&quot;token atrule-line&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;@include&lt;/span&gt; mq(m) {&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token selector&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
@@ -63,10 +63,10 @@
 	
 	<entry>
 		<title>SASS and the ampersand selector</title>
-		<link href="https://example.com/blog/2016-9-24-sass-ampersand/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2016-9-24-sass-ampersand/</id>
-		<content type="html">&lt;h2 id=&quot;sass-and-the-ampersand-selector&quot; tabindex=&quot;-1&quot;&gt;SASS and the ampersand selector &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2016-9-24-sass-ampersand/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+		<link href="https://christopherkollars.com/blog/2016-9-24-sass-ampersand/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2016-9-24-sass-ampersand/</id>
+		<content type="html">&lt;h2 id=&quot;sass-and-the-ampersand-selector&quot; tabindex=&quot;-1&quot;&gt;SASS and the ampersand selector &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2016-9-24-sass-ampersand/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Recently I was tasked to add a new feature on a website&#39;s code base that was developed by another developer. This wasn&#39;t my first rodeo especially with working with multiple developers. What was needed was pretty simple. So I first started viewing things in the Chrome&#39;s inspector just to get a sense of what and where I needed to make the changes. Thanks to source maps, it was pretty straight forward.&lt;/p&gt;
 &lt;p&gt;I pulled up the SASS file where I need to make the change. I did a little jump to a line feature in Sublime Text but the class I was looking for wasn&#39;t on that line. It was about a 30 or so lines down further.&lt;/p&gt;
 &lt;p&gt;Everyone is aware of the ampersand selector with sass. If the &lt;code&gt;&amp;amp;&lt;/code&gt; is before a declaration it&#39;s part of the declarations parent. If it&#39;s after the declaration then that class has to become before all the other classes in it&#39;s declaration.&lt;/p&gt;
@@ -106,9 +106,9 @@
 	
 	<entry>
 		<title>Options page with Advanced Custom Fields</title>
-		<link href="https://example.com/blog/2016-9-24-options-and-acf/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2016-9-24-options-and-acf/</id>
+		<link href="https://christopherkollars.com/blog/2016-9-24-options-and-acf/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2016-9-24-options-and-acf/</id>
 		<content type="html">&lt;p&gt;Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not &amp;quot;blow you away&amp;quot; eye opener.&lt;/p&gt;
 &lt;p&gt;Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use &lt;a href=&quot;http://advancecustomfields.com&quot;&gt;Advance Custom Fields&lt;/a&gt; (ACF) and add them as a field per page use.&lt;/p&gt;
 &lt;p&gt;There is actually a better way to set up some of these global content and information by using what&#39;s called the &lt;a href=&quot;https://www.advancedcustomfields.com/add-ons/options-page/&quot;&gt;Options Page&lt;/a&gt; with ACF. First you have to activate it within the &lt;code&gt;functions.php&lt;/code&gt; file of your theme.&lt;/p&gt;
@@ -123,9 +123,9 @@
 	
 	<entry>
 		<title>Reflection: Oregon and the Great Outdoors</title>
-		<link href="https://example.com/blog/2016-9-24-one-year/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2016-9-24-one-year/</id>
+		<link href="https://christopherkollars.com/blog/2016-9-24-one-year/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2016-9-24-one-year/</id>
 		<content type="html">&lt;p&gt;It was just a little over a year ago I packed up my belongs, almost all, and drove West. It was something I&#39;ve never done, just move to a whole new city let alone state. Well I take that back. I moved from small town of less than 300 to the big city that&#39;s Omaha for college. I had been there ever since.&lt;/p&gt;
 &lt;p&gt;In all honesty I wasn&#39;t sure if this is what I wanted or needed but I had to try. I knew a few friends from Omaha that moved out a few years before so I wasn&#39;t moving to a new city without knowing anyone. I atleast had that.&lt;/p&gt;
 &lt;p&gt;Since I&#39;ve been out here I&#39;ve experience things on a regular basis that seem just a part of a normal life. For starters, commuting by other means. What I mean is I commute regularly by bike and occasionally by bus, tram, Lyft. Just having these options within a city is something I look back thinking why wouldn&#39;t a city have these options.&lt;/p&gt;
@@ -140,9 +140,9 @@
 	
 	<entry>
 		<title>Sass map and my breakpoints</title>
-		<link href="https://example.com/blog/2014-12-5-sass-map-and-my-breakpoints/"/>
-		<updated>2023-02-03T03:16:23Z</updated>
-		<id>https://example.com/blog/2014-12-5-sass-map-and-my-breakpoints/</id>
+		<link href="https://christopherkollars.com/blog/2014-12-5-sass-map-and-my-breakpoints/"/>
+		<updated>2023-03-26T13:37:13Z</updated>
+		<id>https://christopherkollars.com/blog/2014-12-5-sass-map-and-my-breakpoints/</id>
 		<content type="html">&lt;p&gt;My most recent project I decided to use Sass maps. It all started from an &lt;a href=&quot;http://www.sitepoint.com/managing-responsive-breakpoints-sass/&quot;&gt;article&lt;/a&gt; in which I basically took the example and applied it to my project.&lt;/p&gt;
 &lt;p&gt;It&#39;s been really useful. I can see setting up a config file with a huge map of all your variables, colors, breakpoints and so on. For now though here is the what I used for my breakpoints and it&#39;s mixin if you didn&#39;t read the article.&lt;/p&gt;
 &lt;p&gt;In my &lt;code&gt;_variables.scss&lt;/code&gt; I declare my breakpoint Sass map.&lt;/p&gt;
@@ -158,72 +158,72 @@
 	
 	<entry>
 		<title>This is a fifth post (draft)</title>
-		<link href="https://example.com/blog/fifthpost/"/>
+		<link href="https://christopherkollars.com/blog/fifthpost/"/>
 		<updated>2023-01-23T00:00:00Z</updated>
-		<id>https://example.com/blog/fifthpost/</id>
+		<id>https://christopherkollars.com/blog/fifthpost/</id>
 		<content type="html">&lt;p&gt;This is a draft post&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title></title>
-		<link href="https://example.com/blog/2022-11-02/"/>
+		<link href="https://christopherkollars.com/blog/2022-11-02/"/>
 		<updated>2022-11-02T00:00:00Z</updated>
-		<id>https://example.com/blog/2022-11-02/</id>
+		<id>https://christopherkollars.com/blog/2022-11-02/</id>
 		<content type="html"></content>
 	</entry>
 	
 	<entry>
 		<title>Expo Updates</title>
-		<link href="https://example.com/blog/2022-10-31/"/>
+		<link href="https://christopherkollars.com/blog/2022-10-31/"/>
 		<updated>2022-10-31T00:00:00Z</updated>
-		<id>https://example.com/blog/2022-10-31/</id>
+		<id>https://christopherkollars.com/blog/2022-10-31/</id>
 		<content type="html">&lt;p&gt;I&#39;ve been wanting for 2+ years to get QR codes into PRs for our Expo apps. I think I found a good start &lt;a href=&quot;https://github.com/expo/eas-cli/issues/898#issuecomment-1028273014&quot;&gt;here&lt;/a&gt;. Looking forward to working through this with devops durring my next SID&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>Jest and unit tests</title>
-		<link href="https://example.com/blog/2022-10-29-jest/"/>
+		<link href="https://christopherkollars.com/blog/2022-10-29-jest/"/>
 		<updated>2022-10-29T00:00:00Z</updated>
-		<id>https://example.com/blog/2022-10-29-jest/</id>
+		<id>https://christopherkollars.com/blog/2022-10-29-jest/</id>
 		<content type="html">&lt;p&gt;Had to tackle a simple bug but seen the feature was using momentjs which we are trying to get away from in favor of date-fns.js. So I implement this with a helper method. Simple but it was something I needed to verify would work in other possible scenarios and not just the current implementation. I wrote some unit tests. Something I rarely do in javascript. I know it&#39;s bad but I just have a hard time doing so. This helped me realize it wasn&#39;t so scary and looking forward to writing more.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>Appium Testing with React Native</title>
-		<link href="https://example.com/blog/2022-10-19-appium/"/>
+		<link href="https://christopherkollars.com/blog/2022-10-19-appium/"/>
 		<updated>2022-10-19T00:00:00Z</updated>
-		<id>https://example.com/blog/2022-10-19-appium/</id>
+		<id>https://christopherkollars.com/blog/2022-10-19-appium/</id>
 		<content type="html">&lt;p&gt;Last SID I worked with a few people to rework our mobile testing frameworks. The current setup is using Appium and what I&#39;m seeing so far is I&#39;m not a fan yet. It just seems so combersome to get anything working and especially on iOS. I hope this doesn&#39;t steer me away and I can get into learning this process for end 2 end testing.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>This is my fourth post.</title>
-		<link href="https://example.com/blog/fourthpost/"/>
+		<link href="https://christopherkollars.com/blog/fourthpost/"/>
 		<updated>2018-09-30T00:00:00Z</updated>
-		<id>https://example.com/blog/fourthpost/</id>
+		<id>https://christopherkollars.com/blog/fourthpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.avif 350w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://example.com/img/IdthKOzqFA-350.webp 350w&quot;&gt;&lt;img alt=&quot;A possum parent and two possum kids hanging from the iconic red balloon&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://example.com/img/IdthKOzqFA-350.png&quot; width=&quot;350&quot; height=&quot;685&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;picture&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;https://christopherkollars.com/img/IdthKOzqFA-350.avif 350w&quot;&gt;&lt;source type=&quot;image/webp&quot; srcset=&quot;https://christopherkollars.com/img/IdthKOzqFA-350.webp 350w&quot;&gt;&lt;img alt=&quot;A possum parent and two possum kids hanging from the iconic red balloon&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;https://christopherkollars.com/img/IdthKOzqFA-350.png&quot; width=&quot;350&quot; height=&quot;685&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/fourthpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>This is my third post.</title>
-		<link href="https://example.com/blog/thirdpost/"/>
+		<link href="https://christopherkollars.com/blog/thirdpost/"/>
 		<updated>2018-08-24T00:00:00Z</updated>
-		<id>https://example.com/blog/thirdpost/</id>
+		<id>https://christopherkollars.com/blog/thirdpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;h3 id=&quot;styled-with-syntax&quot; tabindex=&quot;-1&quot;&gt;Styled (with Syntax) &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h2 id=&quot;code&quot; tabindex=&quot;-1&quot;&gt;Code &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id=&quot;styled-with-syntax&quot; tabindex=&quot;-1&quot;&gt;Styled (with Syntax) &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;pre class=&quot;language-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-js&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;	&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;	counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&quot;unstyled&quot; tabindex=&quot;-1&quot;&gt;Unstyled &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;unstyled&quot; tabindex=&quot;-1&quot;&gt;Unstyled &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;// this is a command
 function myCommand() {
@@ -234,20 +234,20 @@ function myCommand() {
 // Test with a line break above this line.
 console.log(&#39;Test&#39;);
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/thirdpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>This is my second post with a much longer title.</title>
-		<link href="https://example.com/blog/secondpost/"/>
+		<link href="https://christopherkollars.com/blog/secondpost/"/>
 		<updated>2018-07-04T00:00:00Z</updated>
-		<id>https://example.com/blog/secondpost/</id>
+		<id>https://christopherkollars.com/blog/secondpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://example.com/blog/firstpost/&quot;&gt;First post&lt;/a&gt;
-&lt;a href=&quot;https://example.com/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/secondpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://christopherkollars.com/blog/firstpost/&quot;&gt;First post&lt;/a&gt;
+&lt;a href=&quot;https://christopherkollars.com/blog/thirdpost/&quot;&gt;Third post&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 </content>
@@ -255,12 +255,12 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>This is my first post.</title>
-		<link href="https://example.com/blog/firstpost/"/>
+		<link href="https://christopherkollars.com/blog/firstpost/"/>
 		<updated>2018-05-01T00:00:00Z</updated>
-		<id>https://example.com/blog/firstpost/</id>
+		<id>https://christopherkollars.com/blog/firstpost/</id>
 		<content type="html">&lt;p&gt;Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.&lt;/p&gt;
 &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
-&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;section-header&quot; tabindex=&quot;-1&quot;&gt;Section Header &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/firstpost/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
 &lt;pre class=&quot;language-diff-js&quot; tabindex=&quot;0&quot;&gt;&lt;code class=&quot;language-diff-js&quot;&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// this is a command&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;myCommand&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token inserted-sign inserted language-js&quot;&gt;&lt;span class=&quot;token prefix inserted&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token deleted-sign deleted language-js&quot;&gt;&lt;span class=&quot;token prefix deleted&quot;&gt;-&lt;/span&gt;  &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; counter &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;  counter&lt;span class=&quot;token operator&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token unchanged language-js&quot;&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;&lt;span class=&quot;token comment&quot;&gt;// Test with a line break above this line.&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;token prefix unchanged&quot;&gt; &lt;/span&gt;console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&#39;Test&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
 </content>
@@ -268,9 +268,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Options page with Advanced Custom Fields</title>
-		<link href="https://example.com/blog/2016-10-31-options-page-with-advanced-custom-fields/"/>
+		<link href="https://christopherkollars.com/blog/2016-10-31-options-page-with-advanced-custom-fields/"/>
 		<updated>2016-10-31T00:00:00Z</updated>
-		<id>https://example.com/blog/2016-10-31-options-page-with-advanced-custom-fields/</id>
+		<id>https://christopherkollars.com/blog/2016-10-31-options-page-with-advanced-custom-fields/</id>
 		<content type="html">&lt;p&gt;Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not &amp;quot;blow you away&amp;quot; eye opener.&lt;/p&gt;
 &lt;p&gt;Across many sites there is content or information that’s used globally on the website. Say a contact email address or a physical mailing address. Maybe even a tag-line. My old ways I would code these into a template as static content. I sometimes even use &lt;a href=&quot;http://advancecustomfields.com&quot;&gt;Advance Custom Fields&lt;/a&gt; (ACF) and add them as a field per page use.&lt;/p&gt;
 &lt;p&gt;There is actually a better way to set up some of these global content and information by using what&#39;s called the &lt;a href=&quot;https://www.advancedcustomfields.com/add-ons/options-page/&quot;&gt;Options Page&lt;/a&gt; with ACF. First you have to activate it within the &lt;code&gt;functions.php&lt;/code&gt; file of your theme.&lt;/p&gt;
@@ -285,9 +285,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Google code</title>
-		<link href="https://example.com/blog/2016-10-31-google/"/>
+		<link href="https://christopherkollars.com/blog/2016-10-31-google/"/>
 		<updated>2016-10-31T00:00:00Z</updated>
-		<id>https://example.com/blog/2016-10-31-google/</id>
+		<id>https://christopherkollars.com/blog/2016-10-31-google/</id>
 		<content type="html">&lt;p&gt;Sometimes, well most times, I need to look up a code snippet or common design trend. I forget quite often how to do the most common tasks. I feel bad having to do this. Why don&#39;t I have this saved in a tool chest?&lt;/p&gt;
 &lt;p&gt;I think about this every time and every time I Google, find an example and go from there. This weeks it&#39;s a modal. Next week it&#39;s an ajax form. Yet still I&#39;m here Googleing, &amp;quot;How do I do that thing...&amp;quot;&lt;/p&gt;
 </content>
@@ -295,9 +295,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Monday</title>
-		<link href="https://example.com/blog/2014-10-14-monday/"/>
+		<link href="https://christopherkollars.com/blog/2014-10-14-monday/"/>
 		<updated>2014-10-13T00:00:00Z</updated>
-		<id>https://example.com/blog/2014-10-14-monday/</id>
+		<id>https://christopherkollars.com/blog/2014-10-14-monday/</id>
 		<content type="html">&lt;p&gt;Today an old friend and fellow collaborator Carl Avidano of &lt;a href=&quot;http://milestone-creative.com&quot;&gt;Milestone Creative&lt;/a&gt; hit me up on chat. The normal conversation of how&#39;s work and life. We then moved it over to a Skype call and an hour letter I feel reenergized.&lt;/p&gt;
 &lt;p&gt;From this conversation it made me think that my life and work balance has the same struggles that other people have. What&#39;s great though is hearing how these people have overcome these or even steps they do to help improve themselves is always invigorating.&lt;/p&gt;
 &lt;p&gt;So by the end of it all Carl and I came to the conclusion that I need to start reading books and Carl is back to reading two a week. As we laugh about it, this is the start of our &amp;quot;book club&amp;quot;. An hour on a Monday morning.&lt;/p&gt;
@@ -306,9 +306,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Excuse the mess</title>
-		<link href="https://example.com/blog/2014-10-8-excuse-the-mess/"/>
+		<link href="https://christopherkollars.com/blog/2014-10-8-excuse-the-mess/"/>
 		<updated>2014-10-08T00:00:00Z</updated>
-		<id>https://example.com/blog/2014-10-8-excuse-the-mess/</id>
+		<id>https://christopherkollars.com/blog/2014-10-8-excuse-the-mess/</id>
 		<content type="html">&lt;p&gt;Over the last month I&#39;ve been working implementing the philosophy of &lt;a href=&quot;https://bem.info/method/&quot;&gt;BEM&lt;/a&gt; ( Block, Element, Modifier ) with my CSS. I have to admit it&#39;s been tough. I feel the frustrations are coming from keeping all my class and files orgainized. I do tend to fall back to old ways which makes things even more difficult. Also I&#39;m not saying my old ways are bad but they weren&#39;t great.&lt;/p&gt;
 &lt;p&gt;As of now I&#39;m only following this method on my current project which is a bit messy. I will be going back to clean things up when I&#39;m done but for now excuse my mess.&lt;/p&gt;
 &lt;p&gt;In all I&#39;m enjoying writing my CSS in this fasion with hopes of making a &amp;quot;boilerplate/styleguide&amp;quot; going forward.&lt;/p&gt;
@@ -317,9 +317,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>A Follow-up to My Pledge</title>
-		<link href="https://example.com/blog/2013-7-1-followup-to-my-pledge/"/>
+		<link href="https://christopherkollars.com/blog/2013-7-1-followup-to-my-pledge/"/>
 		<updated>2013-07-01T00:00:00Z</updated>
-		<id>https://example.com/blog/2013-7-1-followup-to-my-pledge/</id>
+		<id>https://christopherkollars.com/blog/2013-7-1-followup-to-my-pledge/</id>
 		<content type="html">&lt;p&gt;###Github&lt;/p&gt;
 &lt;p&gt;I continue to use this but even more with a few projects just in the past few weeks. Can&#39;t say how much I love this product. It has so much to offer. Colaboration, project management, to-dos and of course git versioning.&lt;/p&gt;
 &lt;p&gt;###Sublime Text 2&lt;/p&gt;
@@ -332,9 +332,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Taking Chances with No Regrets</title>
-		<link href="https://example.com/blog/2013-6-3-taking-chances-with-no-regrets/"/>
+		<link href="https://christopherkollars.com/blog/2013-6-3-taking-chances-with-no-regrets/"/>
 		<updated>2013-06-03T00:00:00Z</updated>
-		<id>https://example.com/blog/2013-6-3-taking-chances-with-no-regrets/</id>
+		<id>https://christopherkollars.com/blog/2013-6-3-taking-chances-with-no-regrets/</id>
 		<content type="html">&lt;p&gt;On May 29th, I started a new path I thought I&#39;d never take; I became a full-time freelancer. Many of you may know me, so you&#39;ve heard me talk about this idea for a few years but I finally made the decision.&lt;/p&gt;
 &lt;p&gt;How did I come to this decision? I&#39;m not 100% sure. It&#39;s something I&#39;ve been afraid of, but I thought to myself, &amp;quot;why not?&amp;quot;. Over the years I&#39;ve met and worked with some amazing people. I&#39;ve learned a lot from them and I am very grateful.&lt;/p&gt;
 &lt;p&gt;Moving forward, I&#39;m still going to do development work but move my focus more away from CMS-driven marketing sites and heavier on campaign-driven applications. I&#39;ll likely still be working with CMSs like Wordpress or Drupal, but I want to learn new techniques like site generators, Ruby, APIs and new processes that allow me to work as efficiently as possible.&lt;/p&gt;
@@ -347,9 +347,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Why didn&#39;t I ever do this?</title>
-		<link href="https://example.com/blog/2013-5-29-why-didnt-i-ever-do-this/"/>
+		<link href="https://christopherkollars.com/blog/2013-5-29-why-didnt-i-ever-do-this/"/>
 		<updated>2013-05-29T00:00:00Z</updated>
-		<id>https://example.com/blog/2013-5-29-why-didnt-i-ever-do-this/</id>
+		<id>https://christopherkollars.com/blog/2013-5-29-why-didnt-i-ever-do-this/</id>
 		<content type="html">&lt;p&gt;Recently I was working on a javascript project that someone else created. I needed to fix a few things and add a new feature. The person previously created this little log function that was part of the main object.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/ckollars/5665348.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;Now I know it&#39;s the simplest thing but totally takes care of having to delete &lt;code&gt;console.log()&lt;/code&gt; on code going to a production site. I know it&#39;s the little things but this is something I&#39;m going to include in all my projects going forward.&lt;/p&gt;
@@ -358,9 +358,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Hacking Code to Help a Friend</title>
-		<link href="https://example.com/blog/2013-5-18-hacking-code-to-help-friend/"/>
+		<link href="https://christopherkollars.com/blog/2013-5-18-hacking-code-to-help-friend/"/>
 		<updated>2013-05-22T00:00:00Z</updated>
-		<id>https://example.com/blog/2013-5-18-hacking-code-to-help-friend/</id>
+		<id>https://christopherkollars.com/blog/2013-5-18-hacking-code-to-help-friend/</id>
 		<content type="html">&lt;p&gt;The other day my friend Carl sent me a Google chat asking how much I know about javascript. I first thought to myself, hey I&#39;m somewhat decent instead I replied back with I&#39;m pretty good. Once saying this I realized I may be in a world of hurt so he sent me over a code snippet.&lt;/p&gt;
 &lt;script src=&quot;https://gist.github.com/ckollars/5632128.js&quot;&gt;&lt;/script&gt;
 &lt;p&gt;My first glance it looked simple enough. Carl wanted to use classes instead of an ID. Doing this would we could specify one class and use it on multiple DOM elements on the page.&lt;/p&gt;
@@ -374,9 +374,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Christopherkollars.com v2.0 I guess?</title>
-		<link href="https://example.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/"/>
+		<link href="https://christopherkollars.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/"/>
 		<updated>2013-05-20T00:00:00Z</updated>
-		<id>https://example.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/</id>
+		<id>https://christopherkollars.com/blog/2013-5-20-christopherkollarsdotcom-v2point0-i-guess/</id>
 		<content type="html">&lt;p&gt;Well I started this blog to learn to communicate and write my thoughts better. It was almost a year ago and I only submitted 3 posts. Even though I failed first time around I&#39;m getting back on the horse.&lt;/p&gt;
 &lt;p&gt;I hope to write once a week. In fact I&#39;m going to put it as a daily todo until it&#39;s finished for that week. To celebrate this new pledge to my writing I decided to give my site design a refresh. I am happier with this layout then the previous but as always I hope to tweak and add a few features I didn&#39;t get completed.&lt;/p&gt;
 &lt;p&gt;You can see that I put all of the source code on GitHub. Now it&#39;s a bit messy with some bad practice that might make you (Hell, even me) cringe but I&#39;ll be cleaning this up over the next 30 days. In fact, down the road, I might even look at moving away from Scriptogram and try out other static site generators, such as &lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
@@ -386,9 +386,9 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>Fireworks</title>
-		<link href="https://example.com/blog/2012-7-22-fireworks/"/>
+		<link href="https://christopherkollars.com/blog/2012-7-22-fireworks/"/>
 		<updated>2012-06-22T00:00:00Z</updated>
-		<id>https://example.com/blog/2012-7-22-fireworks/</id>
+		<id>https://christopherkollars.com/blog/2012-7-22-fireworks/</id>
 		<content type="html">&lt;p&gt;My usual photo editing application and what I usually receive web layouts in is Photoshop. Since I&#39;am working with Matt Linder and his choice of application, Fireworks, I&#39;ll will be slicing his layouts from Fireworks instead of exporting the layout to Photoshop.&lt;/p&gt;
 &lt;p&gt;The major issue I&#39;ve had between Photoshop and Fireworks has been Fireworks slower responsiveness. I always feel when you select an objects in Fireworks and look at the properties palette that I am either really fast or the application takes a second to populate with its properties. That is my number one issue with the application.&lt;/p&gt;
 &lt;p&gt;Window focus is another. More often then not I usually have to click twice on an object because it seems I need to set focus to the window first before I can click on an object. This happens the most when switching between apps.&lt;/p&gt;
@@ -399,30 +399,30 @@ console.log(&#39;Test&#39;);
 	
 	<entry>
 		<title>I pledge to the next 60 days</title>
-		<link href="https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/"/>
+		<link href="https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/"/>
 		<updated>2012-06-17T00:00:00Z</updated>
-		<id>https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/</id>
+		<id>https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/</id>
 		<content type="html">&lt;p&gt;This is just a portion of a larger list where I feel I can really achieve setting into place over the next 60 days.&lt;/p&gt;
-&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;Github &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;github&quot; tabindex=&quot;-1&quot;&gt;Github &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I&#39;ve been using git little over 8 months but I feel I don&#39;t use it to its full advantage. I want to start incorporating Github into my workflow so I can always have backups and versioning online.&lt;/p&gt;
-&lt;h2 id=&quot;sass-less&quot; tabindex=&quot;-1&quot;&gt;Sass/Less &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;sass-less&quot; tabindex=&quot;-1&quot;&gt;Sass/Less &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I feel using either one would be a great advantage but I need to choose one and start using.&lt;/p&gt;
-&lt;h2 id=&quot;css3&quot; tabindex=&quot;-1&quot;&gt;CSS3 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;css3&quot; tabindex=&quot;-1&quot;&gt;CSS3 &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I&#39;ve been using CSS3 techniques for a while but I feel I need to expand upon my use case and make sure I look at CSS3 first before I start slicing and dicing.&lt;/p&gt;
-&lt;h2 id=&quot;notebooks&quot; tabindex=&quot;-1&quot;&gt;Notebooks &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;notebooks&quot; tabindex=&quot;-1&quot;&gt;Notebooks &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I&#39;ve started carrying around 3.5&amp;quot;x5&amp;quot; Moleskin notebook, thanks to &lt;a href=&quot;http://codyjamespeterson.com&quot;&gt;Cody&lt;/a&gt;, which has helped out tremendously in remembering ideas, thoughts and to-dos. I need to continue with this.&lt;/p&gt;
-&lt;h2 id=&quot;file-and-code-organization&quot; tabindex=&quot;-1&quot;&gt;File &amp;amp; Code organization &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;file-and-code-organization&quot; tabindex=&quot;-1&quot;&gt;File &amp;amp; Code organization &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I want to start storing libraries and snippets of code that I can reference quickly and efficiently. Currently I just open up old site files and copy paste which isn&#39;t the best.&lt;/p&gt;
-&lt;h2 id=&quot;coda-2&quot; tabindex=&quot;-1&quot;&gt;Coda 2 &lt;a class=&quot;header-anchor&quot; href=&quot;https://example.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h2 id=&quot;coda-2&quot; tabindex=&quot;-1&quot;&gt;Coda 2 &lt;a class=&quot;header-anchor&quot; href=&quot;https://christopherkollars.com/blog/2012-6-17-pledge-to-the-next-60-days/&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;I currently use Coda 2 as my current editor for wrangling code but I feel I don&#39;t use it to its full potential. I want to explore my options I have Coda vs other editors. Plus I need to incoporate Coda clips.&lt;/p&gt;
 </content>
 	</entry>
 	
 	<entry>
 		<title>And here we go</title>
-		<link href="https://example.com/blog/2012-5-25-the-next-steps/"/>
+		<link href="https://christopherkollars.com/blog/2012-5-25-the-next-steps/"/>
 		<updated>2012-05-29T00:00:00Z</updated>
-		<id>https://example.com/blog/2012-5-25-the-next-steps/</id>
+		<id>https://christopherkollars.com/blog/2012-5-25-the-next-steps/</id>
 		<content type="html">&lt;p&gt;Over my career in the web arena I really never had a solid website I could call home. For some reason I just never focused on my web presence but over the last few months I&#39;ve been wanting to do so.&lt;/p&gt;
 &lt;p&gt;I&#39;ve finally decided to just start a blog. A place to write my thoughts, show some code examples and to speak my mind. Basically learn to write and do it well.&lt;/p&gt;
 &lt;p&gt;So a few weeks ago it came up in discussion with &lt;a href=&quot;http://blog.codyjamespeterson.com&quot;&gt;Cody Peterson&lt;/a&gt; of &lt;a href=&quot;http://secretpenguin.com&quot;&gt;Secret Penguin&lt;/a&gt; that I&#39;ve been wanting to just start a site, a blog, where I could have place to do all of this. He was actually wanting to do the same and had been writing down his ideas for awhile but never had time come up with a site for himself.&lt;/p&gt;
