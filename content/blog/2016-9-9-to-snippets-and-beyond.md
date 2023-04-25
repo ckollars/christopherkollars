@@ -1,6 +1,7 @@
 ---
 title: "To Snippets and Beyond"
 author: Christopher Kollars
+date: 2016-09-09
 ---
 
 I've recently added a few snippets to my editor, Sublime Text and it's been a really great help. Snippets is definitely something I've been wanting to start using but just hadn't taken the time to setup. No clue why but now I wish I would have sooner.

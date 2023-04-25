@@ -1,5 +1,6 @@
 ---
 title: "Reflection: Oregon and the Great Outdoors"
+date: 2017-09-24
 author: Christopher Kollars
 ---
 
@@ -11,6 +12,6 @@ Since I've been out here I've experience things on a regular basis that seem jus
 
 I had a few goals I was wanting to accomplish
 
-- date
-- up my career level
-- have more outdoor adventures in actual mountains and forests
+-   date
+-   up my career level
+-   have more outdoor adventures in actual mountains and forests

@@ -1,9 +1,10 @@
 ---
 title: "Options page with Advanced Custom Fields"
 author: Christopher Kollars
+date: 2016-09-31
 tags:
-  - Wordpress
-  - ACF
+    - Wordpress
+    - ACF
 ---
 
 Recently I was introduced to the options attribute for Advanced Custom Fields and it’s been an eye opener. I’m going to start using this feature more but it’s also not "blow you away" eye opener.

@@ -1,7 +1,8 @@
 ---
 title: "SASS and the ampersand selector"
 author: Christopher Kollars
-published: false
+date: 2016-09-24
+published: true
 ---
 
 ## SASS and the ampersand selector
