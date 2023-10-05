@@ -1,3 +1,5 @@
+@import '_reset.css';
+
 /* Defaults */
 :root {
 	--font-family: -apple-system, system-ui, sans-serif;
@@ -37,10 +39,6 @@
 
 
 /* Global stylesheet */
-* {
-	box-sizing: border-box;
-}
-
 html,
 body {
 	padding: 0;
