@@ -1,0 +1,37 @@
+// Breakpoints
+$sm: 42em;
+$md: 50em;
+$lg: 68em;
+$xl: 80em;
+
+$green: #7ed21d;
+
+$white: #FFFFFF;
+$black: #0e0f0f;
+
+$gray-50: #f5f5f5;
+$gray-90: #6c6c6c;
+$gray: #3b3b3b;
+
+
+// Typography
+$body: 'Jost', sans-serif;
+
+// Font weights
+$std: 400;
+$bold: 700;
+
+:root {
+  --black: $black;
+  --gray: $gray
+  --primary: $green;
+
+  --background-color: $white;
+
+  --text-color: var(--gray);
+  --text-color-link: var(--primary);
+  --text-color-link-active: #5f2b48;
+  --text-color-link-visited: #17050F;
+
+  --syntax-tab-size: 2;
+  }

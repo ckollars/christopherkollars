@@ -1,0 +1,10 @@
+---
+layout: layouts/base.njk
+---
+
+{% block content %}
+    <div class="page {{ page.fileSlug}}">
+        <h1>{{ title }}</h1>
+        {{ content | safe }}
+    </div>
+{% endblock %}

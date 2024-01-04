@@ -1,57 +1,19 @@
-@import '_reset.css';
 
-/* Defaults */
-:root {
-	--font-family: -apple-system, system-ui, sans-serif;
-	--font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
-}
+@import '01-config/functions';
+@import '01-config/variables';
 
-/* Theme colors */
-:root {
-	--color-gray-20: #e0e0e0;
-	--color-gray-50: #C0C0C0;
-	--color-gray-90: #333;
+@import '02-base/reset';
+@import '02-base/typography';
 
-	--background-color: #fff;
-
-	--text-color: var(--color-gray-90);
-	--text-color-link: #082840;
-	--text-color-link-active: #5f2b48;
-	--text-color-link-visited: #17050F;
-
-	--syntax-tab-size: 2;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-gray-20: #e0e0e0;
-		--color-gray-50: #C0C0C0;
-		--color-gray-90: #dad8d8;
-
-		/* --text-color is assigned to --color-gray-_ above */
-		--text-color-link: #1493fb;
-		--text-color-link-active: #6969f7;
-		--text-color-link-visited: #a6a6f8;
-
-		--background-color: #15202b;
-	}
-}
-
+@import '03-objects/prism.diff';
 
 /* Global stylesheet */
 html,
 body {
-	padding: 0;
-	margin: 0 auto;
-	font-family: var(--font-family);
-	color: var(--text-color);
-	background-color: var(--background-color);
-}
-html {
-	overflow-y: scroll;
-}
-body {
-	max-width: 40em;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  font-size: var(--body-font-size);
 }
 
 /* https://www.a11yproject.com/posts/how-to-hide-content/ */
@@ -265,4 +227,43 @@ a[href].header-anchor:focus,
 
 h2 + .header-anchor {
 	font-size: 1.5em;
+}
+
+.page {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    /* font-size: 1rem; */
+    line-height: 1.85rem;
+}
+
+h1 {
+    margin-bottom: 1.55rem;
+    font-size: 2.2rem;
+    display: none;
+}
+h2 {
+    position: relative;;
+    margin-top: 4.2rem;
+    margin-bottom: 1.35rem;
+    font-size: 2.1rem;
+    font-weight: 400;
+
+    &:before {
+        display: block;
+        position: absolute;
+        left: -20px;
+        height: 10px;
+        width: 10px;
+        background-color: red;
+        content: '';
+    }
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
 }

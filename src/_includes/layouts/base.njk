@@ -22,8 +22,7 @@
 #}
 
 		{#- Add to the CSS bundle #}
-		{%- css %}{% include "src/css/index.css" %}{% endcss %}
-		{%- css %}{# add your own CSS! #}{% endcss %}
+		<link href="{{ '/css/index.css' | url }}" rel="stylesheet" />
 
 		{#- Render the CSS bundle #}
 		{%- if eleventy.env.runMode === "serve" %}
