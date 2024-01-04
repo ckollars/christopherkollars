@@ -1,21 +1,11 @@
 {
-  // http://eslint.org/docs/rules/
-
-  rules: {
-    'quotes': 0,
-    'no-multi-spaces': [
-      1, {
-        'exceptions': {
-          'VariableDeclarator': true
-        }
-      }
+  "rules": {
+    "quotes": [
+    "error",
+    "single",
+    { "avoidEscape": false, "allowTemplateLiterals": true }
     ]
   },
-  globals: {
-    'jQuery': false,
-    '$': true,
-  },
-  envs: {
-    'browser': true
-  }
+  "parserOptions": { "sourceType": "module", "ecmaVersion": 2021 },
+  "extends": ["prettier"]
 }
