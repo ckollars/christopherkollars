@@ -2,9 +2,5 @@
 # This takes care of .tmp, .sass-cache, and many others #
 .*/
 
-_site/
+_site
 node_modules/
-
-# Ignore for Jekyll projects #
-node_modules
-CNAME
