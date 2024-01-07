@@ -1,6 +1,5 @@
 const { DateTime } = require('luxon');
 const markdownItAnchor = require('markdown-it-anchor');
-const eleventySass = require('@11tyrocks/eleventy-plugin-sass-lightningcss');
 
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const pluginSyntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
@@ -8,9 +7,10 @@ const pluginBundle = require('@11ty/eleventy-plugin-bundle');
 const pluginNavigation = require('@11ty/eleventy-navigation');
 const { EleventyHtmlBasePlugin } = require('@11ty/eleventy');
 
+const eleventySass = require('@11tyrocks/eleventy-plugin-sass-lightningcss');
+
 module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
-	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		'./src/img': '/img',
 		'./node_modules/prismjs/themes/prism-okaidia.css': '/css/prism-okaidia.css'
@@ -21,12 +21,11 @@ module.exports = function(eleventyConfig) {
 
 	// Watch content images for the image pipeline.
 	eleventyConfig.addWatchTarget('./src/content/**/*.{svg,webp,png,jpeg}');
-  eleventyConfig.addWatchTarget('./src/css/');
+  eleventyConfig.addWatchTarget('./src/css/**/*');
 
 	// App plugins
 	eleventyConfig.addPlugin(require('./eleventy.config.drafts.js'));
 	eleventyConfig.addPlugin(require('./eleventy.config.images.js'));
-  eleventyConfig.addPlugin(eleventySass);
 
 	// Official plugins
 	eleventyConfig.addPlugin(pluginRss);
@@ -35,7 +34,8 @@ module.exports = function(eleventyConfig) {
 	});
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
-	eleventyConfig.addPlugin(pluginBundle);
+	eleventyConfig.addPlugin(pluginBundle)
+  eleventyConfig.addPlugin(eleventySass);
 
 	// Filters
 	eleventyConfig.addFilter('readableDate', (dateObj, format, zone) => {
@@ -118,9 +118,9 @@ module.exports = function(eleventyConfig) {
 
 		// These are all optional:
 		dir: {
-			input: 'src/content',         // default: "."
-			includes: '../_includes',  // default: "_includes"
-			data: '../_data',          // default: "_data"
+			input: 'src',         // default: "."
+			includes: '_includes',  // default: "_includes"
+			data: '_data',          // default: "_data"
 			output: '_site'
 		},
 
