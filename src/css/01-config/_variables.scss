@@ -15,7 +15,8 @@ $gray: #3b3b3b;
 
 
 // Typography
-$body: 'Jost', sans-serif;
+$body: 'Jost', -apple-system, BlinkMacSystemFont, sans-serif;
+$heading: $body;
 
 // Font weights
 $std: 400;

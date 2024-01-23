@@ -11,8 +11,7 @@ I've been involved with the web in some way for over 21 years. I started off in 
 
 ### Aviture
 
-**Software Engineer**
-
+Software Engineer<br />
 *July 2017 - present*
 
 I worked on a product owned by Aviture called Decision Logic. It's a restaurant management software used to help store owners and franchisees better understand their operations anywhere from costs of goods to labor costs.

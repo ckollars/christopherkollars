@@ -13,6 +13,7 @@ module.exports = function(eleventyConfig) {
 	// Copy the contents of the `public` folder to the output folder
 	eleventyConfig.addPassthroughCopy({
 		'./src/img': '/img',
+    './src/fonts': '/fonts',
 		'./node_modules/prismjs/themes/prism-okaidia.css': '/css/prism-okaidia.css'
 	});
 
@@ -35,6 +36,7 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle)
+
   eleventyConfig.addPlugin(eleventySass);
 
 	// Filters
@@ -76,20 +78,6 @@ module.exports = function(eleventyConfig) {
 
 	eleventyConfig.addFilter('filterTagList', function filterTagList(tags) {
 		return (tags || []).filter(tag => ['all', 'nav', 'post', 'posts'].indexOf(tag) === -1);
-	});
-
-	// Customize Markdown library settings:
-	eleventyConfig.amendLibrary('md', mdLib => {
-		mdLib.use(markdownItAnchor, {
-			permalink: markdownItAnchor.permalink.ariaHidden({
-				placement: 'after',
-				class: 'header-anchor',
-				symbol: '#',
-				ariaHidden: false,
-			}),
-			level: [1,2,3,4],
-			slugify: eleventyConfig.getFilter('slugify')
-		});
 	});
 
 	// Features to make your build faster (when you need them)
