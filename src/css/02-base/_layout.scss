@@ -43,3 +43,10 @@ footer {
   padding: 4rem;
   max-width: $wrapper-sm;
 }
+
+.ultra-pink {
+  margin-inline: auto;
+  width: 80vw;
+  height: 80vh;
+  background-color: oklch(70.88% 0.335 337.76);
+}
