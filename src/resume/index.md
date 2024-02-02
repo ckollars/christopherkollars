@@ -35,15 +35,6 @@ I worked on a product owned by Aviture called Decision Logic. It's a restaurant 
 
 *June 2013 - September 2015*
 
-### Venel
-
-**Web Developer**
-
-*October 2012 to June 2013*
-
-* Developed orthopaedic practices’ websites with Drupal
-* Helped lead a small team in building best web practices within the company
-
 ### The New BLK
 
 **Web Developer**
@@ -53,30 +44,10 @@ I worked on a product owned by Aviture called Decision Logic. It's a restaurant 
 * Developed sites using Drupal, Wordpress and static HTML
 * Created wireframes and sitemaps for projects and also supplied corresponding budgets
 
-### GoodTwin
-
-**Web Developer**
-
-*October 2010 to October 2011*
-
-* Worked with a lead designer to develop user experiences by wireframing websites and applications
-* Developed sites using CMSs like Drupal and Wordpress
-
-
-### Bellevue University
-
-**Web Designer**
-
-*March 2010 to October 2010*
-
-* Designed web pages throughout their existing website
-* Developed form components for a multitude of landing pages
-
-
 ## Relevant Skills
 
 * **Languages**: Javascript, Typescript, C#, SQL, HTML, CSS
 * **Frameworks**: React, React Native, Redux, Backbone, .NET
 * **Process**: Agile, Scrum, TDD <br>
-* **CMS**: Wordpress, Drupal<br>
-* **Other Tools**: Jest, Webpack, Storybook, Jekyll, 11ty
+* **CMS**: Strapi, Wordpress, Drupal<br>
+* **Other Tools**: Jest, Webpack, Storybook, 11ty

@@ -3,26 +3,18 @@ layout: layouts/home.njk
 eleventyNavigation:
   key: Home
   order: 1
-numberOfLatestPostsToShow: 3
 ---
-{% set postsCount = collections.posts | length %}
-{% set latestPostsCount = postsCount | min(numberOfLatestPostsToShow) %}
-<h1>Latest {{ latestPostsCount }} Post{% if latestPostsCount != 1 %}s{% endif %}</h1>
 
-{% set postslist = collections.posts | head(-1 * numberOfLatestPostsToShow) %}
-{% set postslistCounter = postsCount %}
-{% include "postslist.njk" %}
-
-{% set morePosts = postsCount - numberOfLatestPostsToShow %}
-{% if morePosts > 0 %}
-<p>{{ morePosts }} more post{% if morePosts != 1 %}s{% endif %} can be found in <a href="/blog/">the archive</a>.</p>
-{% endif %}
-
-{# List every content page in the project #}
-{#
-<ul>
-	{%- for entry in collections.all %}
-	<li><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></li>
-	{%- endfor %}
-</ul>
-#}
+<div class="c-hero">
+  <div class="container">
+    <h1 class="c-hero__heading">Hi, I'm Chris. I'm an frontend engineer, developer and cyclist</h1>
+    <div class="c-hero__desc flow">
+      <p class="subheading">I see you found my personal site. I've been busy the last few years working at <a href="https://www.aviture.us.com/">Aviture</a> on <s>Decision Logic</s> Aim High.</p>
+      <p>Here is a few social links that might peek your interest while I work on getting more content.</p>
+      <ul class="horizontal-list" role="list">
+        <li><a href="https://www.linkedin.com/in/christopherkollars/">LinkedIn</a></li>
+        <li><a href="/resume">Resume</a></li>
+      </ul>
+    </div>
+  </h1>
+</div>

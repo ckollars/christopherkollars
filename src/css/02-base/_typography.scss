@@ -12,6 +12,7 @@
 
 body {
   font-family: $body;
+  color: var(--text-color);
 
   @media (min-width: $md) {
     font-size: 1.2rem;
@@ -41,21 +42,30 @@ p {
   line-height: 1.85rem;
 }
 
-a[href] {
+a {
 	color: var(--text-color-link);
-}
-a[href]:visited {
-	color: var(--text-color-link-visited);
-}
-a[href]:hover,
-a[href]:active {
-	color: var(--text-color-link-active);
+  text-decoration-thickness: 0.07em;
+  transition:
+    color 0.125s ease-in-out,
+    text-decoration-color 0.250s ease-in-out,
+    text-underline-offset 0.250s ease-in-out;
+  text-decoration-style: wavy;
+  text-underline-offset: 0.15rem;
+
+  &:visited {
+    color: var(--text-color-link-visited);
+  }
+  &:hover,
+  &:active {
+    color: var(--text-color-link-active);
+    text-decoration-color: var(--text-color-link-active);
+    text-underline-offset: 0.05rem;
+  }
 }
 
 h1 {
   margin-bottom: 1.55rem;
   font-size: 2.2rem;
-  display: none;
 }
 
 h2 {
@@ -63,17 +73,6 @@ h2 {
   margin-top: 4.2rem;
   margin-bottom: 1.35rem;
   font-size: 2.1rem;
-
-  &:before {
-      display: block;
-      position: absolute;
-      // top: -20px;
-      left: -8px;
-      height: 36px;
-      width: 2px;
-      background-color: $green;
-      content: '';
-  }
 }
 
 h3 {
@@ -86,4 +85,12 @@ em {
   .resume & {
     font-size: 1rem;
   }
+}
+
+.flow > * + * {
+  margin-top: 1.5em;
+}
+
+small {
+  font-size: 0.9rem;
 }
