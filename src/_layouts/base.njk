@@ -34,14 +34,15 @@
 		{%- endif %}
 	</head>
 	<body>
-
+    <header></header>
 		<main>
 			{{ content | safe }}
 		</main>
 
 		<footer>
-      <div class="container">
-      <small>&copy; Christopher Kollars {% year %}</small>
+      <div class="container" style="display: flex; justify-content: space-between;">
+        <small><span class="wave">👋</span> Thank you for visiting</small>
+        <small>&copy;&nbsp;{% year %}</small>
       </div>
     </footer>
 

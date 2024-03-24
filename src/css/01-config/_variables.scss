@@ -9,7 +9,7 @@ $wrapper-sm: rem(1024px);
 $wrapper: rem(1400px);
 $wrapper-large: rem(1600px);
 
-$green: oklch(77.06% 0.289 145.46);
+$green: oklch(77.99% 0.212 132.95);
 
 $white: #FFFFFF;
 $black: oklch(16.18% 0.036 197);
@@ -21,13 +21,13 @@ $gray: #3b3b3b;
 :root {
   --black: oklch(16.18% 0.036 197);
   --gray: #3b3b3b;
-  --primary: oklch(77.06% 0.289 145.46);
+  --primary: oklch(77.99% 0.212 132.95);
 
   --bg: #f5f5f5;
 
   --text-color: #3b3b3b;
   --text-color-link: #0e0f0f;
-  --text-color-link-active: oklch(77.06% 0.289 145.46);
+  --text-color-link-active: oklch(77.99% 0.212 132.95);
   --text-color-link-visited: #0e0f0f;
 
   --syntax-tab-size: 2;

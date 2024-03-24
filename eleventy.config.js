@@ -112,7 +112,8 @@ module.exports = function (eleventyConfig) {
       input: 'src',         // default: "."
       includes: '_includes',  // default: "_includes"
       data: '_data',          // default: "_data"
-      output: '_site'
+      output: '_site',
+      layouts: '_layouts'
     },
 
     // -----------------------------------------------------------------
