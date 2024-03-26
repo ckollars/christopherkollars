@@ -3,9 +3,8 @@ layout: base.njk
 ---
 
 {% block content %}
-    <div class="page {{ page.fileSlug}} flow">
-      <div class="container">
-        {# <h1>{{ title }}</h1> #}
+    <div class="page {{ page.fileSlug}}">
+      <div class="container flow prose">
         {{ content | safe }}
       </div>
     </div>

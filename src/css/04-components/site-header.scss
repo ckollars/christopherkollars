@@ -1,0 +1,23 @@
+.site-header {
+  padding-block: var(--space-m);
+  border-top: 0.25em solid var(--primary);
+
+  .repel {
+    --gutter: 0.5rem var(--space-m);
+  }
+}
+
+.nav {
+  margin: 0;
+  display: flex;
+  margin: 0;
+  gap: var(--gutter);
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.site-header__brand svg {
+  display: block;
+}

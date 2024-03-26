@@ -1,51 +1,43 @@
 <!doctype html>
 <html lang="{{ metadata.language }}">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>{{ title or metadata.title }}</title>
-		<meta name="description" content="{{ description or metadata.description }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
 
-		{#- Atom and JSON feeds included by default #}
-		<link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
-		<link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
+    {#- Atom and JSON feeds included by default #}
+    <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="alternate" href="/feed/feed.json" type="application/json" title="{{ metadata.title }}">
 
-		{#- Uncomment this if you’d like folks to know that you used Eleventy to build your site!  #}
-		{#- <meta name="generator" content="{{ eleventy.generator }}"> #}
+  {#-
+    CSS bundles are provided via the eleventy-plugin-bundle plugin:
+    1. You can add to them using `{% css %}`
+    2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
 
-{#-
-		CSS bundles are provided via the eleventy-plugin-bundle plugin:
-		1. You can add to them using `{% css %}`
-		2. You can get from them using `{% getBundle "css" %}` or `{% getBundleFileUrl "css" %}`
+    Learn more: https://github.com/11ty/eleventy-plugin-bundle
+  #}
 
-		Learn more: https://github.com/11ty/eleventy-plugin-bundle
-#}
+    {#- Add to the CSS bundle #}
+    <link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
 
-		{#- Add to the CSS bundle #}
-		<link href="{{ '/css/style.css' | url }}" rel="stylesheet" />
+    {#- Render the CSS bundle #}
+    {%- if eleventy.env.runMode === "serve" %}
+    {# External files (local dev live reload will refresh without page reload) #}
+    <link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
+    {%- else  %}
+    {# Inlined CSS (fastest site performance in production) #}
+    <style>{% getBundle "css" %}</style>
+    {%- endif %}
+  </head>
+  <body>
+    {% include "./partials/site-head.njk" %}
 
-		{#- Render the CSS bundle #}
-		{%- if eleventy.env.runMode === "serve" %}
-		{# External files (local dev live reload will refresh without page reload) #}
-		<link rel="stylesheet" href="{% getBundleFileUrl "css" %}">
-		{%- else  %}
-		{# Inlined CSS (fastest site performance in production) #}
-		<style>{% getBundle "css" %}</style>
-		{%- endif %}
-	</head>
-	<body>
-    <header></header>
-		<main>
-			{{ content | safe }}
-		</main>
+    <main>
+      {{ content | safe }}
+    </main>
 
-		<footer>
-      <div class="container" style="display: flex; justify-content: space-between;">
-        <small><span class="wave">👋</span> Thank you for visiting</small>
-        <small>&copy;&nbsp;{% year %}</small>
-      </div>
-    </footer>
-
-		<!-- Current page: {{ page.url | htmlBaseUrl }} -->
-	</body>
+    {% include "./partials/site-foot.njk" %}
+    <!-- Current page: {{ page.url | htmlBaseUrl }} -->
+  </body>
 </html>

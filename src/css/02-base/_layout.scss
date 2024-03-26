@@ -1,6 +1,5 @@
 body {
   background-color: var(--bg);
-  color: var(--textColor);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -8,11 +7,19 @@ body {
   overflow-x: hidden;
 }
 
-.container {
-  --padding-inline: 2rem;
-
-  width: min($wrapper, 100% - (var(--padding-inline)*2));
+.wrapper {
   margin-inline: auto;
+  width: var(--wrapper-width);
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+}
+
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--gutter, var(--space-s-l));
 }
 
 .c-hero {
@@ -36,12 +43,6 @@ footer {
       margin-left: 0;
     }
   }
-}
-
-
-.resume {
-  padding: 4rem;
-  max-width: $wrapper-sm;
 }
 
 .ultra-pink {

@@ -7,17 +7,10 @@
 
 @import '03-objects/prism.diff';
 
+@import '04-components/site-header';
+
 @import '05-utils/utils';
 
-
-header {
-	border-bottom: 1px dashed var(--color-gray-20);
-}
-header:after {
-	content: "";
-	display: table;
-	clear: both;
-}
 
 .links-nextprev {
 	list-style: none;
@@ -54,41 +47,6 @@ pre:not([class*="language-"]) {
 }
 code {
 	word-break: break-all;
-}
-
-/* Header */
-header {
-	display: flex;
-	gap: 1em .5em;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 1em;
-}
-.home-link {
-	font-size: 1em; /* 16px /16 */
-	font-weight: 700;
-	margin-right: 2em;
-}
-.home-link:link:not(:hover) {
-	text-decoration: none;
-}
-
-/* Nav */
-.nav {
-	display: flex;
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
-.nav-item {
-	display: inline-block;
-	margin-right: 1em;
-}
-.nav-item a[href]:not(:hover) {
-	text-decoration: none;
-}
-.nav a[href][aria-current="page"] {
-	text-decoration: underline;
 }
 
 /* Posts list */
