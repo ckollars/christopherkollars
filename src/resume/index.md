@@ -1,6 +1,6 @@
 ---
 layout: page.njk
-title: 'Christopher Kollars Resume'
+title: 'Resume'
 ---
 
 ## Summary
@@ -13,35 +13,36 @@ I've been involved with the web in some way for over 20 years. I started in a st
 
 Software Engineer - _July 2017 to Present_
 
-#### Projects
 
-### Aim High Air Force
+**Projects**
 
-Last six months I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users such as, parents, spouses and significant others to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force Recruiters to comminucate with their recruits in the "on boarding" process and as well many more tools to help recruiters.
+#### Aim High Air Force
 
-- I helped create an online application for enlisted officers to apply for positions posted within the Air Force. This helped staff members to remove the process of paper form applications and decrease the time it to process applicants.
-- Working with UX to gather design elements to help start a design system, first in Figma then following with updated component code across a few applications used within the Aim High stack.
+n the last six months, I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users, such as parents, spouses, and significant others, to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force recruiters to communicate with their recruits during the onboarding process, as well as offering many more tools to help recruiters.
 
-### Decision Logic
+- I helped create an online application for enlisted officers to apply for positions posted within the Air Force. This allowed staff members to eliminate the process of paper form applications and decrease the time required to process applicants.
+- I worked with the UX team to gather design elements and help start a design system, initially in Figma, followed by updating component code across several applications used within the Aim High stack.
 
-For 5 years I worked on a product owned by Aviture called Decision Logic. It's a restaurant management software used to help store owners and franchisees better understand their operational costs.
+#### Decision Logic
 
-- Developed product features, a labor scheduler, schedule forecasts, a ranking tool and other client facing features.
-- Improved performance on core logistical pieces to help speed up some of the applications core reports with working on stored procedures and database changes.
-- Lead the initiative in creating a design system to use across Decision Logics mobile applications.
-- Worked on a mobile application built on
+For five years, I worked on a product owned by Aviture called Decision Logic. It's a restaurant management software used to help store owners and franchisees better understand their operational costs.
+
+- Developed product features such as a labor scheduler, schedule forecasts, a ranking tool, and other client-facing functionalities.
+- Improved performance on core logistical components to expedite key application reports by working on stored procedures and making database changes.
+- Led the initiative to create a design system for use across Decision Logic's mobile applications.
+- Worked on a mobile applications built on
 
 ### Fuzzco
 
 Web Developer - _September 2015 to July 2017_
 
-#### Projects
+**Projects**
 
-### EtsyLookbooks.com
+#### EtsyLookbooks.com
 
 Developed a custom MVC application using Slim and MySql. This allowed the client to upload a preformatted spreadsheet to the application database.
 
-### RevelSystems.com
+#### RevelSystems.com
 
 Delivered HTML/SCSS/JS components with a living styleguide and implementing the components into a custom Wordpress theme.
 
@@ -61,11 +62,3 @@ Web Developer - _October 2011 - September 2015_
 
 - Developed sites using Drupal, Wordpress and static HTML
 - Created wireframes and sitemaps for projects and also supplied corresponding budgets
-
-## Relevant Skills
-
-- **Languages**: Javascript, Typescript, C#, SQL, HTML, CSS
-- **Frameworks**: React, React Native, Redux, Backbone, .NET
-- **Process**: Agile, Scrum, TDD <br>
-- **CMS**: Strapi, Wordpress, Drupal<br>
-- **Other Tools**: Jest, Webpack, Storybook, 11ty

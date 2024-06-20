@@ -55,3 +55,36 @@ footer {
 .c-playground {
   padding-top: 2rem;
 }
+
+.page-title {
+  display: flex;
+
+  h1 {
+    padding-left: 1rem;
+    font-weight: 200;
+  }
+}
+
+.page {
+  padding-top: 3rem
+}
+
+.content {
+  padding-left: 2rem;
+}
+
+.resume {
+  h2 {
+    font-weight: 800;
+  }
+  h3 {
+    --flow-space: var(--space-s-m);
+  }
+
+  h3 + p {
+    margin-top: 0;
+    font-weight: 300;
+    font-size: rem(21px);
+    font-weight: 300;
+  }
+}

@@ -4,8 +4,10 @@ layout: base.njk
 
 {% block content %}
     <div class="page {{ page.fileSlug}}">
-      <div class="container flow prose">
-        {{ content | safe }}
+      <div class="wrapper ">
+        <div class="content flow prose">
+          {{ content | safe }}
+          </div>
       </div>
     </div>
 {% endblock %}
