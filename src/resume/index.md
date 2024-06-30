@@ -18,19 +18,21 @@ Software Engineer - _July 2017 to Present_
 
 #### Aim High Air Force
 
-In the last six months, I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users, such as parents, spouses, and significant others, to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force recruiters to communicate with their recruits during the onboarding process, as well as offering many more tools to help recruiters.
+In the last 10 months, I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users, such as parents, spouses, and significant others, to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force recruiters to communicate with their recruits during the onboarding process, as well as offering many more tools to help recruiters.
 
 - I helped create an online application for enlisted officers to apply for positions posted within the Air Force. This allowed staff members to eliminate the process of paper form applications and decrease the time required to process applicants.
 - I worked with the UX team to gather design elements and help start a design system, initially in Figma, followed by updating component code across several applications used within the Aim High stack.
+- Using AWS Lamdas and DyanmoDB, created an endpoint to help secuy verify a user says they are when updating their email address or password. 
+
 
 #### Decision Logic
 
-For five years, I worked on a product owned by Aviture called Decision Logic. It's a restaurant management software used to help store owners and franchisees better understand their operational costs.
+For 6 years, I worked on a product owned by Aviture called Decision Logic. It's a restaurant management software used to help store owners and franchisees better understand their operational costs.
 
 - Developed product features such as a labor scheduler, schedule forecasts, a ranking tool, and other client-facing functionalities.
 - Improved performance on core logistical components to expedite key application reports by working on stored procedures and making database changes.
 - Led the initiative to create a design system for use across Decision Logic's mobile applications.
-- Worked on a mobile applications built on
+- Built a mobile application used by 10s of thousands of employees to help manage their shifts and schedules utilizing reavt native utilizing React Native. by 
 
 ### Fuzzco
 
