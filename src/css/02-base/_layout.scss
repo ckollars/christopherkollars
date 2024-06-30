@@ -24,6 +24,14 @@ body {
 
 .c-hero {
   padding: 4rem 0;
+
+  .wrapper > * {
+    max-width: 900px;
+  }
+
+  &__desc {
+    margin-top: 1.8rem
+  }
 }
 
 footer {

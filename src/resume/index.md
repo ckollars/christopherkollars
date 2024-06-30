@@ -18,7 +18,7 @@ Software Engineer - _July 2017 to Present_
 
 #### Aim High Air Force
 
-n the last six months, I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users, such as parents, spouses, and significant others, to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force recruiters to communicate with their recruits during the onboarding process, as well as offering many more tools to help recruiters.
+In the last six months, I've been working on an application for the US Air Force called Aim High. Aim High is an Android and iOS application that allows users, such as parents, spouses, and significant others, to follow a loved one going through basic training in the US Air Force. The application is also used by US Air Force recruiters to communicate with their recruits during the onboarding process, as well as offering many more tools to help recruiters.
 
 - I helped create an online application for enlisted officers to apply for positions posted within the Air Force. This allowed staff members to eliminate the process of paper form applications and decrease the time required to process applicants.
 - I worked with the UX team to gather design elements and help start a design system, initially in Figma, followed by updating component code across several applications used within the Aim High stack.
