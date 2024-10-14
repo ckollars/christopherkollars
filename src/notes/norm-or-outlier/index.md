@@ -3,7 +3,8 @@ title: "The Norm or The Outlier"
 draft: true
 tags:
     - notes
-    - mobile
+    - React Native
+    - Mobile
 ---
 
 I recently had the opportunity to attend the Chain React conference in Portland, OR. Aviture was kind enough to send me and two other coworkers. If you haven't been, it's a great conference dedicated to React Native (RN). I've been using RN for about five years now on the mobile apps I helped build at Aviture.

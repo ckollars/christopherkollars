@@ -1,0 +1,12 @@
+---
+layout: base.njk
+title: 'Notes'
+eleventyNavigation:
+  key: Notes
+  order: 1
+---
+
+{% set postslist = collections.notes %}
+<div class="wrapper flow prose">
+    {% include "postslist.njk" %}
+</div>

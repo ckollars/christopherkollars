@@ -28,16 +28,16 @@ module.exports.eleventyComputedPermalink = eleventyComputedPermalink;
 module.exports.eleventyComputedExcludeFromCollections = eleventyComputedExcludeFromCollections;
 
 module.exports = eleventyConfig => {
-	eleventyConfig.addGlobalData("eleventyComputed.permalink", eleventyComputedPermalink);
-	eleventyConfig.addGlobalData("eleventyComputed.eleventyExcludeFromCollections", eleventyComputedExcludeFromCollections);
+	eleventyConfig.addGlobalData('eleventyComputed.permalink', eleventyComputedPermalink);
+	eleventyConfig.addGlobalData('eleventyComputed.eleventyExcludeFromCollections', eleventyComputedExcludeFromCollections);
 
 	let logged = false;
-	eleventyConfig.on("eleventy.before", ({runMode}) => {
-		let text = "Excluding";
+	eleventyConfig.on('eleventy.before', ({runMode}) => {
+		let text = 'Excluding';
 		// Only show drafts in serve/watch modes
-		if(runMode === "serve" || runMode === "watch") {
+		if(runMode === 'serve' || runMode === 'watch') {
 			process.env.BUILD_DRAFTS = true;
-			text = "Including";
+			text = 'Including';
 		}
 
 		// Only log once.

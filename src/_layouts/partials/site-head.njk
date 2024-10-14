@@ -7,14 +7,15 @@
           <ellipse cx="7.5" cy="4" rx="4.5" ry="4" fill="#7ED21D" style="fill:#7ED21D;fill:color(display-p3 0.4941 0.8235 0.1137);fill-opacity:1;"/>
         </svg>
       </a>
-      <h1>{{ title }}</h1>
+      {# TODO: only render page parent page title #}
+      {# <h1>{{ title }}</h1> #}
     </div>
-    {# <nav aria-label="primary">
+    <nav aria-label="primary">
       <ul role="list" class='nav'>
       {%- for entry in collections.all | eleventyNavigation %}
         <li><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
       {%- endfor %}
     </ul>
-    </nav> #}
+    </nav>
   </div>
 </header>
