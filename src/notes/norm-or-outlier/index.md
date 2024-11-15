@@ -1,6 +1,6 @@
 ---
 title: "The Norm or The Outlier"
-draft: true
+draft: false
 tags:
     - notes
     - React Native
